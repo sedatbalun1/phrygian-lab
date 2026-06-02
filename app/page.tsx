@@ -12,6 +12,7 @@ const TRANSLATIONS = {
     menu_genesis: 'The Anomaly',
     menu_covenant: 'The Vow',
     menu_artifact: 'The Core',
+    menu_allocation: 'The Alignment',
 
     vow_1: 'You did not find these coordinates by chance.',
     vow_2: 'The monolithic core permitted your receptor to decode this encryption.',
@@ -27,8 +28,8 @@ const TRANSLATIONS = {
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Triple Geological Ritual / Metamorphic Preservation Archive',
     gold_plate: 'Numbered 24K Gold Mounted Plate',
-    tooltip_title: 'SECRET 718: THE ASCENDING VALUATION',
-    tooltip_desc: 'Genesis price starts at €718. Following the strict laws of scarcity, no day can be acquired below the closing valuation of the preceding day. The value only ascends.',
+    tooltip_title: 'SECRET 718: FIXED SOVEREIGN VALUATION',
+    tooltip_desc: 'Absolute scarcity control. One allocation per day worldwide. Fixed rate: €718.',
     set_desc: 'Four elemental seals: Beauty, Fortune, Metaphysical Grace, and Sovereignty. Three high-density mineral layers hand-carved from Midaum depths, encased inside a monolithic solid marble jar with a personalized 24K Gold Mounted Sovereign Plate:',
     
     grey_title: 'PHRYGIAN GREY',
@@ -41,22 +42,22 @@ const TRANSLATIONS = {
     monolith_title: 'THE OBSIDIAN MONOLITH / THE 31 DECEMBER ALIGNMENT',
     monolith_desc: 'On December 31st, a transparent cosmic draw occurs among the 365 archive holders. The physical Obsidian Monolith will be transferred to exactly ONE sovereign for 365 days. The Mask transforms your skin; the Stone re-routes your destiny. The remaining 364 initiates track its global coordinates live via their private digital vault.',
     
-    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await within the solid marble jar. One family, one monolith. The floor value only rises.',
-    form_title: 'SOVEREIGN ALLOCATION REQUEST & VALUE OFFER',
+    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await within the solid marble jar. One family, one monolith. Rate is absolute: €718.',
+    form_title: 'SOVEREIGN ALLOCATION SECURE PROTOCOL',
     input_name: 'Sovereign Name & Title (e.g., Sovereign Sedat)',
     input_city: 'City / Country (e.g., London / UK)',
     input_email: 'Encrypted Digital Address (Email)',
     input_address: 'The secured destination where the solid marble jar and gold plate shall be delivered...',
-    button_submit: 'ACQUIRE CORE / ENGAGE FREQUENCY',
+    button_submit: 'SECURE TODAY ALLOCATION / €718',
     success: 'ALLOCATION RECORDED IN THE SEISMIC LEDGER',
-    success_desc: 'Your value offer has been submitted and sealed under your name. Our concierge will contact your encrypted address within 24 hours.',
+    success_desc: 'Your allocation for today has been locked and sealed under your name at a fixed rate of €718. Our concierge will contact your encrypted address within 24 hours.',
     
-    ledger_title: 'THE ALIGNMENT CALENDAR / THE ASCENDING VALUE CYCLE',
-    ledger_sub: 'Commencing June 23rd Solstice — Subsequent days cannot be acquired below the last closed valuation.',
-    status_verified: 'Closed & Sealed',
-    status_open: 'Offer Value',
-    status_floor: 'Floor:',
-    status_closed: 'Closed',
+    ledger_title: 'THE ALIGNMENT CALENDAR / ONE SINGLE ALLOCATION PER DAY',
+    ledger_sub: 'Commencing June 23rd Solstice — Absolute rate: €718 per core.',
+    status_verified: 'Sealed',
+    status_open: 'Open',
+    status_floor: 'Rate:',
+    status_closed: 'Sealed',
     status_price_void: 'Priceless',
     status_local: 'Midaum Local'
   },
@@ -69,23 +70,24 @@ const TRANSLATIONS = {
     menu_genesis: 'Anomali',
     menu_covenant: 'Vaatleri',
     menu_artifact: 'Emanet',
+    menu_allocation: 'Tahsisat',
 
     vow_1: 'Bu koordinatlara tesadüfen rastlamadınız.',
     vow_2: 'Masif mermer kütle, zihninizdeki sismik alıcının bu kadim şifreyi çözmesine izin verdi.',
-    vow_3: 'M.Ö. 718 yılında Kral Midas, Midaum dehlizlerinde kendisine uzatılan ışığı yutan o mineral kütleyi reddetti ve koskoca bir soyun metafiziksel kaderini kilitledi.',
-    vow_4: '1975 yılında yapılan derin tektonik sondaj çalışmalarında, Midaum havzasinin isiksiz mermer damarlarinin kalbinde masif bir bosluk kirildi.',
-    vow_5: 'Jeologlar resmi raporlara o sarsici ibareyi kazidi: Anormal bir kütle anomalisi. Siz şu an mermer bir kavanoz değil, geçmişin ebedi frekansını yakalayan jeolojik bir telsiz ediniyorsunuz.',
+    vow_3: 'M.Ö. 718 yılında Kral Midas, Midaum dehlizlerinde kendisine uzatılan ışığı yutan o mineral kütleyi reddetti ve koskoca bir soyun kaderini mühürledi.',
+    vow_4: '1975 yılında yapılan derin tektonik sondaj çalışmalarında, Midaum mermer damarlarının kalbinde masif bir boşluk kırıldı.',
+    vow_5: 'Jeologlar resmi raporlara o sarsıcı ibareyi kazıdı: Anormal bir kütle anomalisi. Şu an mermer bir kavanoz değil, geçmişin ebedi frekansını yakalayan jeolojik bir telsiz ediniyorsunuz.',
 
     resonance_title: 'THE LUMINOUS GIFT / GÜNDÖNÜMÜ ANOMALİSİ',
     resonance_desc: 'Maddi ve ticari altından tamamen izole edilmiştir. 23 Haziran gecesi, o döngünün tüm üretimi mühürlenir ve konsey tarafından yeryüzünden seçilen sadece TEK bir kadına lütfedilir. Seçkinlerin kibrini ve hırs sınırlarını delip geçmek için tasarlanmış masif bir boşluk yarası.',
-    vow_6: 'Sermaye gelecekteki her şeyi satın alabilir. Fakat tarih ve Frigya altyapisinin o gizemli efsunu asla satılık olmadı. Alın ve bekleyin.',
+    vow_6: 'Sermaye gelecekteki her şeyi satın alabilir. Fakat tarih ve Frigya efsununun o gizemli koruması asla satılık olmadı. Alın ve bekleyin.',
     vow_7: 'Biz gençlik vadetmiyoruz; gençlik geçicidir. Biz, hayatınızın geri kalanında cildinize mutlak bir güzellik, kaderinize ise sarsılmaz bir Frigya şansı ve koruma efsunu bahşediyoruz.',
 
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
     gold_plate: 'Numbered 24K Gold Mounted Plate',
-    tooltip_title: 'SECRET 718: YÜKSELEN DEĞER PRENSİBİ',
-    tooltip_desc: 'Başlangıç endeksi €718 dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
+    tooltip_title: 'SECRET 718: SABİT HÜKÜMDAR DEĞERİ',
+    tooltip_desc: 'Mutlak kıtlık kontrolü. Dünya genelinde günde sadece tek bir tahsisat. Sabit bedel: €718.',
     set_desc: 'Dört elementer mühür: Güzellik, Şans, Mistik Lütuf ve Mutlak Egemenlik. Midaum dehlizlerinden çıkarılan ve fani cildinizle geçmişin sarsılmaz frekansı arasında sismik bir medyum görevi gören 3 katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile masif mermer kavanoz içinde teslim edilir. Aile başına tek tahsisat:',
     
     grey_title: 'PHRYGIAN GREY',
@@ -98,22 +100,22 @@ const TRANSLATIONS = {
     monolith_title: 'THE OBSIDIAN MONOLITH / 31 ARALIK HİZALANMASI',
     monolith_desc: 'Güneş döngüsünün son gecesi, 365 hak sahibi arasında şeffaf ve kutsal bir çekiliş gerçekleşir. Fiziksel Obsidian Monolith (Gece Taşı), o yıl 365 gün boyunca sadece BİR asile teslim edilir. Maske cildinizi değiştirir; Monolith ise kaderinizi yeniden yazar. Geri kalan 364 üye koordinatları şifreli panelle canlı izler.',
     
-    call_to_action: 'Kadim emanet, mutlak asalet ve geçmişin o sarsılmaz frekansı mermer kavanozun içinde seni bekliyor. Değer sadece yükselir.',
-    form_title: 'SOVEREIGN TAHSİSAT TALEBİ & DEĞER TEKLİFİ',
+    call_to_action: 'Kadim emanet, mutlak asalet ve geçmişin o sarsılmaz frekansı mermer kavanozun içinde seni bekliyor. Fiyat mutlak ve sabittir: €718.',
+    form_title: 'SOVEREIGN TAHSİSAT KİLİTLEME PROTOKOLÜ',
     input_name: 'Asil İsim & Sismik Unvan (Örn: Asil Sedat)',
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
     input_email: 'Şifreli Dijital Adres (E-posta)',
     input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı resmi teslimat lokasyonu...',
-    button_submit: 'ASİL TAHSİSATI BAŞLAT',
-    success: 'TAHSİSAT Sİ Sİ SİCİLE İŞLENDİ',
-    success_desc: 'Değer teklifiniz sismik sicile kaydedilmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde sizinle irtibat kuracaktır.',
+    button_submit: 'BUGÜNÜN TAHSİSATINI KİLİTLE / €718',
+    success: 'TAHSİSAT SİSİ SİCİLE İŞLENDİ',
+    success_desc: 'Bugüne ait tahsisatınız €718 sabit bedel üzerinden adınıza kilitlenmiş ve mühürlenmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde sizinle irtibat kuracaktır.',
     
-    ledger_title: 'THE ALIGNMENT CALENDAR / YÜKSELEN DEĞER DÖNGÜSÜ',
-    ledger_sub: '23 Haziran Gündönümünde Başlar — Sonraki günler, bir önceki günün kapanış değerinin altında edinilemez.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / GÜNDE SADECE BİR ADET TAHSİSAT',
+    ledger_sub: '23 Haziran Gündönümünde Başlar — Her kütle için mutlak fiyat: €718.',
     status_verified: 'Mühürlendi',
-    status_open: 'Teklif Sun',
-    status_floor: 'Taban:',
-    status_closed: 'Kapatıldı',
+    status_open: 'Açık',
+    status_floor: 'Değer:',
+    status_closed: 'Mühürlendi',
     status_price_void: 'Paha Biçilemez',
     status_local: 'Midaum Havzası'
   }
@@ -124,26 +126,20 @@ export default function Home() {
   const [orderSubmitted, setOrderSubmitted] = useState(false);
   const [buyerName, setBuyerName] = useState('');
   const [buyerCity, setBuyerCity] = useState('');
+  const [buyerEmail, setBuyerEmail] = useState('');
+  const [buyerAddress, setBuyerAddress] = useState('');
 
   const t = TRANSLATIONS[lang];
 
-  // Derleyicinin patlamasını önlemek için tamamen statikleştirilmiş takvim veri dizisi
   const CALENDAR_DAYS = [
-    { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'verified', rawPrice: 718, isVoid: false },
-    { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'verified', rawPrice: 850, isVoid: false },
-    { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980, isVoid: false },
-    { date: 'June 26', holder: 'The Chosen One', city: 'Midaum Zone', status: 'void', rawPrice: 0, isVoid: true },
-    { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100, isVoid: false },
-    { date: 'June 28', holder: 'Sovereign Alignment', city: 'Global', status: 'open', rawPrice: 1100, isVoid: false },
-    { date: 'June 29', holder: 'Sovereign Alignment', city: 'Global', status: 'open', rawPrice: 1100, isVoid: false },
+    { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'verified', displayPrice: '€718' },
+    { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'verified', displayPrice: '€718' },
+    { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', displayPrice: '€718' },
+    { date: 'June 26', holder: 'The Chosen One', city: 'Midaum Zone', status: 'void', displayPrice: 'Priceless' },
+    { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', displayPrice: '€718' },
+    { date: 'June 28', holder: 'Sovereign Alignment', city: 'Global', status: 'open', displayPrice: '€718' },
+    { date: 'June 29', holder: 'Sovereign Alignment', city: 'Global', status: 'open', displayPrice: '€718' },
   ];
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -160,11 +156,6 @@ export default function Home() {
           <span className="text-lg md:text-xl font-extralight tracking-[0.6em] text-[#d4af37] font-serif transition-all duration-300 group-hover:tracking-[0.65em]">PHRYGIAN LAB</span>
           <span className="text-[8px] tracking-[0.4em] uppercase opacity-20 mt-0.5 font-sans">{t.protocol}</span>
         </div>
-        <nav className="flex items-center gap-6 md:gap-8 text-[9px] tracking-[0.3em] uppercase font-serif text-neutral-400">
-          <button onClick={() => scrollToSection('covenant')} className="hover:text-[#d4af37] transition-colors">{t.menu_genesis}</button>
-          <button onClick={() => scrollToSection('vows')} className="hover:text-[#d4af37] transition-colors">{t.menu_covenant}</button>
-          <button onClick={() => scrollToSection('triad-archive')} className="hover:text-[#d4af37] transition-colors">{t.menu_artifact}</button>
-        </nav>
         <div className="flex items-center gap-2 bg-neutral-950/90 border border-neutral-900/60 px-2.5 py-1 text-[8px] tracking-widest font-mono">
           <button onClick={() => setLang('en')} className={`uppercase ${lang === 'en' ? 'text-[#d4af37] font-bold' : 'text-neutral-600'}`}>EN</button>
           <button onClick={() => setLang('tr')} className={`uppercase ${lang === 'tr' ? 'text-[#d4af37] font-bold' : 'text-neutral-600'}`}>TR</button>
@@ -175,6 +166,7 @@ export default function Home() {
         </div>
       </header>
 
+      {/* CHRONOLOGICAL ÇİFT SÜTUN DÜZENİ */}
       <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 pt-16 pb-12 z-10 relative">
         
         {/* Sol Sütun: Anlatı & Vaat */}
@@ -199,7 +191,7 @@ export default function Home() {
             <p className="opacity-70 text-[11px] leading-relaxed lowercase font-sans">{t.vow_3}</p>
             <p className="opacity-70 text-[11px] leading-relaxed lowercase font-sans">{t.vow_4}</p>
             <div className="text-[8px] tracking-[0.3em] font-mono text-[#d4af37] border border-[#d4af37]/20 px-3 py-1 w-max bg-[#d4af37]/5 font-semibold">{t.vow_5}</div>
-            <div id="vows" className="w-full h-[1px] bg-neutral-900 my-2" />
+            <div className="w-full h-[1px] bg-neutral-900 my-2" />
             <p className="opacity-90 text-[#e5e5e5] font-light leading-relaxed">{t.vow_6}</p>
             <p className="text-[#d4af37] font-medium leading-relaxed">{t.vow_7}</p>
           </div>
@@ -218,11 +210,10 @@ export default function Home() {
                 <h3 className="text-xs tracking-widest text-white uppercase mt-0.5">{t.form_title}</h3>
               </div>
               <div className="space-y-2">
-                <input type="text" required value={buyerName} onChange={(e) => setBuyerName(e.target.value)} placeholder={lang === 'tr' ? 'Asil İsim & Sismik Unvan' : t.input_name} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                <input type="text" required value={buyerCity} onChange={(e) => setBuyerCity(e.target.value)} placeholder={t.input_city} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                <input type="number" required min="1100" placeholder={lang === 'tr' ? 'EUR Cinsinden Değer Teklifiniz (Taban: €1,100)' : `Your Value Offer in EUR (Floor: €1,100)`} className="w-full bg-[#161616] border border-[#c5a880]/30 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-[#c5a880] tracking-widest font-mono placeholder:text-neutral-700" />
-                <input type="email" required placeholder={t.input_email} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                <textarea rows={3} required placeholder={t.input_address} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide resize-none leading-relaxed font-sans placeholder:text-neutral-700" />
+                <input type="text" required value={buyerName} onChange={(e) => setBuyerName(e.target.value)} placeholder={lang === 'tr' ? t.input_name : 'Sovereign Name & Title'} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
+                <input type="text" required value={buyerCity} onChange={(e) => setBuyerCity(e.target.value)} placeholder={lang === 'tr' ? t.input_city : 'City / Country'} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
+                <input type="email" required value={buyerEmail} onChange={(e) => setBuyerEmail(e.target.value)} placeholder={lang === 'tr' ? t.input_email : 'Encrypted Digital Address (Email)'} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
+                <textarea rows={4} required value={buyerAddress} onChange={(e) => setBuyerAddress(e.target.value)} placeholder={lang === 'tr' ? t.input_address : 'The secured destination where the jar shall be delivered...'} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide resize-none leading-relaxed font-sans placeholder:text-neutral-700" />
               </div>
               <button type="submit" className="w-full bg-[#c5a880] text-black font-semibold uppercase text-[10px] tracking-[0.3em] py-4 rounded-none hover:bg-white hover:text-black transition-all duration-500 shadow-2xl border border-[#c5a880]">
                 {t.button_submit}
@@ -238,12 +229,21 @@ export default function Home() {
         </div>
       </div>
 
-      <section id="triad-archive" className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative scroll-mt-24">
+      {/* DETAYLAR */}
+      <section id="triad-archive" className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative">
         <div className="bg-[#111111]/20 border border-neutral-900/60 p-6 md:p-8 backdrop-blur-sm">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline mb-6 border-b border-neutral-900 pb-4">
             <div>
               <h2 className="text-xl font-serif font-light tracking-widest text-white">{t.set_title}</h2>
-              <p className="text-[9px] tracking-test text-[#c5a880] uppercase mt-0.5">{t.set_sub}</p>
+              <p className="text-[9px] tracking-widest text-[#c5a880] uppercase mt-0.5">{t.set_sub}</p>
+            </div>
+            <div className="mt-2 md:mt-0 flex items-center gap-2 group/price relative cursor-help">
+              <span className="text-xl font-serif text-[#c5a880] tracking-wider font-light">€718</span>
+              <span className="text-[9px] bg-neutral-900 border border-neutral-800 text-neutral-600 rounded-full w-3.5 h-3.5 flex items-center justify-center font-mono">?</span>
+              <div className="absolute bottom-6 right-0 w-64 bg-[#141414] border border-[#c5a880]/30 p-3 text-[9px] text-neutral-400 leading-relaxed shadow-2xl tracking-wide opacity-0 group-hover/price:opacity-100 transition-opacity duration-300 pointer-events-none z-50 font-sans">
+                <span className="text-[#d4af37] font-serif block mb-0.5">{t.tooltip_title}</span>
+                {t.tooltip_desc}
+              </div>
             </div>
           </div>
           <p className="text-xs text-neutral-400 mb-6 leading-relaxed font-light text-justify max-w-4xl">{t.set_desc}</p>
@@ -265,7 +265,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="artifact" className="bg-[#131313]/90 border border-purple-900/20 p-5 text-center relative overflow-hidden scroll-mt-24">
+          <div className="bg-[#131313]/90 border border-purple-900/20 p-5 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
             <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/60 px-2 py-0.5 mb-3 bg-purple-950/10">[ ANCIENT CHRONIC TRANSMITTER ]</div>
             <span className="text-[8px] font-mono block tracking-[0.25em] mb-1.5 text-[#d4af37]">{t.monolith_title}</span>
@@ -278,6 +278,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TAKVİM BÖLÜMÜ */}
       <section className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative">
         <div className="border-t border-neutral-950 pt-6">
           <div className="text-center mb-6">
@@ -286,23 +287,19 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-7 gap-2">
             {CALENDAR_DAYS.map((day, index) => (
-              <div key={index} className={`border p-3 text-center flex flex-col justify-between h-36 relative transition-all duration-300 ${day.status === 'void' ? 'border-purple-950/30 bg-purple-950/5' : day.status === 'open' ? 'border-[#c5a880]/30 bg-[#c5a880]/5 hover:border-[#c5a880]' : 'border-neutral-900 bg-[#111111]/20'}`}>
+              <div key={index} className="border p-3 text-center flex flex-col justify-between h-36 relative transition-all duration-300 border-neutral-900 bg-[#111111]/20">
                 <div>
                   <span className="text-[9px] font-serif block text-neutral-400 font-semibold border-b border-neutral-900/60 pb-0.5 mb-1.5">{day.date}</span>
-                  <span className={`text-[11px] block font-medium font-serif ${day.status === 'void' ? 'text-purple-400 italic font-semibold animate-pulse' : 'text-white'}`}>{day.status === 'void' ? t.status_local : day.holder}</span>
-                  <span className="text-[8px] text-neutral-600 block font-mono mt-0.5">{day.status === 'void' ? 'Anonymized' : day.city}</span>
+                  <span className="text-[11px] block font-medium font-serif text-white">{day.holder}</span>
+                  <span className="text-[8px] text-neutral-600 block font-mono mt-0.5">{day.city}</span>
                 </div>
                 <div>
-                  <span className={`text-[8px] font-mono block mb-1.5 font-bold ${day.status === 'open' ? 'text-[#c5a880]' : 'text-neutral-500'}`}>
-                    {day.status === 'void' ? t.status_price_void : day.status === 'open' ? `${t.status_floor} €${day.rawPrice}` : `€${day.rawPrice} (${t.status_closed})`}
+                  <span className="text-[8px] font-mono block mb-1.5 font-bold text-neutral-500">
+                    {day.displayPrice}
                   </span>
-                  {day.status === 'void' ? (
-                    <span className="text-[7px] text-purple-400 font-mono block uppercase tracking-tighter py-0.5 border border-purple-950/20 bg-purple-950/10 leading-tight">{t.status_void}</span>
-                  ) : day.status === 'open' ? (
-                    <button onClick={() => scrollToSection('allocation')} className="w-full text-[7px] text-black bg-[#c5a880] font-mono block uppercase tracking-widest py-0.5 font-semibold hover:bg-white transition-colors">{lang === 'tr' ? 'Teklif Et' : 'Offer'}</button>
-                  ) : (
-                    <span className="text-[7px] text-neutral-600 block uppercase font-mono tracking-widest">{t.status_verified}</span>
-                  )}
+                  <span className="text-[7px] text-neutral-600 block uppercase font-mono tracking-widest">
+                    {day.status === 'void' ? 'Priceless' : 'Sealed'}
+                  </span>
                 </div>
               </div>
             ))}
