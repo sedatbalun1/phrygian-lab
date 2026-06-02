@@ -8,22 +8,34 @@ const TRANSLATIONS = {
     remaining: 'REMAINING',
     tagline: 'ATYPICAL LUXURY / THE SACRED OBJECT OF DESIRE',
     h1: 'Older than humanity.\nCleaner than science.',
-    manifesto1: 'While Gordion was burning under the Cimmerian fire, King Midas retreated to the high cliffs of Midaum (İnbazarcık). In those silent caverns, a pure Phrygian shepherd girl extended her hand, offering him a black stone that absorbed all light—The Obsidian Monolith. Burdened by the weight of a dying empire, Midas refused the girl’s pure gift. That single refusal marked the metaphysical collapse of Phrygia; the people scattered, and their name vanished from history. The unreturned stone became the hidden monument of a lost civilization.',
-    manifesto2: 'In 1975, exactly 2700 years later, an old shepherd grandmother, grazing her flock along the same marble fissures of İnbazarcık, rediscovered the Monolith. Today, this stone travels the world, spending strictly one year with a single sovereign. Phrygian Lab brings forth the three geological layers (The Antique Triad) that encapsulated this secret. This is not industrial cosmetics; it is an initiation into a timeless covenant. The Mask brightens your skin. The Stone illuminates your destiny.',
+    
+    // Premium Menü
+    menu_genesis: 'The Genesis',
+    menu_covenant: 'The Covenant',
+    menu_artifact: 'The Artifact',
+    menu_allocation: 'The Allocation',
+
+    manifesto1: 'While Gordion was burning under the Cimmerian fire, King Midas retreated to the high cliffs of Midaum (İnbazarcık). In those silent caverns, a pure Phrygian shepherd girl extended her hand, offering him a black stone that absorbed all light—The Obsidian Monolith. Burdened by the weight of a dying empire, Midas refused the girl’s pure gift. That single refusal marked the metaphysical collapse of Phrygia; the people scattered, and their name vanished from history. It is whispered among the few who know that this unreturned stone carries an ancient, heavy resonance—those whose eyes cross this text often encounter the Monolith in their subconscious weight, a quiet geological shadow that refuses to leave the mind until the circle is restored.',
+    manifesto2: 'In 1975, exactly 2700 years later, an old shepherd grandmother, descending from the same lineage in the marble fissures of İnbazarcık, rediscovered the Monolith. Today, this stone travels the world, spending strictly one year with a single sovereign. Phrygian Lab brings forth the three geological layers (The Antique Triad) that encapsulated this secret for millennia. This is not industrial cosmetics; it is an initiation into an elite, unspoken order of absolute beauty and metaphysical heritage.',
+    
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Triple Geological Ritual from Midaum Vaults',
     gold_plate: 'Numbered 24K Gold Mounted Plate / Midaum Archive',
-    tooltip_title: 'FORMULA 718: THE REFUSAL OF MIDAS',
-    tooltip_desc: 'Consecrated to the year 718 BC, when King Midas refused the shepherd girl’s gift in Midaum, sealing the fate of an entire empire.',
+    tooltip_title: 'SECRET 718: THE REFUSAL OF MIDAS',
+    tooltip_desc: 'Consecrated to the year 718 BC, when King Midas refused the shepherd girl’s gift in Midaum, sealing the fate of an entire empire. Free from human market dynamics.',
     set_desc: 'This holistic set includes 3 sacred geological layers hand-carved from the depths of Midaum, sealed with a 24K Gold-Plated brass tag (e.g., 014 / 365) personalized in your name:',
+    
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'High sulfur and silica sifting through ash-grey layers. A tectonic purification ritual that purges modern urban residues.',
     white_title: 'PHRYGIAN WHITE',
     white_desc: 'Pure calcium carbonate isolated from lightless veins. Offers the smooth, ageless porcelain tone of ancient imperial baths.',
     raw_title: 'TRAVERTINE RAW',
     raw_desc: 'Magmatic mineral crust deposited over millennia by thermal springs. Erases time by forming an ancient shield over the skin barrier.',
+    
     monolith_title: 'THE OBSIDIAN MONOLITH / THE 1975 MATRIARCH COVENANT',
-    monolith_desc: 'On the night of December 31st, aligned with cosmic Jove, the Obsidian Monolith (The Night Stone) will be transferred to strictly ONE sovereign. The chosen custodian vows to protect this relic for 365 days, witnessing unparalleled metaphysical grace, ageless beauty, and absolute Phrygian fortune, before passing it to the next sovereign. The remaining 364 initiates will log in via their encrypted portal to witness live where the sovereign grace resides this year.',
+    monolith_desc: 'On the night of December 31st, aligned with cosmic Jove, the Obsidian Monolith (The Night Stone) will be transferred to strictly ONE sovereign. The chosen custodian vows to protect this relic for 365 days, witnessing unparalleled metaphysical grace, ageless beauty, and absolute Phrygian fortune, before passing it to the next sovereign. The Mask brightens your skin; the Stone illuminates your destiny. The remaining 364 initiates will log in via their encrypted portal to witness live where the sovereign grace resides this year.',
+    
+    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await you. The search is over. Perhaps, the chosen one is you.',
     form_title: 'ARISTOCRATIC ALLOCATION REQUEST',
     input_name: 'Aristocratic Name & Title (e.g., Baron Sedat)',
     input_city: 'City / Country (e.g., London / UK)',
@@ -40,22 +52,34 @@ const TRANSLATIONS = {
     remaining: 'KALAN KOTA',
     tagline: 'ATYPICAL LUXURY / KUTSAL EMANET VE ARZU NESNESİ',
     h1: 'Older than humanity.\nCleaner than science.',
-    manifesto1: 'Gordion, Kimmerlerin amansız ateşiyle kavrulurken; Kral Midas, sığınak şehri Midaum’un (İnbazarcık) dik kayalıklarına çekildi. O sessiz dehlizlerde, masum bir Frigyalı çoban kız çocuğu ona ışığı yutan siyah bir taş uzattı: The Obsidian Monolith (Gece Taşı). Ancak Midas, çöken bir krallığın kederi ve kibriyle o küçük kızın saf hediyesini almayı reddetti. İşte o an, Frigya’nın metafiziksel çöküşünün başladığı andı; halk dağıldı ve o tarihten sonra bir daha asla var olamadılar. Geri çevrilen o taş, kayıp bir imparatorluğun mermere gömülen sırrına dönüştü.',
-    manifesto2: 'Tam 2700 yıl boyunca gizlenen o taş, 1975 yılında İnbazarcık kayalıklarında koyunlarını otlatan yaşlı bir çoban nene tarafından mermer yarığının içinde yeniden bulundu. Taş, o günden beri dünyadaki en seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu büyük sırrı saklayan 3 jeolojik katmanı (The Antique Triad) gün yüzüne çıkarıyor. Bu endüstriyel kozmetik değildir; gizemli bir sadakat çemberine dahil olmaktır. Maske cildinizi, Taş ise hayatınızı ışıldatacak.',
+    
+    // Premium Menü
+    menu_genesis: 'Hikayesi',
+    menu_covenant: 'Vaatleri',
+    menu_artifact: 'Emanet',
+    menu_allocation: 'Tahsisat',
+
+    manifesto1: 'Gordion, Kimmerlerin amansız ateşiyle kavrulurken; Kral Midas, sığınak şehri Midaum’un (İnbazarcık) dik kayalıklarına çekildi. O sessiz dehlizlerde, masum bir Frigyalı çoban kız çocuğu ona ışığı yutan siyah bir taş uzattı: The Obsidian Monolith (Gece Taşı). Ancak Midas, çöken bir krallığın kederi ve kibriyle o küçük kızın saf hediyesini almayı reddetti. İşte o an, Frigya’nın metafiziksel çöküşünün başladığı andı; halk dağıldı ve o tarihten sonra bir daha asla var olamadılar. Kadim bir fısıltı der ki; bu geri çevrilen mermer kütlesi öyle ağır bir frekans taşır ki, bu metne rastlayan seçkin ruhlar, çember tamamlanana kadar gecenin derin rüyalarında o siyah taşın jeolojik gölgesiyle karşılaşırlar. Zihni terk etmeyen asil bir ağırlık.',
+    manifesto2: 'Tam 2700 yıl boyunca gizlenen o taş, 1975 yılında İnbazarcık kayalıklarında koyunlarını otlatan, o kız çocuğunun soyundan gelen yaşlı bir çoban nene tarafından yeniden bulundu. Taş, o günden beri dünyadaki en seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu büyük sırrı saklayan 3 jeolojik katmanı (The Antique Triad) gün yüzüne çıkarıyor. Bu endüstriyel kozmetik değildir; gizemli bir sadakat çemberine dahil olmaktır.',
+    
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Midaum Dehlizlerinden Üçlü Jeolojik Ritüel',
     gold_plate: 'Numbered 24K Gold Mounted Plate / Midaum Arşivi',
-    tooltip_title: 'FORMULA 718: MIDAS\'IN REDDEDİŞİ',
+    tooltip_title: 'SECRET 718: MIDAS\'IN REDDEDİŞİ',
     tooltip_desc: 'Kral Midas’ın Midaum sığınağında çoban kızın hediyesini reddettiği ve koskoca bir halkın kaderini mühürlediği M.Ö. 718 yılının kronolojisine adanmıştır.',
     set_desc: 'Bu bütünsel set, Midaum topraklarının derinliklerinden titizlikle çıkarılan ve her biri adınıza el işçiliğiyle işlenen 24 Ayar Altın Kaplama Pirinç Plaka ile mühürlenen (Örn: 014 / 365) 3 kadim katmanı içerir:',
+    
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Kül grisi katmanlardan süzülen yüksek sülfür ve silika. Hücreleri modern şehir kalıntılarından arındıran tektonik arınma.',
     white_title: 'PHRYGIAN WHITE',
     white_desc: 'Işıksız damarlardan izole edilen saf kalsiyum karbonat. Antik asillerin banyolarındaki pürüzsüz porselen tonu ve mutlak arılık.',
     raw_title: 'TRAVERTINE RAW',
     raw_desc: 'Termal suların binlerce yılda bıraktığı magmatik mineral kabuk. Cilt bariyerini dış etkenlere karşı antik bir kalkanla örerek zamanı siler.',
+    
     monolith_title: 'THE OBSIDIAN MONOLITH / 1975 MATRİYARK SÖZLEŞMESİ',
-    monolith_desc: '31 Aralık gecesi, kozmik hizalanmaya göre, 365 mülkiyet sahibinden sadece 1 kişiye, İnbazarcık emaneti olan The Obsidian Monolith (Gece Taşı) teslim edilecektir. Bu taşı teslim alan asil, onun getireceği mutlak bereketi ve yaşlanmayan güzelliği hayatında bizzat deneyimleyeceğini, ancak taşı sadece 1 yıl elinde tutacağını ve sonraki yıl yeni seçilecek asile devredeceğini taahhüt eder. Geri kalan 364 tarikat üyesi, o gece şifreli panelle giriş yaparak, emanetin dünyada hangi koordinata (Örn: Triad #014 / Istanbul) devredildiğini canlı izleyecektir.',
+    monolith_desc: '31 Aralık gecesi, kozmik hizalanmaya göre, 365 mülkiyet sahibinden sadece 1 kişiye, İnbazarcık emaneti olan The Obsidian Monolith (Gece Taşı) teslim edilecektir. Bu taşı teslim alan asil, onun getireceği mutlak bereketi ve yaşlanmayan güzelliği hayatında bizzat deneyimleyeceğini, ancak taşı sadece 1 yıl elinde tutacağını ve sonraki yıl yeni seçilecek asile devredeceğini taahhüt eder. Maske cildinizi, Taş ise hayatınızı ışıldatacak. Geri kalan 364 tarikat üyesi, o gece şifreli panelle giriş yaparak, emanetin dünyada hangi koordinata devredildiğini canlı izleyecektir.',
+    
+    call_to_action: 'Kadim emanet, mutlak asalet ve masken seni bekliyor. Arayış bitti. Belki de aradığımız o aristokrat sensin.',
     form_title: 'ARİSTOKRAT TAHSİSAT TALEBİ',
     input_name: 'Aristokrat İsim & Unvan (Örn: Baron Sedat)',
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
@@ -72,12 +96,16 @@ const TRANSLATIONS = {
     remaining: 'QUOTA RESTANT',
     tagline: 'ATYPICAL LUXURY / L’OBJET SACRÉ DU DÉSIR',
     h1: 'Older than humanity.\nCleaner than science.',
-    manifesto1: 'Alors que Gordion brûlait, le roi Midas se retira à Midaum (İnbazarcık). Dans ces cavernes, une jeune bergère phrygienne lui offrit une pierre noire absorbant la lumière—Le Monolithe d’Obsidienne. Accablé par le chagrin, Midas refusa ce don pur. Ce refus marqua le déclin métaphysique de la Phrygie; le peuple se dispersa et disparut de l’histoire.',
-    manifesto2: 'En 1975, exactement 2700 ans plus tard, une vieille grand-mère bergère redécouvrit le Monolithe dans une fissure de marbre. Depuis, cette pierre voyage à travers le monde, passant strictement un an avec un seul souverain. Le Masque illumine votre peau. La Pierre illumine votre destin.',
+    menu_genesis: 'L’Histoire',
+    menu_covenant: 'Les Promesses',
+    menu_artifact: 'La Relique',
+    menu_allocation: 'L’Allocation',
+    manifesto1: 'Alors que Gordion brûlait, le roi Midas se retira à Midaum (İnbazarcık). Dans ces cavernes, une jeune bergère phrygienne lui offrit une pierre noire absorbant la lumière—Le Monolithe d’Obsidienne. Accablé par le chagrin, Midas refusa ce don pur. Ce refus marqua le déclin métaphysique de la Phrygie. On murmure que ceux dont les yeux croisent ce texte rencontrent souvent le Monolithe dans le poids de leurs rêves...',
+    manifesto2: 'En 1975, exactement 2700 ans plus tard, une vieille grand-mère bergère redécouvrit le Monolithe. Depuis, cette pierre voyage à travers le monde, passant strictement un an avec un seul souverain. Phrygian Lab ressuscite les trois couches géologiques (The Antique Triad). Le Masque illumine votre peau. La Pierre illumine votre destin.',
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Rituel Géologique Triple des Archives de Midaum',
     gold_plate: 'Plaque en Or 24K Numérotée / Archives de Midaum',
-    tooltip_title: 'FORMULA 718: LE REFUS DE MIDAS',
+    tooltip_title: 'SECRET 718: LE REFUS DE MIDAS',
     tooltip_desc: 'Consacré à l’an 718 av. J.-C., lorsque le roi Midas refusa le don de la bergère, scellant le destin de tout son peuple.',
     set_desc: 'Ce coffret holistique comprend 3 couches géologiques sacrées extraites de Midaum, scellées d’une plaque en laiton plaqué or 24K à votre nom :',
     grey_title: 'PHRYGIAN GREY',
@@ -88,6 +116,7 @@ const TRANSLATIONS = {
     raw_desc: 'Croûte minérale magmatique déposée par les sources thermales. Efface le temps en formant un bouclier sur la peau.',
     monolith_title: 'LE MONOLITHE D’OBSIDIENNE / LE PACTE DE LA MATRIARCHE DE 1975',
     monolith_desc: 'Le 31 décembre, le Monolithe sera transféré à UN seul souverain. Le gardien jure de protéger cette relique pendant 365 jours, vivant une grâce métaphysique, avant de la transmettre. Les 364 autres initiés se connecteront à leur portail pour observer où réside la grâce cette année.',
+    call_to_action: 'L’héritage antique, la noblesse absolue et votre masque vous attendent. La recherche est terminée. Peut-être que l’élu, c’est vous.',
     form_title: 'DEMANDE D’ALLOCATION ARISTOCRATIQUE',
     input_name: 'Nom & Titre Aristocratique (ex: Baron Sedat)',
     input_city: 'Ville / Pays (ex: Paris / FR)',
@@ -104,12 +133,16 @@ const TRANSLATIONS = {
     remaining: 'RESTKONTINGENT',
     tagline: 'ATYPICAL LUXURY / DAS HEILIGE OBJEKT BEGEHREN',
     h1: 'Older than humanity.\nCleaner than science.',
-    manifesto1: 'Als Gordion brannte, zog sich König Midas nach Midaum (İnbazarcık) zurück. Dort bot ihm ein reines phrygisches Hirtenmädchen einen schwarzen Stein an—den Obsidian-Monolithen. Voller Kummer lehnte Midas dieses reine Geschenk ab. Diese Ablehnung besiegelte den metaphysischen Untergang Phrygiens; das Volk zerstreute sich und verschwand aus der Geschichte.',
+    menu_genesis: 'Geschichte',
+    menu_covenant: 'Versprechen',
+    menu_artifact: 'Relikt',
+    menu_allocation: 'Zuweisung',
+    manifesto1: 'Als Gordion brannte, zog sich König Midas nach Midaum (İnbazarcık) zurück. Dort bot ihm ein reines phrygisches Hirtenmädchen einen schwarzen Stein an—den Obsidian-Monolithen. Voller Kummer lehnte Midas dieses reine Geschenk ab. Diese Ablehnung besiegelte den metaphysischen Untergang Phrygiens. Es wird gemunkelt, dass diejenigen, die diesen Text lesen, dem Monolithen oft in der Tiefe ihrer Träume begegnen...',
     manifesto2: 'Im Jahr 1975, genau 2700 Jahre später, entdeckte eine alte Hirten-Großmutter das Relikt in einer Spalte wieder. Seitdem reist dieser Stein um die Welt und verbleibt jeweils ein Jahr bei einem Souverän. Die Maske bringt Ihre Haut zum Strahlen. Der Stein erleuchtet Ihr Schicksal.',
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Dreifaches geologisches Ritual aus den Midaum-Gewölben',
     gold_plate: 'Nummerierte 24K Goldplakette / Midaum-Archiv',
-    tooltip_title: 'FORMULA 718: DIE ABLEHNUNG DES MIDAS',
+    tooltip_title: 'SECRET 718: DIE ABLEHNUNG DES MIDAS',
     tooltip_desc: 'Gewidmet dem Jahr 718 v. Chr., als König Midas das Geschenk des Hirtenmädchens ablehnte und das Schicksal eines Volkes besiegelte.',
     set_desc: 'Dieses ganzheitliche Set enthält 3 heilige geologische Schichten, versiegelt mit einer 24K vergoldeten Messingplakette in Ihrem Namen:',
     grey_title: 'PHRYGIAN GREY',
@@ -119,7 +152,8 @@ const TRANSLATIONS = {
     raw_title: 'TRAVERTINE RAW',
     raw_desc: 'Magmatische Mineralkruste aus thermalen Quellen. Löscht die Zeit durch einen antiken Schutzschild auf der Haut.',
     monolith_title: 'DER OBSIDIAN-MONOLITH / DER BUND DER MATRIARCHIN VON 1975',
-    monolith_desc: 'Am 31. Dezember wird der Monolith an genau EINEN Souverän übergeben. Der Hüter verpflichtet sich, dieses Relikt 365 Tage lang zu schützen, um metaphysische Gnade zu erfahren, bevor er es weitergibt. Die restlichen 364 Eingeweihten loggen sich ein, um live zu sehen, wo die Souveränität dieses Jahr weilt.',
+    monolith_desc: 'Am 31. Dezember wird der Monolith an genau EINEN Souverän übergeben. Der Hüter verpflichtet sich, dieses Relikt 365 Tage lang zu schützen, bevor er es weitergibt. Die restlichen 364 Eingeweihten loggen sich ein, um live zu sehen, wo die Souveränität weilt.',
+    call_to_action: 'Das antike Erbe, der absolute Adel und Ihre Maske erwarten Sie. Die Suche ist vorbei. Vielleicht sind Sie der Auserwählte.',
     form_title: 'ARISTOKRATISCHE ZUWEISUNGSANFRAGE',
     input_name: 'Aristokratischer Name & Titel (z. B. Baron Sedat)',
     input_city: 'Stadt / Land (z. B. Wien / AT)',
@@ -136,12 +170,16 @@ const TRANSLATIONS = {
     remaining: 'ОСТАТОК КВОТЫ',
     tagline: 'ATYPICAL LUXURY / СВЯЩЕННЫЙ ОБЪЕКТ ЖЕЛАНИЯ',
     h1: 'Older than humanity.\nCleaner than science.',
-    manifesto1: 'Когда Гордион пылал, царь Мидас отступил к скалам Мидаума (Инбазарджик). Там юная фригийская пастушка протянула ему черный камень — Обсидиановый Монолит. Подавленный скорбью, Мидас отверг этот чистый дар. Этот отказ ознаменовал метафизический крах Фригии; народ рассеялся, и их имя исчезло из истории.',
+    menu_genesis: 'История',
+    menu_covenant: 'Обещания',
+    menu_artifact: 'Реликвия',
+    menu_allocation: 'Выделение',
+    manifesto1: 'Когда Гордион пылал, царь Мидас отступил к скалам Мидаума (Инбазарджик). Там юная фригийская пастушка протянула ему черный камень — Обсидиановый Монолит. Подавленный скорбью, Мидас отверг этот чистый дар. Этот отказ ознаменовал метафизический крах Фригии. Поговаривают, что те, кто читает этот текст, часто видят Монолит в глубине своих снов...',
     manifesto2: 'В 1975 году, ровно 2700 лет спустя, пожилая бабушка-пастушка вновь нашла Монолит в мраморной расщелине Инбазарджика. Сегодня этот камень путешествует по миру, оставаясь строго на год у одного избранного. Маска заставит сиять вашу кожу. Камень озарит вашу судьбу.',
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Тройной Геологический Ритуал из Склепов Мидаума',
     gold_plate: 'Номерная табличка с 24К золотым напылением',
-    tooltip_title: 'FORMULA 718: ОТКАЗ МИДАСА',
+    tooltip_title: 'SECRET 718: ОТКАЗ МИДАСА',
     tooltip_desc: 'Посвящено 718 году до н.э., когда царь Мидас отверг дар пастушки в Мидауме, предопределив гибель империи.',
     set_desc: 'Этот холистический набор включает 3 священных геологических слоя, скрепленных латунной табличкой с 24К золотым напылением на ваше имя:',
     grey_title: 'PHRYGIAN GREY',
@@ -152,6 +190,7 @@ const TRANSLATIONS = {
     raw_desc: 'Магматическая минеральная корка термальных источников. Стирает время, создавая древний щит на кожном барьере.',
     monolith_title: 'ОБСИДИАНОВЫЙ МОНОЛИТ / ПАКТ МАТРИАРХА 1975 ГОДА',
     monolith_desc: 'В ночь на 31 декабря Монолит будет передан строго ОДНОМУ владельцу. Хранитель обязуется оберегать реликвию 365 дней, принимая метафизическую благодать, прежде чем передать ее дальше. Остальные 364 посвященных войдут в портал, чтобы увидеть в прямом эфире, где пребывает святыня.',
+    call_to_action: 'Древнее наследие, абсолютное благородство и ваша маска ждут вас. Поиски окончены. Возможно, этот аристократ — вы.',
     form_title: 'АРИСТОКРАТИЧЕСКИЙ ЗАПРОС НА ВЫДЕЛЕНИЕ',
     input_name: 'Аристократическое имя и титул (напр., Барон Седат)',
     input_city: 'Город / Страна (напр., Москва / RU)',
@@ -168,12 +207,16 @@ const TRANSLATIONS = {
     remaining: 'الحصة المتبقية',
     tagline: 'ATYPICAL LUXURY / غاية الرغبة والمقتنيات المقدسة',
     h1: 'Older than humanity.\nCleaner than science.',
-    manifesto1: 'بينما كان غورديون يحترق، لجأ الملك ميداس إلى منحدرات ميداعوم (إنبازارجيك). وفي تلك الكهوف، مدّت فتاة فريجية صغيرة راعية غنم يدها لتقدم له حجرًا أسود يمتص الضوء—كتلة الهالة السوداء (The Obsidian Monolith). وبسبب ثقل حزنه على انهيار ملكه، رفض ميداس تلك الهدية الصافية. وكان ذلك الرفض بداية الانهيار الميتافيزيقي لفريجيا، فتشتت شعبها واختفوا من التاريخ.',
-    manifesto2: 'وفي عام 1975، أي بعد 2700 عام بالضبط، أعادت جدة عجوز راعية غنم اكتشاف هذا الحجر داخل شق رخامي في إنبازارجيك. واليوم، يطوف هذا الحجر العالم ليمكث عامًا واحدًا فقط لدى سيادي واحد. القناع سيجعل بشرتك تشرق، أما الحجر فسينير حياتك بأكملها.',
+    menu_genesis: 'النشأة',
+    menu_covenant: 'الوعود',
+    menu_artifact: 'الأمانة',
+    menu_allocation: 'التخصيص',
+    manifesto1: 'بينما كان غورديون يحترق، لجأ الملك ميداس إلى منحدرات ميداعوم (إنبازارجيك). وفي تلك الكهوف، مدّت فتاة فريجية صغيرة راعية غنم يدها لتقدم له حجرًا أسود يمتص الضوء—كتلة الهالة السوداء (The Obsidian Monolith). وبسبب ثقل حزنه على انهيار ملكه، رفض ميداس تلك الهدية الصافية. وكان ذلك الرفض بداية الانهيار الميتافيزيقي لفريجيا. ويُهمس بين القلة الذين يعرفون أن هذا الحجر المرفوض يحمل تردداً ثقيلاً، لدرجة أن النفوس النبيلة التي تمر عبر هذا النص غالباً ما تواجه الحجر في عمق أحلامها...',
+    manifesto2: 'وفي عام 1975، أعادت جدة عجوز راعية غنم اكتشاف هذا الحجر داخل شق رخامي في إنبازارجيك. واليوم، يطوف هذا الحجر العالم ليمكث عامًا واحدًا فقط لدى سيادي واحد. القناع سيجعل بشرتك تشرق، أما الحجر فسينير حياتك بأكملها.',
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'طيف جيولوجي ثلاثي من أقبية ميداعوم',
     gold_plate: 'لوحة نحاسية مطلية بذهب عيار 24 / أرشيف ميداعوم',
-    tooltip_title: 'FORMULA 718: رفض ميداس الأثري',
+    tooltip_title: 'SECRET 718: رفض ميداس الأثري',
     tooltip_desc: 'مكرس لعام 718 قبل الميلاد، عندما رفض الملك ميداس هدية الفتاة الراعية في ميداعوم، ليختم بذلك مصير شعب بأكمله.',
     set_desc: 'تتضمن هذه المجموعة المتكاملة 3 طبقات جيولوجية مقدسة مستخرجة من أعماق ميداعوم، مختومة بلوحة نحاسية مطلية بذهب عيار 24 تحمل اسمك الخاص:',
     grey_title: 'PHRYGIAN GREY',
@@ -183,7 +226,8 @@ const TRANSLATIONS = {
     raw_title: 'TRAVERTINE RAW',
     raw_desc: 'قشرة معدنية صهارية ترسبت عبر آلاف السنين بواسطة الينابيع الحرارية. تمحو أثر الزمن بتشكيل درع أثري يحمي حاجز البشرة.',
     monolith_title: 'كتلة الهالة السوداء / عهد الجدة الراعية لعام 1975',
-    monolith_desc: 'في ليلة 31 ديسمبر، وفقًا للمحاذاة الكونية، سيتم نقل الحجر الأسود إلى سيادي واحد فقط. يتعهد الحارس المختار بحماية هذه الأمانة لمدة 365 يومًا، ليشهد في حياته على البركة المطلقة والجمال السرمدي، قبل تسليمها للسيادي التالي. أما الأعضاء الـ 364 الآخرون، فسيقومون بتسجيل الدخول عبر بوابتهم المشفرة لمشاهدة الموقع الجغرافي الذي استقرت فيه الأمانة هذا العام مباشرة.',
+    monolith_desc: 'في ليلة 31 ديسمبر، وفقًا للمحاذاة الكونية، سيتم نقل الحجر الأسود إلى سيادي واحد فقط. يتعهد الحارس المختار بحماية هذه الأمانة لمدة 365 يومًا، قبل تسليمها للسيادي التالي. القناع يضيء بشرتك، والحجر ينير قدرك. أما الأعضاء الـ 364 الآخرون، فسيقومون بتسجيل الدخول عبر بوابتهم المشفرة لمشاهدة الموقع الجغرافي الذي استقرت فيه الأمانة هذا العام مباشرة.',
+    call_to_action: 'إن الإرث القديم، والنبل المطلق، وقناعك بانتظارك. لقد انتهى البحث. لعل الأرستقراطي الذي نبحث عنه هو أنت.',
     form_title: 'طلب تخصيص أرستقراطي',
     input_name: 'الاسم واللقب الأرستقراطي (مثال: البارون سادات)',
     input_city: 'المدينة / الدولة (مثال: دبي / AE)',
@@ -191,7 +235,7 @@ const TRANSLATIONS = {
     input_address: 'الوجهة الرسمية التي سيتم تسليم الصندوق الخشبي المختوم واللوحة الذهبية إليها...',
     button_submit: 'تأمين التخصيص / حجز المجموعة الآن',
     success: 'تم تسجيل التخصيص في السجل الملكي',
-    success_desc: 'تم ختم مجموعتك وحقك في الدورة الكونية لمدة 365 يومًا باسمك. سيتصل بك فريق الكونسيرج عبر عنوانك المشفر خلال 24 ساعة.',
+    success_desc: 'تم ختم مجموعتك وحقك في الدورة الكونية باسمك. سيتصل بك فريق الكونسيرج عبر عنوانك المشفر خلال 24 ساعة.',
     ledger_title: 'THE LEDGER OF SOVEREIGNS / سجل الحكام والملّاك الحاليين',
     verified: 'صاحب حق معتمد'
   }
@@ -205,9 +249,12 @@ export default function Home() {
 
   const t = TRANSLATIONS[lang];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setOrderSubmitted(true);
+  // Yumuşak Kaydırma (Smooth Scroll) Fonksiyonu
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -217,36 +264,47 @@ export default function Home() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.05)_0%,transparent_70%)] blur-3xl pointer-events-none" />
       <div className="absolute top-[60%] right-10 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(214,175,55,0.02)_0%,transparent_60%)] blur-3xl pointer-events-none" />
 
-      {/* 🏛️ ELİT HEADER & LANGUAGE PROTOCOL */}
-      <header className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center z-10 relative border-b border-neutral-900/30 gap-6">
-        <div className="flex flex-col items-center md:items-start">
-          <span className="text-2xl font-light tracking-[0.5em] text-[#d4af37] font-serif">PHRYGIAN LAB</span>
-          <span className="text-[9px] tracking-[0.4em] uppercase opacity-40 mt-1 font-sans">{t.protocol}</span>
-        </div>
+      {/* 🏛️ PREMIUM HEADER & NAVIGATION PROTOCOL */}
+      <header className="w-full max-w-7xl mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/30 gap-6 sticky top-0 bg-[#0a0a0a]/90 backdrop-blur-md">
         
-        {/* Dil Seçim Protokolü */}
-        <div className="flex items-center gap-3 bg-neutral-950/60 border border-neutral-900 px-4 py-2 text-[10px] tracking-widest font-mono z-50">
+        {/* Logo Bölümü */}
+        <div className="flex flex-col items-center lg:items-start cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+          <span className="text-xl md:text-2xl font-light tracking-[0.5em] text-[#d4af37] font-serif">PHRYGIAN LAB</span>
+          <span className="text-[9px] tracking-[0.4em] uppercase opacity-40 mt-0.5 font-sans">{t.protocol}</span>
+        </div>
+
+        {/* 👑 PREMIUM MENÜ */}
+        <nav className="flex items-center gap-6 md:gap-8 text-[10px] tracking-[0.3em] uppercase font-serif text-neutral-400">
+          <button onClick={() => scrollToSection('genesis')} className="hover:text-[#d4af37] transition-colors">{t.menu_genesis}</button>
+          <button onClick={() => scrollToSection('covenant')} className="hover:text-[#d4af37] transition-colors">{t.menu_covenant}</button>
+          <button onClick={() => scrollToSection('artifact')} className="hover:text-[#d4af37] transition-colors">{t.menu_artifact}</button>
+          <button onClick={() => scrollToSection('allocation')} className="hover:text-[#d4af37] transition-colors border border-[#c5a880]/30 px-3 py-1 bg-neutral-950/40 text-[#c5a880]">{t.menu_allocation}</button>
+        </nav>
+        
+        {/* 🌍 MULTI-LANGUAGE PANEL */}
+        <div className="flex items-center gap-2.5 bg-neutral-950/80 border border-neutral-900 px-3 py-1.5 text-[9px] tracking-widest font-mono">
           {(Object.keys(TRANSLATIONS) as Array<keyof typeof TRANSLATIONS>).map((l) => (
             <button 
               key={l}
               onClick={() => setLang(l)}
-              className={`uppercase transition-colors pb-0.5 ${lang === l ? 'text-[#d4af37] border-b border-[#d4af37]' : 'text-neutral-600 hover:text-white'}`}
+              className={`uppercase transition-colors ${lang === l ? 'text-[#d4af37] font-bold' : 'text-neutral-600 hover:text-white'}`}
             >
               {l}
             </button>
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+        {/* Kota Durumu */}
+        <div className="flex items-center gap-3">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
           <span className="text-[9px] tracking-[0.25em] text-[#c5a880] uppercase font-mono">
             {t.remaining}: 324 / 365
           </span>
         </div>
       </header>
 
-      {/* 📜 MANİFESTO (Yazar Kaleminden Çıkan Edebi Alan) */}
-      <section className="w-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-24 pb-16 z-10 relative">
+      {/* 📜 GENESIS (HİKAYESİ) */}
+      <section id="genesis" className="w-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-24 pb-16 z-10 relative scroll-mt-32">
         <p className="text-[10px] tracking-[0.7em] uppercase text-[#c5a880] mb-8 font-semibold">
           {t.tagline}
         </p>
@@ -266,8 +324,8 @@ export default function Home() {
         </p>
       </section>
 
-      {/* 📦 THE ANTIQUE TRIAD (KOLEKSİYON) */}
-      <section className="w-full max-w-4xl mx-auto px-6 py-8 z-10 relative">
+      {/* 📦 THE ANTIQUE TRIAD & COVENANT (VAATLERİ & BU NEDİR?) */}
+      <section id="covenant" className="w-full max-w-4xl mx-auto px-6 py-8 z-10 relative scroll-mt-32">
         <div className="bg-[#111111]/40 border border-[#c5a880]/30 p-8 md:p-12 relative group backdrop-blur-sm">
           
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[9px] tracking-[0.3em] uppercase font-bold px-6 py-1 shadow-xl border border-[#fff]/20 font-mono">
@@ -312,17 +370,24 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 🔮 GİZEMLİ GECE TAŞI BÖLÜMÜ */}
-          <div className="bg-[#131313] border border-[#c5a880]/20 p-6 mb-8 text-center relative overflow-hidden">
+          {/* 🔮 ARTIFACT (GİZEMLİ GECE TAŞI ARŞİVİ) */}
+          <div id="artifact" className="bg-[#131313] border border-[#c5a880]/20 p-6 mb-8 text-center relative overflow-hidden scroll-mt-32">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/30 to-transparent" />
-            <span className="text-[9px] font-mono text-[#d4af37] block tracking-[0.25em] mb-2">{t.monolith_title}</span>
+            <span className="text-[9px] font-mono text-----[#d4af37] block tracking-[0.25em] mb-2 text-[#d4af37]">{t.monolith_title}</span>
             <p className="text-xs text-neutral-400 leading-relaxed font-light max-w-2xl mx-auto text-justify md:text-center whitespace-pre-line">
               {t.monolith_desc}
             </p>
           </div>
 
-          {/* SİPARİŞ FORMU */}
-          <div className="border-t border-neutral-900/60 pt-8">
+          {/* ✒️ ARİSTOKRATİK HİPNOTİK METİN VE SÖZLEŞME */}
+          <div className="py-6 text-center border-t border-neutral-900">
+            <p className="text-xs md:text-sm font-serif italic text-[#c5a880] tracking-wide max-w-2xl mx-auto leading-relaxed">
+              "{t.call_to_action}"
+            </p>
+          </div>
+
+          {/* ALLOCATION (TAHSİSAT SİSTEMİ) */}
+          <div id="allocation" className="border-t border-neutral-900/60 pt-8 scroll-mt-32">
             {!orderSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="text-center mb-6">
