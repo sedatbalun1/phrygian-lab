@@ -47,7 +47,7 @@ const TRANSLATIONS = {
     ledger_title: 'THE ALIGNMENT CALENDAR / THE 365 CYCLE',
     ledger_sub: 'Commencing on the Solstice of June 23rd — Strictly One Allocation Per Day',
     status_verified: 'Sealed & Secured',
-    status_void: 'The Sovereign Grace (Granted to the Destitute)',
+    status_void: 'The Luminous Gift (Bestowed upon One Chosen Woman)',
     status_open: 'Awaiting Sovereign Alignment'
   },
   tr: {
@@ -62,7 +62,7 @@ const TRANSLATIONS = {
     menu_allocation: 'Tahsisat',
 
     manifesto1: 'Gordion, Kimmerlerin amansız ateşiyle kavrulurken; Kral Midas, sığınak şehri Midaum’un (İnbazarcık) dik kayalıklarına çekildi. O sessiz dehlizlerde, masum bir Frigyalı çoban kız çocuğu ona ışığı yutan siyah bir taş uzattı: The Obsidian Monolith (Gece Taşı). Ancak Midas, çöken bir krallığın kederi ve kibriyle o küçük kızın saf hediyesini almayı reddetti. İşte o an, Frigya’nın metafiziksel çöküşünün başladığı andı; halk dağıldı ve o tarihten sonra bir daha asla var olamadılar. Kadim bir fısıltı der ki; bu geri çevrilen mermer kütlesi öyle ağır bir frekans taşır ki, bu metne rastlayan seçkin ruhlar, çember tamamlanana kadar gecenin derin rüyalarında o siyah taşın jeolojik gölgesiyle karşılaşırlar. Zihni terk etmeyen asil bir ağırlık.',
-    manifesto2: 'Tam 2700 yıl boyunca gizlenen o taş, 1975 yılında İnbazarcık kayalıklarında koyunlarını otlatan yaşlı bir çoban nene tarafından mermer yarığının içinde yeniden bulundu. Taş, o günden beri dünyadaki en seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu büyük sırrı ve üçlü ritüeli (The Antique Triad), tek satu masif mermer bir kavanozun içinde muhafaza ederek gün yüzüne çıkarıyor. Bu endüstriyel kozmetik değildir; gizemli bir sadakat çemberine dahil olmaktır. Soyun saflığını korumak adına, her aile/kan hattı ömrü boyunca yalnızca tek bir Triad setine sahip olabilir.',
+    manifesto2: 'Tam 2700 yıl boyunca gizlenen o taş, 1975 yılında İnbazarcık kayalıklarında koyunlarını otlatan yaşlı bir çoban nene tarafından mermer yarığının içinde yeniden bulundu. Taş, o günden beri dünyadaki en seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu büyük sırrı ve üçlü ritüeli (The Antique Triad), tek bir mermer bloktan el işçiliğiyle oyulmuş masif bir mermer kavanozun içinde muhafaza ederek gün yüzüne çıkarıyor. Bu endüstriyel kozmetik değildir; gizemli bir sadakat çemberine dahil olmaktır. Soyun saflığını korumak adına, her aile/kan hattı ömrü boyunca yalnızca tek bir Triad setine sahip olabilir.',
     
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
@@ -94,7 +94,7 @@ const TRANSLATIONS = {
     ledger_title: 'THE ALIGNMENT CALENDAR / 365 DÖNGÜSÜ',
     ledger_sub: '23 Haziran Gündönümünde Başlar — Gün Başına Kesinlikle Tek Bir Tahsisat',
     status_verified: 'Mühürlendi ve Kilitlendi',
-    status_void: 'The Sovereign Grace (İhtiyaç Sahibine Lütfedildi)',
+    status_void: 'The Luminous Gift (Dünyadan Seçilen Bir Kadına Lütfedildi)',
     status_open: 'Asil Hizalanma Bekleniyor'
   },
   fr: {
@@ -134,7 +134,7 @@ const TRANSLATIONS = {
     ledger_title: 'THE ALIGNMENT CALENDAR / LE CYCLE DES 365',
     ledger_sub: 'Débutant au solstice du 23 juin',
     status_verified: 'Scellé & Sécurisé',
-    status_void: 'The Sovereign Grace (Accordé aux Nécessiteux)',
+    status_void: 'The Luminous Gift (Attribué à une femme choisie dans le monde)',
     status_open: 'En Attente d’Alignement'
   },
   de: {
@@ -174,7 +174,7 @@ const TRANSLATIONS = {
     ledger_title: 'THE ALIGNMENT CALENDAR / DER 365-ZYKLUS',
     ledger_sub: 'Beginnend mit der Sonnenwende am 23. Juni',
     status_verified: 'Versiegelt & Gesichert',
-    status_void: 'The Sovereign Grace (Den Bedürftigen Gewährt)',
+    status_void: 'The Luminous Gift (Einer auserwählten Frau auf der Welt verliehen)',
     status_open: 'Wartet auf Ausrichtung'
   },
   ru: {
@@ -214,7 +214,7 @@ const TRANSLATIONS = {
     ledger_title: 'THE ALIGNMENT CALENDAR / ЦИКЛ 365',
     ledger_sub: 'Начиная с солнцестояния 23 июня',
     status_verified: 'Запечатано и Защищено',
-    status_void: 'The Sovereign Grace (Передано Нуждающимся)',
+    status_void: 'The Luminous Gift (Даровано одной избранной женщине в мире)',
     status_open: 'Ожидание Выравнивания'
   },
   ar: {
@@ -237,7 +237,7 @@ const TRANSLATIONS = {
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'كبريت وفير وسيليكا.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'كربونات الكالسيوم النقية.',
+    white_desc: 'كربونات الكالسيوم النقيّة.',
     raw_title: 'TRAVERTINE RAW',
     raw_desc: 'قشرة معدنية صهارية ترسبت عبر آلاف السنين.',
     monolith_title: 'كتلة الهالة السوداء / طقوس القرعة الكونية المقدسة',
@@ -254,7 +254,7 @@ const TRANSLATIONS = {
     ledger_title: 'THE ALIGNMENT CALENDAR / دورة 365 الكونية',
     ledger_sub: 'تبدأ من الانقلاب الشمسي في 23 يونيو',
     status_verified: 'مختوم ومؤمّن',
-    status_void: 'The Sovereign Grace (مُُنحت للمحتاجين والفقراء)',
+    status_void: 'The Luminous Gift (مُُنحت لامرأة واحدة مختارة في العالم)',
     status_open: 'في انتظار المحاذاة السيادية'
   }
 };
@@ -271,7 +271,7 @@ export default function Home() {
     { date: 'June 23', holder: 'Baron S.', city: 'Istanbul', status: 'verified', Triad: 'Triad #001' },
     { date: 'June 24', holder: 'Lady A.', city: 'London', status: 'verified', Triad: 'Triad #002' },
     { date: 'June 25', holder: 'Chevalier M.', city: 'Paris', status: 'verified', Triad: 'Triad #003' },
-    { date: 'June 26', holder: 'Anonymized', city: 'Midaum Local', status: 'void', Triad: '—' }, // Kutsal Boşluk & Fakir Hakkı
+    { date: 'June 26', holder: 'The Chosen One', city: 'Anonymized', status: 'void', Triad: '—' }, // 👑 Işıltılı Lütuf Günü
     { date: 'June 27', holder: 'Countess V.', city: 'Vienna', status: 'verified', Triad: 'Triad #004' },
     { date: 'June 28', holder: 'Available', city: 'Global', status: 'open', Triad: 'Pending' },
     { date: 'June 29', holder: 'Available', city: 'Global', status: 'open', Triad: 'Pending' },
@@ -296,7 +296,7 @@ export default function Home() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.05)_0%,transparent_70%)] blur-3xl pointer-events-none" />
       <div className="absolute top-[60%] right-10 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(214,175,55,0.02)_0%,transparent_60%)] blur-3xl pointer-events-none" />
 
-      {/* 🏛========= PREMIUM HEADER & NAVIGATION ========= */}
+      {/* 🏛 PRE-NAV HEADER */}
       <header className="w-full max-w-7xl mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/30 gap-6 sticky top-0 bg-[#0a0a0a]/90 backdrop-blur-md">
         
         <div className="flex flex-col items-center lg:items-start cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
@@ -407,13 +407,14 @@ export default function Home() {
             </p>
           </div>
 
+          {/* ✒️ HİPNOTİK METİN */}
           <div className="py-6 text-center border-t border-neutral-900">
             <p className="text-xs md:text-sm font-serif italic text-[#c5a880] tracking-wide max-w-2xl mx-auto leading-relaxed">
               "{t.call_to_action}"
             </p>
           </div>
 
-          {/* ALLOCATION (TAHSİSAT FORMU) */}
+          {/* ALLOCATION */}
           <div id="allocation" className="border-t border-neutral-900/60 pt-8 scroll-mt-32">
             {!orderSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -474,7 +475,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📜 THE ALIGNMENT CALENDAR (23 HAZİRAN SİCİL TAKVİMİ) */}
+      {/* 📜 THE ALIGNMENT CALENDAR (23 HAZİRAN PROTOKOLÜ) */}
       <section className="w-full max-w-4xl mx-auto px-6 py-12 z-10 relative">
         <div className="border-t border-neutral-950 pt-10">
           <div className="text-center mb-8">
@@ -490,7 +491,7 @@ export default function Home() {
                 key={index} 
                 className={`border p-4 text-center flex flex-col justify-between h-36 relative transition-all duration-300 ${
                   day.status === 'void' 
-                    ? 'border-emerald-900/30 bg-emerald-950/5' 
+                    ? 'border-purple-950/40 bg-purple-950/5' 
                     : day.status === 'open' 
                     ? 'border-[#c5a880]/30 bg-neutral-900/10 hover:border-[#c5a880]' 
                     : 'border-neutral-900 bg-[#111111]/20'
@@ -498,13 +499,13 @@ export default function Home() {
               >
                 <div>
                   <span className="text-[10px] font-serif block text-neutral-400 font-semibold border-b border-neutral-900 pb-1 mb-2">{day.date}</span>
-                  <span className={`text-xs block font-medium font-serif ${day.status === 'void' ? 'text-emerald-500 italic' : 'text-white'}`}>{day.holder}</span>
+                  <span className={`text-xs block font-medium font-serif ${day.status === 'void' ? 'text-purple-400 italic font-semibold animate-pulse' : 'text-white'}`}>{day.holder}</span>
                   <span className="text-[9px] text-neutral-600 block font-mono mt-0.5">{day.city}</span>
                 </div>
 
                 <div>
                   {day.status === 'void' ? (
-                    <span className="text-[8px] text-emerald-400 font-mono block uppercase tracking-tight py-0.5 border border-emerald-950/40 bg-emerald-950/20">
+                    <span className="text-[7px] text-purple-400 font-mono block uppercase tracking-tighter py-0.5 border border-purple-950/40 bg-purple-950/20 leading-tight">
                       {t.status_void}
                     </span>
                   ) : day.status === 'open' ? (
