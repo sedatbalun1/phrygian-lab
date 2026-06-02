@@ -6,42 +6,42 @@ const TRANSLATIONS = {
   en: {
     protocol: 'Midaum Private Protocol',
     remaining: 'REMAINING',
-    tagline: 'THE SACRED TABLET / SEVENTH LAYER',
-    h1: 'Science measures time.\nMidaum erases it.',
+    tagline: 'THE SACRED TABLET / THE ELEMENTAL RESONANCE',
+    h1: 'Science measures time.\nMidaum erases death.',
     
     menu_genesis: 'The Genesis',
     menu_covenant: 'The Covenant',
     menu_artifact: 'The Artifact',
     menu_allocation: 'The Allocation',
 
-    // Kutsal Kitap Gibi Kısa ve Net Vaat Öbekleri
+    // Kısa, Vurucu Vahiy Öbekleri
     vow_1: 'You did not find this text.',
     vow_2: 'The stone allowed you to see it.',
-    vow_3: 'We do not offer youth; youth is fleeting.',
-    vow_4: 'We bestow the absolute shield of being unforgotten.',
-    vow_5: 'One family. One monolithic jar. One lifetime.',
+    vow_3: 'We do not offer cosmetics; particles decay.',
+    vow_4: 'We bestow the tectonic antenna to speak with eternity.',
+    vow_5: 'One bloodline. One monolithic resonance. One eternal shield.',
 
-    manifesto1: 'Gordion was ashes. King Midas did not yield; he retreated to the silent cliffs of Midaum (İnbazarcık). There, a pure Phrygian shepherd girl offered him a light-absorbing black stone: The Obsidian Monolith. Burdened by a dying empire, Midas refused. Phrygia vanished into history, but the unreturned stone became a timeless monument. Those who touch this text often encounter its heavy shadow in their deepest dreams.',
-    manifesto2: '1975, İnbazarcık. An old shepherd grandmother from the same bloodline rediscovered the Monolith inside a deep marble fissure. Today, this relic travels the world, spending strictly one year with a single sovereign. Phrygian Lab encapsulates the three geological layers (The Antique Triad) inside a solid, hand-carved marble jar. Absolute beauty, metaphysical heritage.',
+    manifesto1: 'Gordion was ashes. King Midas did not yield; he retreated to the silent cliffs of Midaum (İnbazarcık). There, a pure Phrygian shepherd girl offered a light-absorbing black stone: The Obsidian Monolith. Midas refused. Phrygia vanished, but the stone became an immortal monument buried in marble. Those who touch this text encounter its heavy frequency in their deepest dreams.',
+    manifesto2: '1975, İnbazarcık. An old shepherd grandmother from the same lineage rediscovered the Monolith inside a deep marble vein. Today, this relic travels the world, spending strictly one year with a single sovereign. Phrygian Lab encapsulates the three layers (The Antique Triad) inside a solid, hand-carved marble jar—an elemental antenna tuned to the ancient matriarch.',
     
     set_title: 'THE ANTIQUE TRIAD SET',
-    set_sub: 'Triple Geological Ritual / Solid Marble Jar Archive',
-    gold_plate: 'Numbered 24K Gold Mounted Plate',
+    set_sub: 'Triple Geological Ritual / The Eternal Resonance Vault',
+    gold_plate: 'Numbered 24K Gold Mounted Plate / Solid Marble Jar Archive',
     tooltip_title: 'SECRET 718: THE ASCENDING VALUATION',
     tooltip_desc: 'Genesis price: €718. Following the laws of scarcity, no allocation can be acquired below the final value of the preceding day. The value only ascends.',
-    set_desc: 'Four sacred seals: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." 3 layers hand-carved from Midaum depths, encased in a monolithic solid marble jar with a 24K Gold-Plated brass tag. Strictly limited to one per lineage:',
+    set_desc: 'Four sacred seals: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." 3 layers hand-carved from Midaum depths, bridging mortal skin with the unyielding frequency of the past. Encased in a monolithic solid marble jar with a 24K Gold Mounted Sovereign Plate:',
     
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'High sulfur and silica sifting through ash-grey layers. Tectonic purification against modern urban residues.',
+    grey_desc: 'High sulfur and silica. A tectonic purification ritual connecting cells to deep volcanic memory.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Pure calcium carbonate from lightless veins. The ageless porcelain tone of ancient imperial baths.',
+    white_desc: 'Pure calcium carbonate from lightless veins. Ageless imperial dust reflecting lost centuries.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Magmatic mineral crust from thermal springs. An ancient shield that completely erases time.',
+    raw_desc: 'Magmatic mineral crust from thermal springs. A heavy geological shield that completely freezes time.',
     
     monolith_title: 'THE OBSIDIAN MONOLITH / THE COSMIC DRAW',
     monolith_desc: 'December 31st. A transparent cosmic draw among the 365 archive holders. The Monolith will be transferred to ONE sovereign for 365 days. The Mask brightens your skin; the Stone illuminates your destiny. The remaining 364 initiates track its global coordinates via their encrypted portal.',
     
-    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await within the marble jar. One family, one kütle. The value only rises.',
+    call_to_action: 'The ancient heritage, the absolute nobility, and the frequency of the matriarch await within the marble jar. One family, one kütle. The value only rises.',
     form_title: 'ARISTOCRATIC ALLOCATION REQUEST',
     input_name: 'Sovereign Name & Title (e.g., Sovereign Sedat)',
     input_city: 'City / Country (e.g., London / UK)',
@@ -60,48 +60,48 @@ const TRANSLATIONS = {
   tr: {
     protocol: 'Midaum Mahrem Protokolü',
     remaining: 'KALAN KOTA',
-    tagline: 'KUTSAL TABLET / YEDİNCİ KATMAN',
-    h1: 'Bilim zamanı ölçer.\nMidaum ise onu siler.',
+    tagline: 'KUTSAL TABLET / ELEMENTER REZONANS',
+    h1: 'Bilim zamanı ölçer.\nMidaum ise ölümü siler.',
     
     menu_genesis: 'Hikayesi',
     menu_covenant: 'Vaatleri',
     menu_artifact: 'Emanet',
     menu_allocation: 'Tahsisat',
 
-    // Kutsal Kitap Gibi Kısa ve Net Vaat Öbekleri
-    vow_1: 'Bu metni siz bulmadınız.',
-    vow_2: 'Taş, onu görmenize izin verdi.',
-    vow_3: 'Biz gençlik vadetmiyoruz; gençlik geçicidir.',
-    vow_4: 'Biz, unutulmamanın o mutlak ağırlığını bahşediyoruz.',
-    vow_5: 'Tek bir aile. Tek bir mermer kavanoz. Tek bir ömür.',
+    // Kısa, Vurucu Vahiy Öbekleri
+    vow_1: 'Siz mermer bir kavanoz satın almadınız.',
+    vow_2: '2700 yıllık geri çevrilmiş bir frekansı ele geçirdiniz.',
+    vow_3: 'Biz kozmetik vadetmiyoruz; maddeler çürür.',
+    vow_4: 'Ebediyetle bağ kurmanız için tektonik bir telsiz bahşediyoruz.',
+    vow_5: 'Tek soy. Tek masif rezonans. Tek ölümsüz kalkan.',
 
-    manifesto1: 'Gordion küldü. Kral Midas sahneden çekilmedi; Midaum’un (İnbazarcık) dik kayalıklarına sığındı. Sessiz dehlizlerde masum bir Frigyalı çoban kız çocuğu ona ışığı yutan siyah bir taş uzattı: The Obsidian Monolith. Midas, çöken bir imparatorluğun kederiyle bu saf hediyeyi reddetti. Frigya tarihten silindi, ama geri çevrilen o taş mermere gömülen kadim bir anıta dönüştü.',
-    manifesto2: '1975, İnbazarcık. Aynı soydan gelen yaşlı bir çoban nene, Monolith’i bir mermer yarığında yeniden buldu. Taş, o günden beri dünyadaki en seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu büyük sırrı ve üçlü ritüeli (The Antique Triad), tek bir mermer bloktan el işçiliğiyle oyulmuş masif bir mermer kavanozda muhafaza ediyor. Mutlak asalet, metafiziksel miras.',
+    manifesto1: 'Gordion küldü. Kral Midas çekilmedi; Midaum’un (İnbazarcık) dik kayalıklarına sığındı. Sessiz dehlizlerde bir çoban kız çocuğu ona ışığı yutan siyah bir taş uzattı: The Obsidian Monolith. Midas reddetti. Frigya silindi, ama o taş mermere gömülen kadim bir anıta dönüştü. Bu metne rastlayanlar rüyalarında o taşın ağır frekansıyla karşılaşırlar.',
+    manifesto2: '1975, İnbazarcık. Aynı soydan yaşlı bir çoban nene, Monolith’i bir mermer yarığında yeniden buldu. Taş, dünyadaki seçkin asiller arasında sadece 1’er yıl kalma şartıyla elden ele geziyor. Phrygian Lab, bu üçlü ritüeli (The Antique Triad), tek bir bloktan oyulmuş masif mermer bir kavanozda muhafaza ediyor—kadim matriyarkın frekansına ayarlanmış elementer bir telsiz olarak.',
     
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
-    gold_plate: 'Mühürlü 24K Altın Plaka',
+    gold_plate: 'Numbered 24K Gold Mounted Plate / Masif Mermer Kavanoz Arşivi',
     tooltip_title: 'SECRET 718: YÜKSELEN DEĞER PRENSİBİ',
     tooltip_desc: 'Başlangıç değeri €718’dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
-    set_desc: 'Dört kutsal mühür: "Güzellik, Şans, Mistik Lütuf ve Elementer Egemenlik." Midaum derinliklerinden çıkarılan ve masif mermer bir kavanoz içinde adınıza mühürlenen 3 kadim katman. Her aile için tek bir tahsisatla sınırlandırılmıştır:',
+    set_desc: 'Dört kutsal mühür: "Güzellik, Şans, Mistik Lütuf ve Elementer Egemenlik." Fani cildinizle geçmişin sarsılmaz frekansı arasında jeolojik bir medyum görevi gören 3 kadim katman. Masif mermer kavanoz içinde, adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile teslim edilir. Aile başına tek tahsisat:',
     
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'Kül grisi katmanlardan süzülen yüksek sülfür ve silika. Modern şehir kalıntılarından arındıran tektonik arınma.',
+    grey_desc: 'Yüksek sülfür ve silika. Hücreleri derin ve sessiz volkanik hafızaya bağlayan tektonik arınma.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Işıksız damarlardan izole edilen saf kalsiyum karbonat. Antik asillerin banyolarındaki pürüzsüz porselen tonu.',
+    white_desc: 'Saf kalsiyum karbonat. Kayıp yüzyılların ışığını fani yüze yansıtan ölümsüz imparatorluk tozu.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Termal suların bıraktığı magmatik mineral kabuk. Cilt bariyerinde zamanı tamamen silen antik bir kalkan.',
+    raw_desc: 'Magmatik mineral kabuk. Cilt bariyerinde zamanın çürümesini tamamen donduran ağır jeolojik kalkan.',
     
     monolith_title: 'THE OBSIDIAN MONOLITH / KOZMİK ÇEKİLİŞ',
-    monolith_desc: '31 Aralık gecesi. 365 hak sahibi arasında şeffaf ve kutsal bir çekiliş. Monolith, o yıl 365 gün boyunca sadece BİR asile teslim edilir. Maske cildinizi, Taş ise hayatınızı ışıldatacak. Geri kalan 364 tarikat üyesi, emanetin dünyadaki koordinatlarını şifreli panelle canlı izler.',
+    monolith_desc: '31 Aralık gecesi. 365 hak sahibi arasında şeffaf ve kutsal çekiliş. Monolith, o yıl 365 gün boyunca sadece BİR asile teslim edilir. Maske cildinizi, Taş hayatınızı ışıldatacak. Geri kalan 364 üye koordinatları şifreli panelle canlı izler.',
     
-    call_to_action: 'Kadim emanet, mutlak asalet ve masken o mermer kavanozun içinde seni bekliyor. Tek aile, tek kütle. Değer sadece yükselir.',
+    call_to_action: 'Kadim emanet, mutlak asalet ve o çoban nenenin frekansı mermer kavanozun içinde seni bekliyor. Tek aile, tek kütle. Değer sadece yükselir.',
     form_title: 'ARİSTOKRAT TAHSİSAT TALEBİ & TEKLİFİ',
     input_name: 'Asil İsim & Unvan (Örn: Asil Sedat)',
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
     input_email: 'Şifreli Dijital Adres (E-posta)',
     input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı resmi lokasyon...',
-    button_submit: 'DEĞER TEKLİFİNİ SUN VEYA TAHSİSATI KİLİTLE',
+    button_submit: 'FREKANS TEKLİFİNİ SUN VEYA TAHSİSATI KİLİTLE',
     success: 'TAHSİSAT SİCİLE İŞLENDİ',
     success_desc: 'Teklifiniz mühürlenmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde sizinle irtibat kuracaktır.',
     
@@ -111,10 +111,10 @@ const TRANSLATIONS = {
     status_void: 'The Luminous Gift (Dünyadan Seçilen Bir Kadına Lütfedildi)',
     status_open: 'Değer Hizalanması Bekleniyor'
   },
-  fr: { protocol: 'Protocole Privé de Midaum', remaining: 'QUOTA RESTANT', tagline: 'LA TABLETTE SACRÉE', h1: 'Science measures time.\nMidaum erases it.', menu_genesis: 'L’Histoire', menu_covenant: 'Les Promesses', menu_artifact: 'La Relique', menu_allocation: 'L’Allocation', vow_1: 'Vous n’avez pas trouvé ce texte.', vow_2: 'La pierre vous a permis de la voir.', vow_3: 'Nous ne promettons pas la jeunesse.', vow_4: 'Nous offrons le privilège d’être inoubliable.', vow_5: 'Une famille. Un pot de marbre. Une vie.', manifesto1: 'Gordion était en cendres...', manifesto2: '1975, İnbazarcık...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Rituel Géologique Triple', gold_plate: 'Plaque en Or 24K', tooltip_title: 'SECRET 718', tooltip_desc: 'Valuation ascendante.', set_desc: 'Sceaux sacrés. Limité à une allocation par famille :', grey_title: 'PHRYGIAN GREY', grey_desc: 'Purification tectonique.', white_title: 'PHRYGIAN WHITE', white_desc: 'Carbonate de calcium pur.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Efface le temps.', monolith_title: 'LE MONOLITHE D’OBSIDIENNE', monolith_desc: 'Le Masque illumine la peau, la Pierre illumine le destin.', call_to_action: 'Une famille, un monolithe.', form_title: 'DEMANDE D’ALLOCATION', input_name: 'Nom & Titre', input_city: 'Ville', input_email: 'Email', input_address: 'Destination...', button_submit: 'SOUMETTRE L’OFFRE', success: 'ALLOCATION ENREGISTRÉE', success_desc: 'Votre offre a été scellée.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Débutant au solstice du 23 juin', status_verified: 'Clôturé', status_void: 'The Luminous Gift', status_open: 'En Attente' },
-  de: { protocol: 'Midaum Privat Protokoll', remaining: 'RESTKONTINGENT', tagline: 'DIE HEILIGE TAFEL', h1: 'Science measures time.\nMidaum erases it.', menu_genesis: 'Geschichte', menu_covenant: 'Versprechen', menu_artifact: 'Relikt', menu_allocation: 'Zuweisung', vow_1: 'Sie haben diesen Text nicht gefunden.', vow_2: 'Der Stein hat es dir erlaubt, ihn zu sehen.', vow_3: 'Wir versprechen keine Jugend.', vow_4: 'Wir schenken das Gewicht, unvergessen zu sein.', vow_5: 'Eine Familie. Ein Marmorgefäß. Ein Leben.', manifesto1: 'Gordion war Asche...', manifesto2: '1975, İnbazarcık...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Dreifaches geologisches Ritual', gold_plate: '24K Goldplakette', tooltip_title: 'SECRET 718', tooltip_desc: 'Aufsteigende Bewertung.', set_desc: 'Heilige Siegel. Einziges Set pro Familie:', grey_title: 'PHRYGIAN GREY', grey_desc: 'Tektonische Reinigung.', white_title: 'PHRYGIAN WHITE', white_desc: 'Reines Kalziumkarbonat.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Löscht die Zeit.', monolith_title: 'DER OBSIDIAN-MONOLITH', monolith_desc: 'Die Maske bringt die Haut zum Strahlen, der Stein erleuchtet das Schicksal.', call_to_action: 'Eine Familie, ein Monolith.', form_title: 'ARISTOKRATISCHE ANFRAGE', input_name: 'Name & Titel', input_city: 'Stadt', input_email: 'E-Mail', input_address: 'Bestimmungsort...', button_submit: 'WERTANGEBOT ABGEBEN', success: 'ZUWEISUNG ERFASST', success_desc: 'Ihr Angebot wurde versiegelt.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Beginnend am 23. Juni', status_verified: 'Geschlossen', status_void: 'The Luminous Gift', status_open: 'Wartet' },
-  ru: { protocol: 'Частный Протокол Мидаума', remaining: 'ОСТАТОК КВОТЫ', tagline: 'СВЯЩЕННАЯ С КРИПТА', h1: 'Science measures time.\nMidaum erases it.', menu_genesis: 'История', menu_covenant: 'Обещания', menu_artifact: 'Реликвия', menu_allocation: 'Выделение', vow_1: 'Вы не находили этот текст.', vow_2: 'Камень позволил вам его увидеть.', vow_3: 'Мы не обещаем молодость.', vow_4: 'Мы даруем вечную привилегию быть незабвенной.', vow_5: 'Одна семья. Один мраморный сосуд. Одна жизнь.', manifesto1: 'Гордион был в пепле...', manifesto2: '1975, Инбазарджик...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Тройной Геологический Ритуал', gold_plate: 'Табличка 24К', tooltip_title: 'SECRET 718', tooltip_desc: 'Стоимость растет.', set_desc: 'Четыре печати. Одно выделение на семью:', grey_title: 'PHRYGIAN GREY', grey_desc: 'Тектоническое очищение.', white_title: 'PHRYGIAN WHITE', white_desc: 'Чистый карбонат кальция.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Стирает время.', monolith_title: 'ОБСИДИАНОВЫЙ МОНОЛИТ', monolith_desc: 'Маска заставит сиять вашу кожу, камень озарит вашу судьбу.', call_to_action: 'Одна семья — один монолит.', form_title: 'ЗАПРОС НА ВЫДЕЛЕНИЕ', input_name: 'Имя и титул', input_city: 'Город', input_email: 'Email', input_address: 'Адрес доставки...', button_submit: 'ОТПРАВИТЬ ПРЕДЛОЖЕНИЕ', success: 'ВЫДЕЛЕНИЕ ЗАРЕГИСТРИРОВАНО', success_desc: 'Ваше предложение запечатано.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Начиная с 23 июня', status_verified: 'Закрыто', status_void: 'The Luminous Gift', status_open: 'Ожидание' },
-  ar: { protocol: 'بروتوكول ميداعوم الخاص', remaining: 'الحصة المتبقية', tagline: 'اللوح المقدس', h1: 'Science measures time.\nMidaum erases it.', menu_genesis: 'النشأة', menu_covenant: 'الوعود', menu_artifact: 'الأمانة', menu_allocation: 'التخصيس', vow_1: 'أنتِ لم تجدي هذا النص.', vow_2: 'الحجر هو من سمح لكِ برؤيته.', vow_3: 'نحن لا نعدكِ بالشباب.', vow_4: 'بل نمنحكِ الهالة الرفيعة لتكوني عصية على النسيان.', vow_5: 'عائلة واحدة. وعاء رخامي واحد. عمر واحد.', manifesto1: 'كان غورديون رماداً...', manifesto2: '1975، إنبازارجيك...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'طقوس جيولوجية ثلاثة', gold_plate: 'لوحة مطلية بذهب عيار 24', tooltip_title: 'SECRET 718', tooltip_desc: 'القيمة تتصاعد.', set_desc: 'الأختام الأربعة المقدسة. تخصيص واحد لكل عائلة:', grey_title: 'PHRYGIAN GREY', grey_desc: 'طقس تطهير تكتوني.', white_title: 'PHRYGIAN WHITE', white_desc: 'كربونات الكالسيوم النقيّة.', raw_title: 'TRAVERTINE RAW', raw_desc: 'يمحو أثر الزمن تماماً.', monolith_title: 'كتلة الهالة السوداء', monolith_desc: 'القناع يضيء بشرتكِ، والحجر ينير قدركِ.', call_to_action: 'عائلة واحدة، كتلة واحدة.', form_title: 'طلب تخصيص سيادي', input_name: 'الاسم واللقب السيادي', input_city: 'المدينة', input_email: 'العنوان المشفر', input_address: 'الوجهة الرسمية...', button_submit: 'تقديم عرض القيمة', success: 'تم تسجيل التخصيص', success_desc: 'تم تسجيل عرضك بنجاح.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'تبدأ من 23 يونيو', status_verified: 'مغلق', status_void: 'The Luminous Gift', status_open: 'في انتظار المحاذاة' }
+  fr: { protocol: 'Protocole Privé de Midaum', remaining: 'QUOTA RESTANT', tagline: 'LA TABLETTE SACRÉE', h1: 'Science measures time.\nMidaum erases death.', menu_genesis: 'L’Histoire', menu_covenant: 'Les Promesses', menu_artifact: 'La Relique', menu_allocation: 'L’Allocation', vow_1: 'Vous n’avez pas acheté un pot de marbre.', vow_2: 'Vous avez capturé une fréquence vieille de 2700 ans.', vow_3: 'Nous ne promettons pas la cosmétique.', vow_4: 'Nous offrons une antenne tectonique.', vow_5: 'Une lignée. Une résonance. Un bouclier.', manifesto1: 'Gordion était en cendres...', manifesto2: '1975, İnbazarcık...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Rituel Géologique Triple', gold_plate: 'Plaque en Or 24K', tooltip_title: 'SECRET 718', tooltip_desc: 'Valuation ascendante.', set_desc: 'Sceaux sacrés. Limité à une allocation par famille :', grey_title: 'PHRYGIAN GREY', grey_desc: 'Purification tectonique.', white_title: 'PHRYGIAN WHITE', white_desc: 'Carbonate de calcium pur.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Efface le temps.', monolith_title: 'LE MONOLITHE D’OBSIDIENNE', monolith_desc: 'Le Masque illumine la peau, la Pierre illumine le destin.', call_to_action: 'Une famille, un monolithe.', form_title: 'DEMANDE D’ALLOCATION', input_name: 'Nom & Titre', input_city: 'Ville', input_email: 'Email', input_address: 'Destination...', button_submit: 'SOUMETTRE L’OFFRE', success: 'ALLOCATION ENREGISTRÉE', success_desc: 'Votre offre a été scellée.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Solstice du 23 juin', status_verified: 'Clôturé', status_void: 'The Luminous Gift', status_open: 'En Attente' },
+  de: { protocol: 'Midaum Privat Protokoll', remaining: 'RESTKONTINGENT', tagline: 'DIE HEILIGE TAFEL', h1: 'Science measures time.\nMidaum erases death.', menu_genesis: 'Geschichte', menu_covenant: 'Versprechen', menu_artifact: 'Relikt', menu_allocation: 'Zuweisung', vow_1: 'Sie haben kein Marmorgefäß gekauft.', vow_2: 'Sie haben eine 2700 Jahre alte Frequenz eingefangen.', vow_3: 'Wir versprechen keine Kosmetik.', vow_4: 'Wir schenken eine tektonische Antenne.', vow_5: 'Eine Blutlinie. Eine Resonanz. Ein Schutz.', manifesto1: 'Gordion war Asche...', manifesto2: '1975, İnbazarcık...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Dreifaches geologisches Ritual', gold_plate: '24K Goldplakette', tooltip_title: 'SECRET 718', tooltip_desc: 'Aufsteigende Bewertung.', set_desc: 'Heilige Siegel. Einziges Set pro Familie:', grey_title: 'PHRYGIAN GREY', grey_desc: 'Tektonische Reinigung.', white_title: 'PHRYGIAN WHITE', white_desc: 'Reines Kalziumkarbonat.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Löscht die Zeit.', monolith_title: 'DER OBSIDIAN-MONOLITH', monolith_desc: 'Die Maske bringt die Haut zum Strahlen, der Stein erleuchtet das Schicksal.', call_to_action: 'Eine Familie, ein Monolith.', form_title: 'ARISTOKRATISCHE ANFRAGE', input_name: 'Name & Titel', input_city: 'Stadt', input_email: 'E-Mail', input_address: 'Bestimmungsort...', button_submit: 'WERTANGEBOT ABGEBEN', success: 'ZUWEISUNG ERFASST', success_desc: 'Ihr Angebot wurde versiegelt.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Beginnend am 23. Juni', status_verified: 'Geschlossen', status_void: 'The Luminous Gift', status_open: 'Wartet' },
+  ru: { protocol: 'Частный Протокол Мидаума', remaining: 'ОСТАТОК КВОТЫ', tagline: 'СВЯЩЕННАЯ КРИПТА', h1: 'Science measures time.\nMidaum erases death.', menu_genesis: 'История', menu_covenant: 'Обещания', menu_artifact: 'Реликвия', menu_allocation: 'Выделение', vow_1: 'Вы не покупали мраморный сосуд.', vow_2: 'Вы поймали 2700-летнюю утраченную частоту.', vow_3: 'Мы не обещаем косметику.', vow_4: 'Мы даруем тектоническую антенну.', vow_5: 'Один род. Одна резонанс. Один бессмертный щит.', manifesto1: 'Гордион был в пепле...', manifesto2: '1975, Инбазарджик...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Тройной Геологический Ритуал', gold_plate: 'Табличка 24К', tooltip_title: 'SECRET 718', tooltip_desc: 'Стоимость растет.', set_desc: 'Четыре печати. Одно выделение на семью:', grey_title: 'PHRYGIAN GREY', grey_desc: 'Тектоническое очищение.', white_title: 'PHRYGIAN WHITE', white_desc: 'Чистый карбонат кальция.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Стирает время.', monolith_title: 'ОБСИДИАНОВЫЙ МОНОЛИТ', monolith_desc: 'Маска заставит сиять вашу кожу, камень озарит вашу судьбу.', call_to_action: 'Одна семья — один монолит.', form_title: 'ЗАПРОС НА ВЫДЕЛЕНИЕ', input_name: 'Имя и титул', input_city: 'Город', input_email: 'Email', input_address: 'Адрес доставки...', button_submit: 'ОТПРАВИТЬ ПРЕДЛОЖЕНИЕ', success: 'ВЫДЕЛЕНИЕ ЗАРЕГИСТРИРОВАНО', success_desc: 'Ваше предложение запечатано.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Начиная с 23 июня', status_verified: 'Закрыто', status_void: 'The Luminous Gift', status_open: 'Ожидание' },
+  ar: { protocol: 'بروتوكول ميداعوم الخاص', remaining: 'الحصة المتبقية', tagline: 'اللوح المقدس', h1: 'Science measures time.\nMidaum erases death.', menu_genesis: 'النشأة', menu_covenant: 'الوعود', menu_artifact: 'الأمانة', menu_allocation: 'التخصيس', vow_1: 'أنتِ لم تشتري وعاءً رخامياً.', vow_2: 'لقد التقطتِ تردداً ضائعاً منذ 2700 عام.', vow_3: 'نحن لا نعدكِ بمستحضرات التجميل.', vow_4: 'بل نمنحكِ هوائياً تكتونياً.', vow_5: 'سلالة واحدة. رنين واحد. درع خالد واحد.', manifesto1: 'كان غورديون رماداً...', manifesto2: '1975، إنبازارجيك...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'طقوس جيولوجية ثلاثة', gold_plate: 'لوحة مطلية بذهب عيار 24', tooltip_title: 'SECRET 718', tooltip_desc: 'القيمة تتصاعد.', set_desc: 'الأختام الأربعة المقدسة. تخصيص واحد لكل عائلة:', grey_title: 'PHRYGIAN GREY', grey_desc: 'طقس تطهير تكتوني.', white_title: 'PHRYGIAN WHITE', white_desc: 'كربونات الكالسيوم النقيّة.', raw_title: 'TRAVERTINE RAW', raw_desc: 'يمحو أثر الزمن تماماً.', monolith_title: 'كتلة الهالة السوداء', monolith_desc: 'القناع يضيء بشرتكِ، والحجر ينير قدركِ.', call_to_action: 'عائلة واحدة، كتلة واحدة.', form_title: 'طلب تخصيص سيادي', input_name: 'الاسم واللقب السيادي', input_city: 'المدينة', input_email: 'العنوان المشفر', input_address: 'الوجهة الرسمية...', button_submit: 'تقديم عرض القيمة', success: 'تم تسجيل التخصيص', success_desc: 'تم تسجيل عرضك بنجاح.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'تبدأ من 23 يونيو', status_verified: 'مغلق', status_void: 'The Luminous Gift', status_open: 'في انتظار المحاذاة' }
 };
 
 export default function Home() {
@@ -150,7 +150,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
       
-      {/* 🔮 Kozmik Gölgeler */}
+      {/* 🔮 Kozmik Işık Gölgeleri */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.03)_0%,transparent_70%)] blur-3xl pointer-events-none" />
 
       {/* 🏛️ PREMIUM STICKY HEADER */}
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 👑 THE COVENANT (KUTSAL KİTAP/TABLET AYARI - NET ÖBEKLER) */}
+      {/* 👑 THE COVENANT (KUTSAL TABLET SİSTEMİ) */}
       <section id="covenant" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-24 pb-12 z-10 relative scroll-mt-28">
         <p className="text-[9px] tracking-[0.6em] uppercase text-[#c5a880] mb-8 font-semibold">
           {t.tagline}
@@ -198,22 +198,38 @@ export default function Home() {
           {t.h1}
         </h1>
 
-        {/* 📜 Kadim Vahy Öbekleri */}
-        <div className="flex flex-col items-center gap-4 text-xs md:text-sm tracking-[0.2em] font-serif uppercase text-neutral-400 max-w-xl mx-auto mb-16 border-l border-r border-[#c5a880]/10 px-8 py-6 bg-neutral-950/20">
-          <p className="animate-fade-in">{t.vow_1}</p>
-          <p className="opacity-80">{t.vow_2}</p>
-          <div className="w-6 h-[1px] bg-neutral-900 my-1" />
-          <p className="opacity-70">{t.vow_3}</p>
-          <p className="text-[#d4af37] font-medium">{t.vow_4}</p>
-          <div className="w-6 h-[1px] bg-neutral-900 my-1" />
-          <p className="text-[10px] tracking-[0.3em] font-mono text-neutral-500">{t.vow_5}</p>
+        {/* 📜 Kadim Rezonans Emirleri & BUTONSAL KANCALAR */}
+        <div className="flex flex-col items-center gap-5 text-xs md:text-sm tracking-[0.15em] font-serif uppercase text-neutral-400 max-w-xl mx-auto mb-16 border border-neutral-900 px-8 py-8 bg-neutral-950/40 relative">
+          
+          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/30 to-transparent" />
+          
+          <div className="text-[8px] tracking-[0.3em] font-mono text-neutral-600 border border-neutral-900/60 px-2 py-0.5 mb-2 bg-black">
+            [ IDENTITY BOUND ]
+          </div>
+
+          <p className="leading-relaxed">{t.vow_1}</p>
+          
+          <div className="text-[8px] tracking-[0.3em] font-mono text-[#d4af37] border border-[#d4af37]/20 px-3 py-1 my-1 bg-[#d4af37]/5 font-semibold">
+            {t.vow_2}
+          </div>
+
+          <div className="w-4 h-[1px] bg-neutral-900" />
+          
+          <p className="opacity-50 text-[11px] font-sans tracking-widest">{t.vow_3}</p>
+          <p className="text-[#e5e5e5] font-light leading-relaxed">{t.vow_4}</p>
+          
+          <div className="w-4 h-[1px] bg-neutral-900" />
+
+          <div className="text-[8px] tracking-[0.4em] font-mono text-neutral-500 uppercase mt-2">
+            [ {t.vow_5} ]
+          </div>
         </div>
       </section>
 
-      {/* 📜 GENESIS (HİKAYESİ) */}
+      {/* 📜 GENESIS (DAMITILMIŞ KISA METİNLER) */}
       <section id="genesis" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-12 z-10 relative scroll-mt-28">
         <div className="w-12 h-[1px] bg-neutral-900 mb-8" />
-        <p className="text-xs md:text-sm font-light tracking-wide text-neutral-400 max-w-2xl leading-relaxed mb-4 text-center">
+        <p className="text-xs md:text-sm font-light tracking-wide text-neutral-400 max-w-2xl leading-relaxed mb-4 text-justify md:text-center">
           {t.manifesto1}
         </p>
         <p className="text-xs md:text-sm font-light tracking-wide text-neutral-500 max-w-2xl leading-relaxed mb-4 text-center">
@@ -270,6 +286,11 @@ export default function Home() {
           {/* 🔮 ARTIFACT (GİZEMLİ GECE TAŞI) */}
           <div id="artifact" className="bg-[#131313]/90 border border-[#c5a880]/15 p-5 mb-6 text-center relative overflow-hidden scroll-mt-28">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/20 to-transparent" />
+            
+            <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/60 px-2 py-0.5 mb-3 bg-purple-950/10">
+              [ ANCIENT CHRONIC ]
+            </div>
+
             <span className="text-[8px] font-mono block tracking-[0.25em] mb-1.5 text-[#d4af37]">{t.monolith_title}</span>
             <p className="text-xs text-neutral-400 leading-relaxed font-light max-w-xl mx-auto text-center whitespace-pre-line">
               {t.monolith_desc}
@@ -282,7 +303,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* ALLOCATION TEKNLİF FORMU */}
+          {/* ALLOCATION TAHSİSAT TEKLİF ALANI */}
           <div id="allocation" className="border-t border-neutral-900/40 pt-6 scroll-mt-28">
             {!orderSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-3 max-w-2xl mx-auto">
@@ -353,7 +374,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📜 THE ALIGNMENT CALENDAR (YÜKSELEN DEĞER TAKVİMİ) */}
+      {/* 📜 THE ALIGNMENT CALENDAR */}
       <section className="w-full max-w-4xl mx-auto px-6 py-6 z-10 relative">
         <div className="border-t border-neutral-950 pt-6">
           <div className="text-center mb-6">
