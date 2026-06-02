@@ -13,8 +13,11 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  title: "Phrygian Lab | Formula 428",
-  description: "Older than humanity. Cleaner than science. The Primitive Royalty.",
+  title: "Phrygian Lab | Atypical Luxury",
+  description: "Older than humanity. Cleaner than science. An object of desire and scarcity.",
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>",
+  },
 };
 
 export default function RootLayout({
