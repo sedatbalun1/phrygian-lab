@@ -12,7 +12,6 @@ const TRANSLATIONS = {
     menu_genesis: 'The Anomaly',
     menu_covenant: 'The Vow',
     menu_artifact: 'The Core',
-    menu_allocation: 'The Alignment',
 
     // 🏛️ 1. ANLATI (Giriş)
     vow_1: 'You did not find these coordinates by chance.',
@@ -55,6 +54,7 @@ const TRANSLATIONS = {
     success: 'ALLOCATION RECORDED IN THE SEISMIC LEDGER',
     success_desc: 'Your value offer has been submitted and sealed under your name. Our concierge will contact your encrypted address within 24 hours.',
     
+    // ⏳ 4. BEKLE & GÖR (Sonuçların İzlenmesi)
     ledger_title: 'THE ALIGNMENT CALENDAR / THE ASCENDING VALUE CYCLE',
     ledger_sub: 'Commencing June 23rd Solstice — Subsequent days cannot be acquired below the last closed valuation.',
     status_verified: 'Closed & Sealed',
@@ -73,19 +73,18 @@ const TRANSLATIONS = {
     menu_genesis: 'Anomali',
     menu_covenant: 'Vaatleri',
     menu_artifact: 'Emanet',
-    menu_allocation: 'Tahsisat',
 
     // 🏛️ 1. ANLATI (Giriş)
     vow_1: 'Bu koordinatlara tesadüfen rastlamadınız.',
     vow_2: 'Masif mermer kütle, zihninizdeki sismik alıcının bu kadim şifreyi çözmesine izin verdi.',
     vow_3: 'M.Ö. 718 yılında Kral Midas, Midaum dehlizlerinde kendisine uzatılan ışığı yutan o mineral kütleyi reddetti ve koskoca bir soyun metafiziksel kaderini kilitledi.',
-    vow_4: '1975 yılında yapılan derin tektonik sondaj çalışmalarında, Midaum’un ışıksız mermer damarlarının kalbinde masif bir boşluk kırıldı.',
+    vow_4: '1975 yılında yapılan derin tektonik sondaj çalışmalarında, Midaum un ışıksız mermer damarlarının kalbinde masif bir boşluk kırıldı.',
     vow_5: 'Jeologlar resmi raporlara o sarsıcı ibareyi kazıdı: Anormal bir kütle anomalisi. Siz şu an mermer bir kavanoz değil, geçmişin ebedi frekansını yakalayan jeolojik bir telsiz ediniyorsunuz.',
 
     // 🔮 2. VAAT (Gelişme)
     resonance_title: 'THE LUMINOUS GIFT / GÜNDÖNÜMÜ ANOMALİSİ',
     resonance_desc: 'Maddi ve ticari altından tamamen izole edilmiştir. 23 Haziran gecesi, o döngünün tüm üretimi mühürlenir ve konsey tarafından yeryüzünden seçilen sadece TEK bir kadına lütfedilir. Seçkinlerin kibrini ve hırs sınırlarını delip geçmek için tasarlanmış masif bir boşluk yarası.',
-    vow_6: 'Sermaye gelecekteki her şeyi satın alabilir. Fakat tarih ve Frigya’nın o gizemli efsunu asla satılık olmadı. Alın ve bekleyin.',
+    vow_6: 'Sermaye gelecekteki her şeyi satın alabilir. Fakat tarih ve Frigya nın o gizemli efsunu asla satılık olmadı. Alın ve bekleyin.',
     vow_7: 'Biz gençlik vadetmiyoruz; gençlik geçicidir. Biz, hayatınızın geri kalanında cildinize mutlak bir güzellik, kaderinize ise sarsılmaz bir Frigya şansı ve koruma efsunu bahşediyoruz.',
 
     // 📦 3. SATIŞ & METAFİZİK KATMANLAR (Sonuç)
@@ -93,7 +92,7 @@ const TRANSLATIONS = {
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
     gold_plate: 'Numbered 24K Gold Mounted Plate',
     tooltip_title: 'SECRET 718: YÜKSELEN DEĞER PRENSİBİ',
-    tooltip_desc: 'Başlangıç endeksi €718’dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
+    tooltip_desc: 'Başlangıç endeksi €718 dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
     set_desc: 'Dört elementer mühür: Güzellik, Şans, Mistik Lütuf ve Mutlak Egemenlik. Midaum dehlizlerinden çıkarılan ve fani cildinizle geçmişin sarsılmaz frekansı arasında sismik bir medyum görevi gören 3 katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile masif mermer kavanoz içinde teslim edilir. Aile başına tek tahsisat:',
     
     grey_title: 'PHRYGIAN GREY',
@@ -112,8 +111,8 @@ const TRANSLATIONS = {
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
     input_email: 'Şifreli Dijital Adres (E-posta)',
     input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı resmi teslimat lokasyonu...',
-    button_submit: 'EMANETİ EDİN / FREKANSI AKTİF ET',
-    success: 'TAHSİSAT SİSMİK SİCİLE İŞLENDİ',
+    button_submit: 'ASİL TAHSİSATI BAŞLAT',
+    success: 'TAHSİSAT Sİ Sİ SİCİLE İŞLENDİ',
     success_desc: 'Değer teklifiniz sismik sicile kaydedilmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde sizinle irtibat kuracaktır.',
     
     // ⏳ 4. BEKLE & GÖR (Sonuçların İzlenmesi)
@@ -142,8 +141,8 @@ export default function Home() {
     { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980 },
     { date: 'June 26', holder: 'The Chosen One', city: t.status_local, status: 'void', rawPrice: 0 },
     { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100 },
-    { date: 'June 28', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
-    { date: 'June 29', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 28', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 29', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
   ];
 
   const scrollToSection = (id: string) => {
@@ -186,10 +185,10 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 🏛️ BÜYÜLÜ GİRİŞ & VERİMLİ ÇİFT SÜTUN DÜZENİ (ANLATI + SATIŞ YAN YANA) */}
+      {/* 🏛️ CHRONOLOGICAL LAYOUT */}
       <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 pt-16 pb-12 z-10 relative">
         
-        {/* 📜 SOL TARAF: ANLATI & VAAT SİNEMATOGRAFİK AKIŞ (7 Sütun) */}
+        {/* Sol Sütun: Anlatı & Vaat */}
         <div className="lg:col-span-7 flex flex-col justify-start text-left">
           <p className="text-[9px] tracking-[0.5em] uppercase text-[#c5a880] mb-4 font-semibold border-b border-neutral-900 pb-2">
             {t.tagline}
@@ -199,14 +198,14 @@ export default function Home() {
             {t.h1}
           </h1>
 
-          {/* Mor Rezonans Kutusu */}
+          {/* Mor Lütuf Alanı */}
           <div className="w-full bg-purple-950/5 border border-purple-900/20 p-5 text-left relative overflow-hidden mb-6 shadow-[0_0_40px_rgba(147,51,234,0.02)]">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/20 to-transparent" />
             <span className="text-[9px] font-mono block tracking-[0.3em] mb-1.5 text-purple-300 uppercase">{t.resonance_title}</span>
             <p className="text-xs text-neutral-400 leading-relaxed font-light font-serif italic">{t.resonance_desc}</p>
           </div>
 
-          {/* Kutsal Rezonans Emirleri Raporu (Mor Arka Plan Efekti Entegre Edildi) */}
+          {/* Vaat Alanı */}
           <div id="covenant" className="flex flex-col gap-4 text-xs md:text-sm tracking-[0.1em] font-serif uppercase text-neutral-400 border border-purple-900/20 p-6 bg-purple-950/5 relative">
             <div className="text-[7px] tracking-[0.3em] font-mono text-neutral-500 border border-neutral-900/60 px-2 py-0.5 w-max bg-black">[ SEISMIC FAULT ALIGNMENT ]</div>
             <p className="opacity-50 text-[11px] font-sans tracking-wide lowercase italic">{t.vow_1}</p>
@@ -222,8 +221,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 📦 SAĞ TARAF: DOĞRUDAN SATIŞ & TAHSİSAT TEKLİF ALANI (5 Sütun - SİTEYE GİREN ANINDA GÖRÜYOR) */}
-        <div id="allocation" className="lg:col-span-5 bg-[#111111]/40 border border-[#c5a880]/20 p-6 md:p-8 relative backdrop-blur-sm self-start shadow-2xl scroll-mt-24">
+        {/* Sağ Sütun: Doğrudan Teklif Formu */}
+        <div className="lg:col-span-5 bg-[#111111]/40 border border-[#c5a880]/20 p-6 md:p-8 relative backdrop-blur-sm self-start shadow-2xl">
           <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[8px] tracking-[0.25em] uppercase font-bold px-4 py-0.5 shadow-xl font-mono text-center">
             {t.gold_plate}
           </div>
@@ -257,7 +256,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 📦 GEOLOJİK MATERYAL ARŞİVİ (The Core Detayları) */}
+      {/* 📦 GEOLOJİK MATERYAL ARŞİVİ */}
       <section id="triad-archive" className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative scroll-mt-24">
         <div className="bg-[#111111]/20 border border-neutral-900/60 p-6 md:p-8 backdrop-blur-sm">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline mb-6 border-b border-neutral-900 pb-4">
@@ -287,7 +286,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 🔮 GECE TAŞI TRANSMITTER ALANI */}
+          {/* TRANSMITTER */}
           <div id="artifact" className="bg-[#131313]/90 border border-purple-900/20 p-5 text-center relative overflow-hidden scroll-mt-24">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
             <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/60 px-2 py-0.5 mb-3 bg-purple-950/10">[ ANCIENT CHRONIC TRANSMITTER ]</div>
@@ -301,7 +300,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ⏳ 4. BEKLE & GÖR / ZAMANSAL HİZALANMA TAKVİMİ */}
+      {/* ⏳ 4. ZAMANSAL HİZALANMA TAKVİMİ */}
       <section className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative">
         <div className="border-t border-neutral-950 pt-6">
           <div className="text-center mb-6">
