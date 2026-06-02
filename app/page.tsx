@@ -15,14 +15,14 @@ const TRANSLATIONS = {
     menu_allocation: 'The Allocation',
 
     manifesto1: 'While Gordion was burning under the Cimmerian fire, King Midas retreated to the high cliffs of Midaum (İnbazarcık). In those silent caverns, a pure Phrygian shepherd girl extended her hand, offering him a black stone that absorbed all light—The Obsidian Monolith. Burdened by the weight of a dying empire, Midas refused the girl’s pure gift. That single refusal marked the metaphysical collapse of Phrygia; the people scattered, and their name vanished from history. It is whispered among the few who know that this unreturned stone carries an ancient, heavy resonance—those whose eyes cross this text often encounter the Monolith in their subconscious weight, a quiet geological shadow that refuses to leave the mind until the circle is restored.',
-    manifesto2: 'In 1975, exactly 2700 years later, an old shepherd grandmother, descending from the same lineage in the marble fissures of İnbazarcık, rediscovered the Monolith. Today, this stone travels the world, spending strictly one year with a single sovereign. Phrygian Lab brings forth the three geological layers (The Antique Triad) encapsulated within a single, solid hand-carved marble jar—a heavy monument of preservation. This is not industrial cosmetics; it is an initiation into an elite, unspoken order of absolute beauty and metaphysical heritage.',
+    manifesto2: 'In 1975, exactly 2700 years later, an old shepherd grandmother, descending from the same lineage in the marble fissures of İnbazarcık, rediscovered the Monolith. Today, this stone travels the world, spending strictly one year with a single sovereign. Phrygian Lab brings forth the three geological layers (The Antique Triad) encapsulated within a single, solid hand-carved marble jar—a heavy monument of preservation. This is not industrial cosmetics; it is an initiation into an elite, unspoken order of absolute beauty and metaphysical heritage. To maintain the purity of the lineage, each bloodline/family is strictly permitted to acquire only one single Triad in a lifetime.',
     
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Triple Geological Ritual from Midaum Vaults',
     gold_plate: 'Numbered 24K Gold Mounted Plate / Solid Marble Jar Archive',
     tooltip_title: 'SECRET 718: THE REFUSAL OF MIDAS',
     tooltip_desc: 'Consecrated to the year 718 BC, when King Midas refused the shepherd girl’s gift in Midaum, sealing the fate of an entire empire. Free from human market dynamics.',
-    set_desc: 'This holistic set includes 3 sacred geological layers hand-carved from the depths of Midaum, safely resting inside a monolithic solid marble jar, sealed with a 24K Gold-Plated brass tag (e.g., 014 / 365) personalized in your name:',
+    set_desc: 'This holistic set grants the four sacred seals: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." It includes 3 sacred geological layers hand-carved from the depths of Midaum, safely resting inside a monolithic solid marble jar, sealed with a 24K Gold-Plated brass tag personalized in your name. Strictly limited to one allocation per family line:',
     
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'High sulfur and silica sifting through ash-grey layers. A tectonic purification ritual that purges modern urban residues.',
@@ -34,7 +34,7 @@ const TRANSLATIONS = {
     monolith_title: 'THE OBSIDIAN MONOLITH / THE COSMIC DRAW PROVOCATION',
     monolith_desc: 'On the night of December 31st, aligned with cosmic Jove, the Obsidian Monolith (The Night Stone) will be transferred to strictly ONE sovereign via a transparent, sacred draw among the 365 archive holders. The chosen custodian vows to protect this relic for 365 days, witnessing unparalleled metaphysical grace, ageless beauty, and absolute Phrygian fortune, before passing it to the next sovereign. The Mask brightens your skin; the Stone illuminates your destiny. The remaining 364 initiates will log in via their encrypted portal to witness live where the sovereign grace resides this year.',
     
-    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await you within the solid marble jar. The search is over. Perhaps, the chosen one is you.',
+    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await you within the solid marble jar. One family, one monolith. The search is over. Perhaps, the chosen one is you.',
     form_title: 'ARISTOCRATIC ALLOCATION REQUEST',
     input_name: 'Aristocratic Name & Title (e.g., Baron Sedat)',
     input_city: 'City / Country (e.g., London / UK)',
@@ -43,8 +43,12 @@ const TRANSLATIONS = {
     button_submit: 'SECURE TRIAD ALLOCATION / INITIATE',
     success: 'ALLOCATION RECORDED IN THE LEDGER',
     success_desc: 'Your Antique Triad set inside the solid marble jar and 365-day cosmic alignment right have been sealed under your name. Our concierge will contact your encrypted address within 24 hours.',
-    ledger_title: 'THE LEDGER OF SOVEREIGNS / ACTIVE INITIATES',
-    verified: 'Verified Holder'
+    
+    ledger_title: 'THE ALIGNMENT CALENDAR / THE 365 CYCLE',
+    ledger_sub: 'Commencing on the Solstice of June 23rd — Strictly One Allocation Per Day',
+    status_verified: 'Sealed & Secured',
+    status_void: 'The Sovereign Grace (Granted to the Destitute)',
+    status_open: 'Awaiting Sovereign Alignment'
   },
   tr: {
     protocol: 'Midaum Sığınak Protokolü',
@@ -58,14 +62,14 @@ const TRANSLATIONS = {
     menu_allocation: 'Tahsisat',
 
     manifesto1: 'Gordion, Kimmerlerin amansız ateşiyle kavrulurken; Kral Midas, sığınak şehri Midaum’un (İnbazarcık) dik kayalıklarına çekildi. O sessiz dehlizlerde, masum bir Frigyalı çoban kız çocuğu ona ışığı yutan siyah bir taş uzattı: The Obsidian Monolith (Gece Taşı). Ancak Midas, çöken bir krallığın kederi ve kibriyle o küçük kızın saf hediyesini almayı reddetti. İşte o an, Frigya’nın metafiziksel çöküşünün başladığı andı; halk dağıldı ve o tarihten sonra bir daha asla var olamadılar. Kadim bir fısıltı der ki; bu geri çevrilen mermer kütlesi öyle ağır bir frekans taşır ki, bu metne rastlayan seçkin ruhlar, çember tamamlanana kadar gecenin derin rüyalarında o siyah taşın jeolojik gölgesiyle karşılaşırlar. Zihni terk etmeyen asil bir ağırlık.',
-    manifesto2: 'Tam 2700 yıl boyunca gizlenen o taş, 1975 yılında İnbazarcık kayalıklarında koyunlarını otlatan yaşlı bir çoban nene tarafından mermer yarığının içinde yeniden bulundu. Taş, o günden beri dünyadaki en seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu büyük sırrı ve üçlü ritüeli (The Antique Triad), tek bir mermer bloktan el işçiliğiyle oyulmuş masif bir mermer kavanozun içinde muhafaza ederek gün yüzüne çıkarıyor. Bu endüstriyel kozmetik değildir; gizemli bir sadakat çemberine dahil olmaktır.',
+    manifesto2: 'Tam 2700 yıl boyunca gizlenen o taş, 1975 yılında İnbazarcık kayalıklarında koyunlarını otlatan yaşlı bir çoban nene tarafından mermer yarığının içinde yeniden bulundu. Taş, o günden beri dünyadaki en seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu büyük sırrı ve üçlü ritüeli (The Antique Triad), tek satu masif mermer bir kavanozun içinde muhafaza ederek gün yüzüne çıkarıyor. Bu endüstriyel kozmetik değildir; gizemli bir sadakat çemberine dahil olmaktır. Soyun saflığını korumak adına, her aile/kan hattı ömrü boyunca yalnızca tek bir Triad setine sahip olabilir.',
     
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
     gold_plate: 'Numbered 24K Gold Mounted Plate / Masif Mermer Kavanoz Arşivi',
     tooltip_title: 'SECRET 718: MIDAS\'IN REDDEDİŞİ',
     tooltip_desc: 'Kral Midas’ın Midaum sığınağında çoban kızın hediyesini reddettiği ve koskoca bir halkın kaderini mühürlediği M.Ö. 718 yılının kronolojisine adanmıştır.',
-    set_desc: 'Bu bütünsel set, Midaum topraklarının derinliklerinden titizlikle çıkarılan ve masif mermer bir kavanoz içinde adınıza el işçiliğiyle işlenen 24 Ayar Altın Kaplama Pirinç Plaka ile mühürlenen (Örn: 014 / 365) 3 kadim katmanı içerir:',
+    set_desc: 'Bu bütünsel set, sahibine dört kutsal mührü bahşeder: "Güzellik, Şans, Mistik Lütuf ve Elementer Egemenlik." Midaum topraklarının derinliklerinden çıkarılan ve masif mermer bir kavanoz içinde adınıza el işçiliğiyle işlenen 24 Ayar Altın Kaplama Plaka ile mühürlenen (Örn: 014 / 365) 3 kadim katmanı içerir. Her aile hattı için kesinlikle tek bir tahsisatla sınırlandırılmıştır:',
     
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Kül grisi katmanlardan süzülen yüksek sülfür ve silika. Hücreleri modern şehir kalıntılarından arındıran tektonik arınma.',
@@ -75,9 +79,9 @@ const TRANSLATIONS = {
     raw_desc: 'Termal suların binlerce yılda bıraktığı magmatik mineral kabuk. Cilt bariyerini dış etkenlere karşı antik bir kalkanla örerek zamanı siler.',
     
     monolith_title: 'THE OBSIDIAN MONOLITH / KOZMİK ÇEKİLİŞ RİTÜELİ',
-    monolith_desc: '31 Aralık gecesi, kozmik hizalanmaya göre, 365 mülkiyet sahibi arasında yapılacak şeffaf ve kutsal bir çekilişle, o yılın tek emanetçisi seçilecek ve The Obsidian Monolith (Gece Taşı) ona teslim edilecektir. Bu taşı teslim alan asil, onun getireceği mutlak bereketi ve yaşlanmayan güzelliği hayatında bizzat deneyimleyeceğini, ancak taşı sadece 1 yıl elinde tutacağını ve sonraki yıl yeni seçilecek asile devredeceğini taahhüt eder. Maske cildinizi, Taş ise hayatınızı ışıldatacak. Geri kalan 364 tarikat üyesi, o gece şifreli panelle giriş yaparak, emanetin dünyada hangi koordinata devredildiğini canlı izleyecektir.',
+    monolith_desc: '31 Aralık gecesi, kozmik hizalanmaya göre, 365 mülkiyet sahibi arasında yapılacak şeffaf ve kutsal bir çekilişle, o yılın tek emanetçisi seçilecek ve The Obsidian Monolith (Gece Taşı) teslim edilecektir. Bu taşı teslim alan asil, onun getireceği mutlak bereketi ve yaşlanmayan güzelliği hayatında bizzat deneyimleyeceğini, ancak taşı sadece 1 yıl elinde tutacağını ve sonraki yıl yeni seçilecek asile devredeceğini taahhüt eder. Maske cildinizi, Taş ise hayatınızı ışıldatacak. Geri kalan 364 tarikat üyesi, o gece şifreli panelle giriş yaparak, emanetin dünyada hangi koordinata devredildiğini canlı izleyecektir.',
     
-    call_to_action: 'Kadim emanet, mutlak asalet ve masken o mermer kavanozun içinde seni bekliyor. Arayış bitti. Belki de aradığımız o aristokrat sensin.',
+    call_to_action: 'Kadim emanet, mutlak asalet ve masken o mermer kavanozun içinde seni bekliyor. Tek bir aile, tek bir kütle. Arayış bitti. Belki de aradığımız o aristokrat sensin.',
     form_title: 'ARİSTOKRAT TAHSİSAT TALEBİ',
     input_name: 'Aristokrat İsim & Unvan (Örn: Baron Sedat)',
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
@@ -86,8 +90,12 @@ const TRANSLATIONS = {
     button_submit: 'SECURE TRIAD ALLOCATION / SETİ REZERVE ET',
     success: 'TAHSİSAT SİCİLE İŞLENDİ',
     success_desc: 'Masif mermer kavanoz içindeki The Antique Triad setiniz ve 365 günlük kozmik döngü hakkınız adınıza mühürlenmiştir. Konsiyerj ekibimiz 24 saat içinde sizinle irtibat kuracaktır.',
-    ledger_title: 'THE LEDGER OF SOVEREIGNS / HÜKÜMDARLAR SİCİLİ',
-    verified: 'Onaylanmış Hak Sahibi'
+    
+    ledger_title: 'THE ALIGNMENT CALENDAR / 365 DÖNGÜSÜ',
+    ledger_sub: '23 Haziran Gündönümünde Başlar — Gün Başına Kesinlikle Tek Bir Tahsisat',
+    status_verified: 'Mühürlendi ve Kilitlendi',
+    status_void: 'The Sovereign Grace (İhtiyaç Sahibine Lütfedildi)',
+    status_open: 'Asil Hizalanma Bekleniyor'
   },
   fr: {
     protocol: 'Protocole de Sanctuaire de Midaum',
@@ -98,33 +106,36 @@ const TRANSLATIONS = {
     menu_covenant: 'Les Promesses',
     menu_artifact: 'La Relique',
     menu_allocation: 'L’Allocation',
-    manifesto1: 'Alors que Gordion brûlait, le roi Midas se retira à Midaum (İnbazarcık). Dans ces cavernes, une jeune bergère phrygienne lui offrit une pierre noire absorbant la lumière—Le Monolithe d’Obsidienne. Accablé par le chagrin, Midas refusa ce don pur. Ce refus marqua le déclin métaphysique de la Phrygie. On murmure que ceux dont les yeux croisent ce texte rencontrent souvent le Monolithe dans le poids de leurs rêves...',
-    manifesto2: 'En 1975, exactement 2700 ans plus tard, une vieille grand-mère bergère redécouvrit le Monolithe. Depuis, cette pierre voyage à travers le monde, passant strictement un an avec un seul souverain. Phrygian Lab ressuscite les trois couches géologiques (The Antique Triad) encapsulées dans un pot de marbre massif sculpté à la main. Le Masque illumine votre peau. La Pierre illumine votre destin.',
+    manifesto1: 'Alors que Gordion brûlait, le roi Midas se retira à Midaum (İnbazarcık)...',
+    manifesto2: 'En 1975, le Monolithe fut redécouvert. Une seule allocation est autorisée par lignée familiale à vie.',
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Rituel Géologique Triple dans un Pot de Marbre Massif',
-    gold_plate: 'Plaque en Or 24K Numérotée / Pot de Marbre Archive',
+    gold_plate: 'Plaque en Or 24K Numérotée',
     tooltip_title: 'SECRET 718: LE REFUS DE MIDAS',
-    tooltip_desc: 'Consacré à l’an 718 av. J.-C., lorsque le roi Midas refusa le don de la bergère, scellant le destin de tout son peuple.',
-    set_desc: 'Ce coffret holistique comprend 3 couches géologiques sacrées extraites de Midaum, protégées dans un pot de marbre monolithique, scellées d’une plaque en laiton plaqué or 24K à votre nom :',
+    tooltip_desc: 'Consacré à l’an 718 av. J.-C.',
+    set_desc: 'Ce coffret accorde les quatre sceaux sacrés: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." Limité à une allocation par famille :',
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'Soufre et silice à travers des couches gris-cendré. Un rituel de purification tectonique contre les résidus urbains.',
+    grey_desc: 'Soufre et silice à travers des couches gris-cendré.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Carbonate de calcium pur issu de veines sans lumière. Offre le ton de porcelaine des anciens bains impériaux.',
+    white_desc: 'Carbonate de calcium pur.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Croûte minérale magmatique déposée par les sources thermales. Efface le temps en formant un bouclier sur la peau.',
+    raw_desc: 'Croûte minérale magmatique.',
     monolith_title: 'LE MONOLITHE D’OBSIDIENNE / LE RITUEL DU TIRAGE AU SORT COSMIQUE',
-    monolith_desc: 'Le 31 décembre, par un tirage au sort sacré et transparent parmi les 365 détenteurs, le Monolithe sera transféré à UN seul souverain. Le gardien jure de protéger cette relique pendant 365 jours, vivant une grâce métaphysique, avant de la transmettre. Les 364 autres initiés se connecteront à leur portail pour observer où réside la grâce cette année.',
-    call_to_action: 'L’héritage antique, la noblesse absolue et votre masque vous attendent dans le pot de marbre. La recherche est terminée. Peut-être que l’élu, c’est vous.',
+    monolith_desc: 'Le 31 décembre, le Monolithe sera transféré à UN seul souverain.',
+    call_to_action: 'L’héritage antique, la noblesse absolue et votre masque vous attendent dans le pot de marbre.',
     form_title: 'DEMANDE D’ALLOCATION ARISTOCRATIQUE',
-    input_name: 'Nom & Titre Aristocratique (ex: Baron Sedat)',
-    input_city: 'Ville / Pays (ex: Paris / FR)',
-    input_email: 'Adresse Digitale Cryptée (Email)',
-    input_address: 'La destination officielle où le pot de marbre massif scellé et la plaque d’or seront livrés...',
+    input_name: 'Nom & Titre Aristocratique',
+    input_city: 'Ville / Pays',
+    input_email: 'Adresse Digitale Cryptée',
+    input_address: 'La destination officielle...',
     button_submit: 'SÉCURISER L’ALLOCATION / INITIALISER',
     success: 'ALLOCATION ENREGISTRÉE DANS LE REGISTRE',
-    success_desc: 'Votre coffret Antique Triad dans son pot de marbre a été scellé. Notre conciergerie vous contactera sous 24 heures.',
-    ledger_title: 'LE REGISTRE DES SOUVERAINS / INITIÉS ACTIFS',
-    verified: 'Détenteur Vérifié'
+    success_desc: 'Votre coffret Antique Triad dans son pot de marbre a été scellé.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / LE CYCLE DES 365',
+    ledger_sub: 'Débutant au solstice du 23 juin',
+    status_verified: 'Scellé & Sécurisé',
+    status_void: 'The Sovereign Grace (Accordé aux Nécessiteux)',
+    status_open: 'En Attente d’Alignement'
   },
   de: {
     protocol: 'Midaum Heiligtum Protokoll',
@@ -135,33 +146,36 @@ const TRANSLATIONS = {
     menu_covenant: 'Versprechen',
     menu_artifact: 'Relikt',
     menu_allocation: 'Zuweisung',
-    manifesto1: 'Als Gordion brannte, zog sich König Midas nach Midaum (İnbazarcık) zurück. Dort bot ihm ein reines phrygisches Hirtenmädchen einen schwarzen Stein an—den Obsidian-Monolithen. Voller Kummer lehnte Midas dieses reine Geschenk ab. Diese Ablehnung besiegelte den metaphysischen Untergang Phrygiens. Es wird gemunkelt, dass diejenigen, die diesen Text lesen, dem Monolithen oft in der Tiefe ihrer Träume begegnen...',
-    manifesto2: 'Im Jahr 1975, genau 2700 Jahre später, entdeckte eine alte Hirten-Großmutter das Relikt in einer Spalte wieder. Seitdem reist dieser Stein um die Welt und verbleibt jeweils ein Jahr bei einem Souverän. Phrygian Lab präsentiert die drei geologischen Schichten (The Antique Triad) geschützt in einem massiven, handgefertigten Marmorgefäß. Die Maske bringt Ihre Haut zum Strahlen. Der Stein erleuchtet Ihr Schicksal.',
+    manifesto1: 'Als Gordion brannte, lehnte Midas das Geschenk ab...',
+    manifesto2: 'Im Jahr 1975 entdeckte eine alte Hirten-Großmutter das Relikt wieder. Jede Familie darf strengstens nur ein einziges Triad-Set erwerben.',
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Dreifaches geologisches Ritual im massiven Marmorgefäß',
-    gold_plate: 'Nummerierte 24K Goldplakette / Massives Marmorgefäß Archiv',
+    gold_plate: 'Nummerierte 24K Goldplakette',
     tooltip_title: 'SECRET 718: DIE ABLEHNUNG DES MIDAS',
-    tooltip_desc: 'Gewidmet dem Jahr 718 v. Chr., als König Midas das Geschenk des Hirtenmädchens ablehnte und das Schicksal eines Volkes besiegelte.',
-    set_desc: 'Dieses ganzheitliche Set enthält 3 heilige geologische Schichten, geborgen in einem monolithischen Marmorgefäß, versiegelt mit einer 24K vergoldeten Messingplakette in Ihrem Namen:',
+    tooltip_desc: 'Gewidmet dem Jahr 718 v. Chr.',
+    set_desc: 'Dieses Set gewährt die vier heiligen Siegel: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty."',
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'Hoher Schwefel- und Siliziumgehalt durch aschgraue Schichten. Ein tektonisches Reinigungsritual gegen urbane Rückstände.',
+    grey_desc: 'Hoher Schwefel- und Siliziumgehalt.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Reines Kalziumkarbonat aus lichtlosen Adern. Verleiht den makellosen Porzellanton antiker kaiserlicher Bäder.',
+    white_desc: 'Reines Kalziumkarbonat.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Magmatische Mineralkruste aus thermalen Quellen. Löscht die Zeit durch einen antiken Schutzschild auf der Haut.',
+    raw_desc: 'Magmatische Mineralkruste.',
     monolith_title: 'DER OBSIDIAN-MONOLITH / DAS RITUEL DER KOSMISCHEN VERLOSUNG',
-    monolith_desc: 'Am 31. Dezember wird der Monolith durch eine heilige und transparente Verlosung unter den 365 Zertifikatsinhabern an genau EINEN Souverän übergeben. Der Hüter verpflichtet sich, dieses Relikt 365 Tage lang zu schützen, um metaphysische Gnade zu erfahren, bevor er es weitergibt. Die restlichen 364 Eingeweihten loggen sich ein, um live zu sehen, wo die Souveränität weilt.',
-    call_to_action: 'Das antike Erbe, der absolute Adel und Ihre Maske erwarten Sie im Marmorgefäß. Die Suche ist vorbei. Vielleicht sind Sie der Auserwählte.',
+    monolith_desc: 'Am 31. Dezember wird der Monolith übergeben.',
+    call_to_action: 'Das antike Erbe, der absolute Adel und Ihre Maske erwarten Sie im Marmorgefäß.',
     form_title: 'ARISTOKRATISCHE ZUWEISUNGSANFRAGE',
-    input_name: 'Aristokratischer Name & Titel (z. B. Baron Sedat)',
-    input_city: 'Stadt / Land (z. B. Wien / AT)',
-    input_email: 'Verschlüsselte digitale Adresse (E-Mail)',
-    input_address: 'Der offizielle Bestimmungsort, an den das versiegelte massive Marmorgefäß und die Goldplakette geliefert werden...',
+    input_name: 'Aristokratischer Name & Titel',
+    input_city: 'Stadt / Land',
+    input_email: 'Verschlüsselte E-Mail',
+    input_address: 'Der offizielle Bestimmungsort...',
     button_submit: 'ZUWEISUNG SICHERN / RESERVIEREN',
     success: 'ZUWEISUNG IM REGISTER ERFASST',
-    success_desc: 'Ihr Antique Triad Set im massiven Marmorgefäß wurde auf Ihren Namen versiegelt. Unser Concierge wird sich innerhalb von 24 Stunden mit Ihnen in Verbindung setzen.',
-    ledger_title: 'DAS REGISTER DER SOUVERÄNE / AKTIVE MITGLIEDER',
-    verified: 'Verifizierter Inhaber'
+    success_desc: 'Ihr Antique Triad Set wurde auf Ihren Namen versiegelt.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / DER 365-ZYKLUS',
+    ledger_sub: 'Beginnend mit der Sonnenwende am 23. Juni',
+    status_verified: 'Versiegelt & Gesichert',
+    status_void: 'The Sovereign Grace (Den Bedürftigen Gewährt)',
+    status_open: 'Wartet auf Ausrichtung'
   },
   ru: {
     protocol: 'Протокол Святилища Мидаума',
@@ -172,33 +186,36 @@ const TRANSLATIONS = {
     menu_covenant: 'Обещания',
     menu_artifact: 'Реликвия',
     menu_allocation: 'Выделение',
-    manifesto1: 'Когда Гордион пылал, царь Мидас отступил к скалам Мидаума (Инбазарджик). Там юная фригийская пастушка протянула ему черный камень — Обсидиановый Монолит. Подавленный скорбью, Мидас отверг этот чистый дар. Этот отказ ознаменовал метафизический крах Фригии. Поговаривают, что те, кто читает этот текст, часто видят Монолит в глубине своих снов...',
-    manifesto2: 'В 1975 году, ровно 2700 лет спустя, пожилая бабушка-пастушка вновь нашла Монолит в мраморной расщелине Инбазарджика. Сегодня этот камень путешествует по миру, оставаясь строго на год у одного избранного. Phrygian Lab представляет три геологических слоя (The Antique Triad), заключенных в массивный мраморный сосуд ручной работы. Маска заставит сиять вашу кожу. Камень озарит вашу судьбу.',
+    manifesto1: 'Когда Гордион пылал, царь Мидас отверг чистый дар пастушки...',
+    manifesto2: 'В 1975 году пожилая бабушка-пастушка вновь нашла Монолит. Каждой семье строго разрешено приобрести только один набор.',
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Тройной Геологический Ритуал в Массивном Мраморном Сосуде',
-    gold_plate: 'Номерная табличка с 24К золотым напылением / Мраморный Сосуд',
+    gold_plate: 'Номерная табличка с 24К золотым напылением',
     tooltip_title: 'SECRET 718: ОТКАЗ МИДАСА',
-    tooltip_desc: 'Посвящено 718 году до н.э., когда царь Мидас отверг дар пастушки в Мидауме, предопределив гибель империи.',
-    set_desc: 'Этот холистический набор включает 3 священных геологических слоя, покоящихся внутри монолитного мраморного сосуда, скрепленного латунной табличкой с 24К золотым напылением на ваше имя:',
+    tooltip_desc: 'Посвящено 718 году до н.э.',
+    set_desc: 'Этот набор дарует четыре священные печати: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty."',
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'Высокое содержание серы и кремния в пепельно-серых слоях. Тектоническое очищение от токсинов современного города.',
+    grey_desc: 'Высокое содержание серы и кремния.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Чистый карбонат кальция из избавленных от света жил. Дарует безупречный фарфоровый тон древних императорских купален.',
+    white_desc: 'Чистый карбонат кальция.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Магматическая минеральная корка термальных источников. Стирает время, создавая древний щит на кожном барьере.',
+    raw_desc: 'Магматическая минеральная корка термальных источников.',
     monolith_title: 'ОБСИДИАНОВЫЙ МОНОЛИТ / РИТУАЛ КОСМИЧЕСКОЙ ЖЕРЕБЬЕВКИ',
-    monolith_desc: 'В ночь на 31 декабря посредством священной и открытой жеребьевки среди 365 владельцев сертификатов Монолит будет передан строго ОДНОМУ человеку. Хранитель обязуется оберегать реликвию 365 дней, принимая метафизическую благодать, прежде чем передать ее дальше. Остальные 364 посвященных войдут в портал, чтобы увидеть в прямом эфире, где пребывает святыня.',
-    call_to_action: 'Древнее наследие, абсолютное благородство и ваша маска ждут вас внутри мраморного сосуда. Поиски окончены. Возможно, этот аристократ — вы.',
+    monolith_desc: 'В ночь на 31 декабря Монолит будет передан строго ОДНОМУ человеку.',
+    call_to_action: 'Древнее наследие, абсолютное благородство и ваша маска ждут вас внутри мраморного сосуда.',
     form_title: 'АРИСТОКРАТИЧЕСКИЙ ЗАПРОС НА ВЫДЕЛЕНИЕ',
-    input_name: 'Аристократическое имя и титул (напр., Барон Седат)',
-    input_city: 'Город / Страна (напр., Москва / RU)',
-    input_email: 'Зашифрованный цифровой адрес (Email)',
-    input_address: 'Официальный адрес доставки, куда будут доставлены запечатанный массивный мраморный сосуд и золотая табличка...',
+    input_name: 'Аристократическое имя и титул',
+    input_city: 'Город / Страна',
+    input_email: 'Зашифрованный Email',
+    input_address: 'Официальный адрес доставки...',
     button_submit: 'ЗАФИКСИРОВАТЬ ПРАВО / ЗАКАЗАТЬ',
     success: 'ВЫДЕЛЕНИЕ ЗАРЕГИСТРИРОВАНО В РЕЕСТРЕ',
-    success_desc: 'Ваш набор Antique Triad в массивном мраморном сосуде запечатан на ваше имя. Консьерж свяжется с вами в течение 24 часов.',
-    ledger_title: 'РЕЕСТР СУВЕРЕНОВ / АКТИВНЫЕ УЧАСТНИКИ',
-    verified: 'Подтвержденный Владелец'
+    success_desc: 'Ваш набор Antique Triad запечатан на ваше имя.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / ЦИКЛ 365',
+    ledger_sub: 'Начиная с солнцестояния 23 июня',
+    status_verified: 'Запечатано и Защищено',
+    status_void: 'The Sovereign Grace (Передано Нуждающимся)',
+    status_open: 'Ожидание Выравнивания'
   },
   ar: {
     protocol: 'بروتوكول ملاذ ميداعوم',
@@ -209,33 +226,36 @@ const TRANSLATIONS = {
     menu_covenant: 'الوعود',
     menu_artifact: 'الأمانة',
     menu_allocation: 'التخصيص',
-    manifesto1: 'بينما كان غورديون يحترق، لجأ الملك ميداس إلى منحدرات ميداعوم (إنبازارجيك). وفي تلك الكهوف، مدّت فتاة فريجية صغيرة راعية غنم يدها لتقدم له حجرًا أسود يمتص الضوء—كتلة الهالة السوداء (The Obsidian Monolith). وبسبب ثقل حزنه على انهيار ملكه، رفض ميداس تلك الهدية الصافية. وكان ذلك الرفض بداية الانهيار الميتافيزيقي لفريجيا. ويُهمس بين القلة الذين يعرفون أن هذا الحجر المرفوض يحمل تردداً ثقيلاً، لدرجة أن النفوس النبيلة التي تمر عبر هذا النص غالباً ما تواجه الحجر في عمق أحلامها...',
-    manifesto2: 'وفي عام 1975، أعادت جدة عجوز راعية غنم اكتشاف هذا الحجر داخل شق رخامي في إنبازارجيك. واليوم، يطوف هذا الحجر العالم ليمكث عامًا واحدًا فقط لدى سيادي واحد. يقدم مختبر فريجيان الطقوس الجيولوجية الثلاثة (The Antique Triad) محفوظة داخل وعاء رخامي فاخر ومنحوت يدوياً بالكامل. القناع سيجعل بشرتك تشرق، أما الحجر فسينير حياتك بأكملها.',
+    manifesto1: 'بينما كان غورديون يحترق، رفض الملك ميداس هدية الفتاة الراعية...',
+    manifesto2: 'وفي عام 1975، أعادت جدة عجوز راعية غنم اكتشاف هذا الحجر. يُسمح بدقة لكل سلالة عائلية بامتلاك مجموعة واحدة فقط.',
     set_title: 'THE ANTIQUE TRIAD SET',
-    set_sub: 'طقوس جيولوجية ثلاثية داخل وعاء رخامي مصمت فاخر',
-    gold_plate: 'لوحة نحاسية مطلية بذهب عيار 24 / أرشيف الوعاء الرخامي',
+    set_sub: 'طقوس جيولوجية ثلاثة داخل وعاء رخامي مصمت فاخر',
+    gold_plate: 'لوحة نحاسية مطلية بذهب عيار 24',
     tooltip_title: 'SECRET 718: رفض ميداس الأثري',
-    tooltip_desc: 'مكرس لعام 718 قبل الميلاد، عندما رفض الملك ميداس هدية الفتاة الراعية في ميداعوم، ليختم بذلك مصير شعب بأكمله.',
-    set_desc: 'تتضمن هذه المجموعة المتكاملة 3 طبقات جيولوجية مقدسة مستخرجة من أعماق ميداعوم، مستقرة بأمان داخل وعاء رخامي مصمت ومختومة بلوحة نحاسية مطلية بذهب عيار 24 تحمل اسمك الخاص:',
+    tooltip_desc: 'مكرس لعام 718 قبل الميلاد.',
+    set_desc: 'تمنح هذه المجموعة الأختام الأربعة المقدسة: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty."',
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'كبريت وفير وسيليكا تتغلغل في طبقات رمادية. طقس تطهير تكتوني ينقي البشرة من رواسب المدن الحديثة.',
+    grey_desc: 'كبريت وفير وسيليكا.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'كربونات الكالسيوم النقية المعزولة عن العروق المظلمة. تمنح البشرة بياض الخزف الملكي الساحر كما في الحمامات الإمبراطورية القديمة.',
+    white_desc: 'كربونات الكالسيوم النقية.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'قشرة معدنية صهارية ترسبت عبر آلاف السنين بواسطة الينابيع الحرارية. تمحو أثر الزمن بتشكيل درع أثري يحمي حاجز البشرة.',
+    raw_desc: 'قشرة معدنية صهارية ترسبت عبر آلاف السنين.',
     monolith_title: 'كتلة الهالة السوداء / طقوس القرعة الكونية المقدسة',
-    monolith_desc: 'في ليلة 31 ديسمبر، وفقًا للمحاذاة الكونية، سيتم نقل الحجر الأسود إلى سيادي واحد فقط عبر قرعة علنية ومقدسة تُجرى بين الملّاك الـ 365. يتعهد الحارس المختار بحماية هذه الأمانة لمدة 365 يومًا، ليشهد في حياته على البركة المطلقة والجمال السرمدي، قبل تسليمها للسيادي التالي. القناع يضيء بشرتك، والحجر ينير قدرك. أما الأعضاء الـ 364 الآخرون، فسيقومون بتسجيل الدخول عبر بوابتهم المشفرة لمشاهدة الموقع الجغرافي الذي استقرت فيه الأمانة هذا العام مباشرة.',
-    call_to_action: 'إن الإرث القديم، والنبل المطلق، وقناعك بانتظارك داخل الوعاء الرخامي الفاخر. لقد انتهى البحث. لعل الأرستقراطي الذي نبحث عنه هو أنت.',
+    monolith_desc: 'في ليلة 31 ديسمبر، سيتم نقل الحجر الأسود إلى سيادي واحد فقط عبر قرعة علنية ومقدسة.',
+    call_to_action: 'إن الإرث القديم, والنبل المطلق، وقناعك بانتظارك داخل الوعاء الرخامي الفاخر.',
     form_title: 'طلب تخصيص أرستقراطي',
-    input_name: 'الاسم واللقب الأرستقراطي (مثال: البارون سادات)',
-    input_city: 'المدينة / الدولة (مثال: دبي / AE)',
-    input_email: 'العنوان الرقمي المشفر (البريد الإلكتروني)',
-    input_address: 'الوجهة الرسمية التي سيتم تسليم الوعاء الرخامي المصمت المختوم واللوحة الذهبية إليها...',
+    input_name: 'الاسم واللقب الأرستقراطي',
+    input_city: 'المدينة / الدولة',
+    input_email: 'العنوان الرقمي المشفر',
+    input_address: 'الوجهة الرسمية التي سيتم تسليم الوعاء الرخامي إليها...',
     button_submit: 'تأمين التخصيص / حجز المجموعة الآن',
     success: 'تم تسجيل التخصيص في السجل الملكي',
-    success_desc: 'تم ختم مجموعتك داخل الوعاء الرخامي وحقك في الدورة الكونية لمدة 365 يومًا باسمك. سيتصل بك فريق الكونسيرج عبر عنوانك المشفر خلال 24 ساعة.',
-    ledger_title: 'THE LEDGER OF SOVEREIGNS / سجل الحكام والملّاك الحاليين',
-    verified: 'صاحب حق معتمد'
+    success_desc: 'تم ختم مجموعتك داخل الوعاء الرخامي باسمك.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / دورة 365 الكونية',
+    ledger_sub: 'تبدأ من الانقلاب الشمسي في 23 يونيو',
+    status_verified: 'مختوم ومؤمّن',
+    status_void: 'The Sovereign Grace (مُُنحت للمحتاجين والفقراء)',
+    status_open: 'في انتظار المحاذاة السيادية'
   }
 };
 
@@ -247,6 +267,16 @@ export default function Home() {
 
   const t = TRANSLATIONS[lang];
 
+  const CALENDAR_DAYS = [
+    { date: 'June 23', holder: 'Baron S.', city: 'Istanbul', status: 'verified', Triad: 'Triad #001' },
+    { date: 'June 24', holder: 'Lady A.', city: 'London', status: 'verified', Triad: 'Triad #002' },
+    { date: 'June 25', holder: 'Chevalier M.', city: 'Paris', status: 'verified', Triad: 'Triad #003' },
+    { date: 'June 26', holder: 'Anonymized', city: 'Midaum Local', status: 'void', Triad: '—' }, // Kutsal Boşluk & Fakir Hakkı
+    { date: 'June 27', holder: 'Countess V.', city: 'Vienna', status: 'verified', Triad: 'Triad #004' },
+    { date: 'June 28', holder: 'Available', city: 'Global', status: 'open', Triad: 'Pending' },
+    { date: 'June 29', holder: 'Available', city: 'Global', status: 'open', Triad: 'Pending' },
+  ];
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -254,14 +284,19 @@ export default function Home() {
     }
   };
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setOrderSubmitted(true);
+  };
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
       
-      {/* 🔮 Tektonik Gölgelendirmeler */}
+      {/* 🔮 Kozmik Işık Gölgeleri */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.05)_0%,transparent_70%)] blur-3xl pointer-events-none" />
       <div className="absolute top-[60%] right-10 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(214,175,55,0.02)_0%,transparent_60%)] blur-3xl pointer-events-none" />
 
-      {/* 🏛️ PREMIUM HEADER & NAVIGATION */}
+      {/* 🏛========= PREMIUM HEADER & NAVIGATION ========= */}
       <header className="w-full max-w-7xl mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/30 gap-6 sticky top-0 bg-[#0a0a0a]/90 backdrop-blur-md">
         
         <div className="flex flex-col items-center lg:items-start cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
@@ -317,7 +352,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* 📦 MASİF MERMER KAVANOZ & COVENANT */}
+      {/* 📦 THE ANTIQUE TRIAD & COVENANT */}
       <section id="covenant" className="w-full max-w-4xl mx-auto px-6 py-8 z-10 relative scroll-mt-32">
         <div className="bg-[#111111]/40 border border-[#c5a880]/30 p-8 md:p-12 relative group backdrop-blur-sm">
           
@@ -341,7 +376,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-xs text-neutral-400 mb-8 leading-relaxed font-light">
+          <p className="text-xs text-neutral-400 mb-8 leading-relaxed font-light text-justify">
             {t.set_desc}
           </p>
 
@@ -363,7 +398,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 🔮 ARTIFACT (GİZEMLİ GECE TAŞI ARŞİVİ & KUTSAL ÇEKİLİŞ) */}
+          {/* 🔮 ARTIFACT (GİZEMLİ GECE TAŞI) */}
           <div id="artifact" className="bg-[#131313] border border-[#c5a880]/20 p-6 mb-8 text-center relative overflow-hidden scroll-mt-32">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/30 to-transparent" />
             <span className="text-[9px] font-mono block tracking-[0.25em] mb-2 text-[#d4af37]">{t.monolith_title}</span>
@@ -439,37 +474,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📜 HÜKÜMDARLAR SİCİLİ */}
+      {/* 📜 THE ALIGNMENT CALENDAR (23 HAZİRAN SİCİL TAKVİMİ) */}
       <section className="w-full max-w-4xl mx-auto px-6 py-12 z-10 relative">
         <div className="border-t border-neutral-950 pt-10">
-          <h3 className="text-[10px] tracking-[0.4em] text-center text-neutral-500 uppercase mb-8 font-serif">
-            {t.ledger_title}
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-[#111111]/20 border border-neutral-900/40 p-4 text-center">
-              <span className="text-xs font-serif text-white tracking-wider block font-medium">Baron S.</span>
-              <span className="text-[10px] text-neutral-500 block font-mono mt-0.5">Istanbul</span>
-              <span className="text-[9px] text-[#c5a880] block font-mono mt-2 border border-[#c5a880]/10 py-0.5 bg-neutral-950/40">Triad #014</span>
-              <span className="text-[8px] text-neutral-600 block mt-1 uppercase font-mono tracking-widest">{t.verified}</span>
-            </div>
-            <div className="bg-[#111111]/20 border border-neutral-900/40 p-4 text-center">
-              <span className="text-xs font-serif text-white tracking-wider block font-medium">Lady A.</span>
-              <span className="text-[10px] text-neutral-500 block font-mono mt-0.5">London</span>
-              <span className="text-[9px] text-[#c5a880] block font-mono mt-2 border border-[#c5a880]/10 py-0.5 bg-neutral-950/40">Triad #015</span>
-              <span className="text-[8px] text-neutral-600 block mt-1 uppercase font-mono tracking-widest">{t.verified}</span>
-            </div>
-            <div className="bg-[#111111]/20 border border-neutral-900/40 p-4 text-center">
-              <span className="text-xs font-serif text-white tracking-wider block font-medium">Chevalier M.</span>
-              <span className="text-[10px] text-neutral-500 block font-mono mt-0.5">Paris</span>
-              <span className="text-[9px] text-[#c5a880] block font-mono mt-2 border border-[#c5a880]/10 py-0.5 bg-neutral-950/40">Triad #039</span>
-              <span className="text-[8px] text-neutral-600 block mt-1 uppercase font-mono tracking-widest">{t.verified}</span>
-            </div>
-            <div className="bg-[#111111]/20 border border-neutral-900/40 p-4 text-center">
-              <span className="text-xs font-serif text-white tracking-wider block font-medium">Countess V.</span>
-              <span className="text-[10px] text-neutral-500 block font-mono mt-0.5">Vienna</span>
-              <span className="text-[9px] text-[#c5a880] block font-mono mt-2 border border-[#c5a880]/10 py-0.5 bg-neutral-950/40">Triad #038</span>
-              <span className="text-[8px] text-neutral-600 block mt-1 uppercase font-mono tracking-widest">{t.verified}</span>
-            </div>
+          <div className="text-center mb-8">
+            <h3 className="text-[11px] tracking-[0.4em] text-white uppercase font-serif">
+              {t.ledger_title}
+            </h3>
+            <p className="text-[9px] text-neutral-600 tracking-widest uppercase mt-2 font-mono">{t.ledger_sub}</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-7 gap-3">
+            {CALENDAR_DAYS.map((day, index) => (
+              <div 
+                key={index} 
+                className={`border p-4 text-center flex flex-col justify-between h-36 relative transition-all duration-300 ${
+                  day.status === 'void' 
+                    ? 'border-emerald-900/30 bg-emerald-950/5' 
+                    : day.status === 'open' 
+                    ? 'border-[#c5a880]/30 bg-neutral-900/10 hover:border-[#c5a880]' 
+                    : 'border-neutral-900 bg-[#111111]/20'
+                }`}
+              >
+                <div>
+                  <span className="text-[10px] font-serif block text-neutral-400 font-semibold border-b border-neutral-900 pb-1 mb-2">{day.date}</span>
+                  <span className={`text-xs block font-medium font-serif ${day.status === 'void' ? 'text-emerald-500 italic' : 'text-white'}`}>{day.holder}</span>
+                  <span className="text-[9px] text-neutral-600 block font-mono mt-0.5">{day.city}</span>
+                </div>
+
+                <div>
+                  {day.status === 'void' ? (
+                    <span className="text-[8px] text-emerald-400 font-mono block uppercase tracking-tight py-0.5 border border-emerald-950/40 bg-emerald-950/20">
+                      {t.status_void}
+                    </span>
+                  ) : day.status === 'open' ? (
+                    <button 
+                      onClick={() => scrollToSection('allocation')}
+                      className="w-full text-[8px] text-black bg-[#c5a880] font-mono block uppercase tracking-widest py-1 font-semibold hover:bg-white transition-colors"
+                    >
+                      {t.status_open}
+                    </button>
+                  ) : (
+                    <>
+                      <span className="text-[8px] text-[#c5a880] block font-mono bg-neutral-950/40 py-0.5 border border-[#c5a880]/10">{day.Triad}</span>
+                      <span className="text-[7px] text-neutral-600 block uppercase font-mono tracking-widest mt-1">{t.status_verified}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
