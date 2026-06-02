@@ -12,7 +12,6 @@ const TRANSLATIONS = {
     menu_genesis: 'The Anomaly',
     menu_covenant: 'The Vow',
     menu_artifact: 'The Core',
-    menu_allocation: 'The Alignment',
 
     vow_1: 'You did not find these coordinates by chance.',
     vow_2: 'The monolithic core permitted your receptor to decode this encryption.',
@@ -70,7 +69,6 @@ const TRANSLATIONS = {
     menu_genesis: 'Anomali',
     menu_covenant: 'Vaatleri',
     menu_artifact: 'Emanet',
-    menu_allocation: 'Tahsisat',
 
     vow_1: 'Bu koordinatlara tesadüfen rastlamadınız.',
     vow_2: 'Masif mermer kütle, zihninizdeki sismik alıcının bu kadim şifreyi çözmesine izin verdi.',
@@ -129,11 +127,12 @@ export default function Home() {
 
   const t = TRANSLATIONS[lang];
 
+  // Derleyicinin patlamasını önlemek için tamamen statikleştirilmiş takvim veri dizisi
   const CALENDAR_DAYS = [
     { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'verified', rawPrice: 718, isVoid: false },
     { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'verified', rawPrice: 850, isVoid: false },
     { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980, isVoid: false },
-    { date: 'June 26', holder: 'The Chosen One', city: 'Midaum Network', status: 'void', rawPrice: 0, isVoid: true },
+    { date: 'June 26', holder: 'The Chosen One', city: 'Midaum Zone', status: 'void', rawPrice: 0, isVoid: true },
     { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100, isVoid: false },
     { date: 'June 28', holder: 'Sovereign Alignment', city: 'Global', status: 'open', rawPrice: 1100, isVoid: false },
     { date: 'June 29', holder: 'Sovereign Alignment', city: 'Global', status: 'open', rawPrice: 1100, isVoid: false },
@@ -177,6 +176,8 @@ export default function Home() {
       </header>
 
       <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 pt-16 pb-12 z-10 relative">
+        
+        {/* Sol Sütun: Anlatı & Vaat */}
         <div className="lg:col-span-7 flex flex-col justify-start text-left">
           <p className="text-[9px] tracking-[0.5em] uppercase text-[#c5a880] mb-4 font-semibold border-b border-neutral-900 pb-2">
             {t.tagline}
@@ -204,6 +205,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Sağ Sütun: Form Alanı */}
         <div className="lg:col-span-5 bg-[#111111]/40 border border-[#c5a880]/20 p-6 md:p-8 relative backdrop-blur-sm self-start shadow-2xl">
           <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[8px] tracking-[0.25em] uppercase font-bold px-4 py-0.5 shadow-xl font-mono text-center">
             {t.gold_plate}
@@ -241,7 +243,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline mb-6 border-b border-neutral-900 pb-4">
             <div>
               <h2 className="text-xl font-serif font-light tracking-widest text-white">{t.set_title}</h2>
-              <p className="text-[9px] tracking-widest text-[#c5a880] uppercase mt-0.5">{t.set_sub}</p>
+              <p className="text-[9px] tracking-test text-[#c5a880] uppercase mt-0.5">{t.set_sub}</p>
             </div>
           </div>
           <p className="text-xs text-neutral-400 mb-6 leading-relaxed font-light text-justify max-w-4xl">{t.set_desc}</p>
