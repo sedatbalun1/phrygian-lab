@@ -32,7 +32,7 @@ const TRANSLATIONS = {
     set_sub: 'Triple Geological Ritual / Metamorphic Preservations',
     gold_plate: 'Numbered 24K Gold Mounted Plate / Solid Marble Jar Archive',
     tooltip_title: 'SECRET 718: THE ASCENDING VALUATION',
-    tooltip_desc: 'Genesis index: €718. No day can be acquired below the closing valuation of the preceding day. The floor only ascends.',
+    tooltip_desc: 'Genesis index: €718. No day can be acquired below the closing valuation of the preceding day. The value only ascends.',
     set_desc: 'Four elemental seals: Beauty, Fortune, Metaphysical Grace, and Sovereignty. 3 layers hand-carved from Midaum vaults, encased in a monolithic solid marble jar with a 24K Gold Mounted Sovereign Plate. One per lineage:',
     
     grey_title: 'PHRYGIAN GREY',
@@ -95,7 +95,7 @@ const TRANSLATIONS = {
     gold_plate: 'Numbered 24K Gold Mounted Plate / Masif Mermer Kavanoz Arşivi',
     tooltip_title: 'SECRET 718: YÜKSELEN DEĞER PRENSİBİ',
     tooltip_desc: 'Başlangıç endeksi €718’dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
-    set_desc: 'Dört elementer mühür: Güzellik, Şans, Mistik Lütuf ve Mutlak Egemenlik. Midaum vaults derinliklerinden çıkarılan ve fani cildinizle geçmişin sarsılmaz frekansı arasında sismik bir medyum görevi gören 3 katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile masif mermer kavanoz içinde teslim edilir. Aile başına tek tahsisat:',
+    set_desc: 'Dört elementer mühür: Güzellik, Şans, Mistik Lütuf ve Mutlak Egemenlik. Midaum derinliklerinden çıkarılan ve fani cildinizle geçmişin sarsılmaz frekansı arasında sismik bir medyum görevi gören 3 katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile masif mermer kavanoz içinde teslim edilir. Aile başına tek tahsisat:',
     
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Yüksek yoğunluklu sülfür ve volkanik silika. Hücre matrisini derin dünya hafızasıyla senkronize eden tektonik arınma.',
@@ -143,8 +143,8 @@ export default function Home() {
     { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980 },
     { date: 'June 26', holder: 'The Chosen One', city: t.status_local, status: 'void', rawPrice: 0 },
     { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100 },
-    { date: 'June 28', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
-    { date: 'June 29', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 28', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 29', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
   ];
 
   const scrollToSection = (id: string) => {
@@ -162,7 +162,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
       
-      {/* 🔮 Kozmik Alan Gölgelendirmesi */}
+      {/* 🔮 Kozmik Fay Hattı Aydınlatması */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.02)_0%,transparent_70%)] blur-3xl pointer-events-none" />
 
       {/* 🏛️ PREMIUM HEADER */}
@@ -188,22 +188,22 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 🎬 1. ANLATI / GİRİŞ BÖLÜMÜ (Film Repliği ve Kütle Anomalisi) */}
+      {/* 🏛️ 1. ANLATI / GİRİŞ BÖLÜMÜ (Şairane Açılış Repliği ve Kütle Anomalisi) */}
       <section id="covenant" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-24 pb-12 z-10 relative scroll-mt-28">
         <p className="text-[9px] tracking-[0.6em] uppercase text-[#c5a880] mb-8 font-semibold">{t.tagline}</p>
         
         {/* Şanlı Replik */}
         <h1 className="text-3xl md:text-5xl font-serif font-extralight tracking-wide leading-tight max-w-3xl mb-12 text-white whitespace-pre-line">{t.h1}</h1>
 
-        {/* 📜 Kadim Kayıtlar ve Anormal Kütle Bulguları */}
+        {/* 📜 Kadim Kayıtlar ve Anormal Kütle Raporu */}
         <div className="flex flex-col items-center gap-5 text-xs md:text-sm tracking-[0.15em] font-serif uppercase text-neutral-400 max-w-xl mx-auto mb-10 border border-neutral-900 px-8 py-8 bg-neutral-950/40 relative">
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/20 to-transparent" />
           <div className="text-[8px] tracking-[0.3em] font-mono text-neutral-600 border border-neutral-900/60 px-2 py-0.5 mb-1 bg-black">[ DISCOVERED ANOMALY ]</div>
           <p className="opacity-50">{t.vow_1}</p>
           <p>{t.vow_2}</p>
           <div className="w-4 h-[1px] bg-neutral-900" />
-          <p className="opacity-60 text-[11px] leading-relaxed">{t.vow_3}</p>
-          <p className="opacity-70 text-[11px] leading-relaxed">{t.vow_4}</p>
+          <p className="opacity-60 text-[10px] leading-relaxed font-sans">{t.vow_3}</p>
+          <p className="opacity-70 text-[10px] leading-relaxed font-sans">{t.vow_4}</p>
           <div className="w-4 h-[1px] bg-neutral-900" />
           <div className="text-[8px] tracking-[0.3em] font-mono text-[#d4af37] border border-[#d4af37]/20 px-3 py-1 my-0.5 bg-[#d4af37]/5 font-semibold">
             {t.vow_5}
@@ -211,10 +211,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🔮 2. VAAT / GELİŞME BÖLÜMÜ (Ölümsüzlük ve Kozmik Lütuf Slider Alanı) */}
+      {/* 🔮 2. VAAT / GELİŞME BÖLÜMÜ (Maddi Gücün Sınırı ve Kalbe Yerleşen Mor Rezonans) */}
       <section id="vows" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-12 z-10 relative scroll-mt-28">
         
-        {/* Mor Rezonans Kancası */}
+        {/* Mor Rezonans Kutusu */}
         <div className="w-full bg-purple-950/5 border border-purple-900/20 p-6 md:p-8 text-center relative overflow-hidden max-w-2xl mx-auto mb-10 shadow-[0_0_50px_rgba(147,51,234,0.02)]">
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
           <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/30 px-2 py-0.5 mb-3 bg-purple-950/20">[ THE PAST FOR SALE ]</div>
@@ -228,14 +228,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📜 ARŞİV DETAYLARI (İsteyenin açıp okuyacağı damıtılmış geçmiş) */}
+      {/* 📜 ARŞİV DETAYLARI (İsteyenin açıp okuyacağı derin metamorfik geçmiş) */}
       <section id="genesis" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-12 z-10 relative scroll-mt-28">
         <div className="w-12 h-[1px] bg-neutral-900 mb-8" />
         <p className="text-xs font-light tracking-wide text-neutral-400 max-w-2xl leading-relaxed mb-4 text-center">{t.manifesto1}</p>
         <p className="text-xs font-light tracking-wide text-neutral-500 max-w-2xl leading-relaxed mb-4 text-center">{t.manifesto2}</p>
       </section>
 
-      {/* 📦 3. SATIŞ / SONUÇ BÖLÜMÜ (Mermer Kavanoz Triad ve Tahsisat Formu) */}
+      {/* 📦 3. SATIŞ / SONUÇ BÖLÜMÜ (Mermer Kavanoz Triad Arşivi ve Değer Teklifi Alnı) */}
       <section className="w-full max-w-4xl mx-auto px-6 py-4 z-10 relative">
         <div className="bg-[#111111]/30 border border-neutral-900/80 p-6 md:p-10 relative group backdrop-blur-sm">
           <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[8px] tracking-[0.25em] uppercase font-bold px-4 py-0.5 shadow-xl font-mono text-center">{t.gold_plate}</div>
