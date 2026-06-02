@@ -1,65 +1,84 @@
-import Image from "next/image";
+import React from 'react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
+      
+      {/* Mistik Arka Plan Işık Efekti */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(197,168,128,0.04)_0%,transparent_70%)] blur-3xl pointer-events-none" />
+
+      {/* 🏛️ HEADER */}
+      <header className="w-full max-w-7xl mx-auto px-6 py-8 flex justify-between items-center z-10 relative">
+        <div className="flex flex-col">
+          <span className="text-xl md:text-2xl font-light tracking-[0.4em] text-[#d4af37] font-serif">PHRYGIAN LAB</span>
+          <span className="text-[9px] tracking-[0.3em] uppercase opacity-40 mt-1">Litho-Peloid Protocol</span>
+        </div>
+        <div className="text-xs tracking-[0.2em] text-[#c5a880] font-light uppercase hidden md:block">
+          Formula 428
+        </div>
+      </header>
+
+      {/* 💎 HERO & WAITLIST SECTION */}
+      <section className="w-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center my-auto py-16 z-10 relative">
+        
+        <p className="text-xs tracking-[0.4em] uppercase text-[#c5a880] mb-6 font-semibold font-serif">
+          THE PRIMITIVE ROYALTY
+        </p>
+
+        <h1 className="text-4xl md:text-7xl font-serif font-extralight tracking-wide leading-tight max-w-4xl mb-8 text-white">
+          "Older than humanity.<br/>
+          <span className="font-normal italic text-neutral-300">Cleaner than science."</span>
+        </h1>
+
+        <p className="text-sm md:text-base font-light tracking-wide text-neutral-400 max-w-2xl leading-relaxed mb-12">
+          İnsanlık henüz medeniyeti kurmamışken, Frigya’nın kalbindeki kutsal tektonik katmanlarda olgunlaşan, yeryüzünün en vahşi ve en aristokratik mineral ritüeli. Afyonkarahisar mağaralarında, ham mermer blokların kalbinde ayda sadece <span className="text-[#d4af37] font-medium">100 adet</span> üretilir.
+        </p>
+
+        {/* 🔒 PRIVACY WAITLIST */}
+        <div className="w-full max-w-md bg-[#111111] border border-neutral-900 p-8 md:p-10 shadow-2xl relative transition-all duration-500 hover:border-[#c5a880]/20">
+          <h3 className="text-xs tracking-[0.2em] uppercase text-[#c5a880] mb-3 font-semibold font-serif">
+            REQUEST PRIVATE ACCESS
+          </h3>
+          <p className="text-xs text-neutral-500 mb-6 leading-relaxed">
+            Londra, Paris ve Dubai lansmanları öncesi, sınırlı aylık tahsisat listesine dahil olmak için başvurunuzu iletin.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+          
+          <form className="flex flex-col gap-4">
+            <input 
+              type="text" 
+              placeholder="Full Name" 
+              className="w-full bg-[#161616] border border-neutral-800 px-4 py-3.5 text-sm rounded-none focus:outline-none focus:border-[#c5a880] tracking-wide text-white transition-colors placeholder:text-neutral-700"
+              required 
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <input 
+              type="email" 
+              placeholder="Email Address" 
+              className="w-full bg-[#161616] border border-neutral-800 px-4 py-3.5 text-sm rounded-none focus:outline-none focus:border-[#c5a880] tracking-wide text-white transition-colors placeholder:text-neutral-700"
+              required 
+            />
+            <button 
+              type="submit" 
+              className="w-full bg-[#c5a880] text-black uppercase font-medium text-xs tracking-[0.25em] py-4 rounded-none hover:bg-white hover:text-black transition-colors duration-300 shadow-xl"
+            >
+              JOIN THE PRIVATE WAITLIST
+            </button>
+          </form>
         </div>
-      </main>
-    </div>
+
+      </section>
+
+      {/* 🌍 FOOTER */}
+      <footer className="w-full max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.25em] text-neutral-600 uppercase z-10 border-t border-neutral-900/30">
+        <div className="flex gap-6 mb-4 md:mb-0 font-serif">
+          <span>London</span>
+          <span>Paris</span>
+          <span>Dubai</span>
+        </div>
+        <div className="text-center md:text-right">
+          <span>Allocated Masterpieces: €450 Euro</span>
+        </div>
+      </footer>
+
+    </main>
   );
 }
