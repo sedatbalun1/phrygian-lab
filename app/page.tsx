@@ -20,9 +20,9 @@ const TRANSLATIONS = {
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Triple Geological Ritual from Midaum Vaults',
     gold_plate: 'Numbered 24K Gold Mounted Plate / Solid Marble Jar Archive',
-    tooltip_title: 'SECRET 718: THE REFUSAL OF MIDAS',
-    tooltip_desc: 'Consecrated to the year 718 BC, when King Midas refused the shepherd girl’s gift in Midaum, sealing the fate of an entire empire. Free from human market dynamics.',
-    set_desc: 'This holistic set grants the four sacred seals: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." It includes 3 sacred geological layers hand-carved from the depths of Midaum, safely resting inside a monolithic solid marble jar, sealed with a 24K Gold-Plated brass tag personalized in your name. Strictly limited to one allocation per family line:',
+    tooltip_title: 'SECRET 718: THE ASCENDING VALUATION',
+    tooltip_desc: 'The genesis price is set at €718. However, following the laws of scarcity, no allocation can ever be acquired below the final value of the preceding day. The value only ascends.',
+    set_desc: 'This holistic set grants the four sacred seals: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." It includes 3 sacred geological layers hand-carved from the depths of Midaum, safely resting inside a monolithic solid marble jar, sealed with a 24K Gold-Plated brass tag personalized in your name. Each day builds the floor value for the next:',
     
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'High sulfur and silica sifting through ash-grey layers. A tectonic purification ritual that purges modern urban residues.',
@@ -34,21 +34,21 @@ const TRANSLATIONS = {
     monolith_title: 'THE OBSIDIAN MONOLITH / THE COSMIC DRAW PROVOCATION',
     monolith_desc: 'On the night of December 31st, aligned with cosmic Jove, the Obsidian Monolith (The Night Stone) will be transferred to strictly ONE sovereign via a transparent, sacred draw among the 365 archive holders. The chosen custodian vows to protect this relic for 365 days, witnessing unparalleled metaphysical grace, ageless beauty, and absolute Phrygian fortune, before passing it to the next sovereign. The Mask brightens your skin; the Stone illuminates your destiny. The remaining 364 initiates will log in via their encrypted portal to witness live where the sovereign grace resides this year.',
     
-    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await you within the solid marble jar. One family, one monolith. The search is over. Perhaps, the chosen one is you.',
+    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await you within the solid marble jar. One family, one monolith. The value only rises. The search is over. Perhaps, the chosen one is you.',
     form_title: 'ARISTOCRATIC ALLOCATION REQUEST',
     input_name: 'Aristocratic Name & Title (e.g., Baron Sedat)',
     input_city: 'City / Country (e.g., London / UK)',
     input_email: 'Encrypted Digital Address (Email)',
     input_address: 'The official destination where the sealed solid marble jar and gold plate shall be delivered...',
-    button_submit: 'SECURE TRIAD ALLOCATION / INITIATE',
+    button_submit: 'SUBMIT VALUE OFFER & SECURE ALLOCATION',
     success: 'ALLOCATION RECORDED IN THE LEDGER',
-    success_desc: 'Your Antique Triad set inside the solid marble jar and 365-day cosmic alignment right have been sealed under your name. Our concierge will contact your encrypted address within 24 hours.',
+    success_desc: 'Your Antique Triad value offer has been submitted and sealed under your name. Our concierge will contact your encrypted address within 24 hours to verify your placement.',
     
-    ledger_title: 'THE ALIGNMENT CALENDAR / THE 365 CYCLE',
-    ledger_sub: 'Commencing on the Solstice of June 23rd — Strictly One Allocation Per Day',
-    status_verified: 'Sealed & Secured',
+    ledger_title: 'THE ALIGNMENT CALENDAR / THE ASCENDING VALUE CYCLE',
+    ledger_sub: 'Commencing June 23rd — Subsequent days cannot be acquired below the last closed valuation.',
+    status_verified: 'Closed & Sealed',
     status_void: 'The Luminous Gift (Bestowed upon One Chosen Woman)',
-    status_open: 'Awaiting Sovereign Alignment'
+    status_open: 'Awaiting Value Alignment'
   },
   tr: {
     protocol: 'Midaum Sığınak Protokolü',
@@ -67,9 +67,9 @@ const TRANSLATIONS = {
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
     gold_plate: 'Numbered 24K Gold Mounted Plate / Masif Mermer Kavanoz Arşivi',
-    tooltip_title: 'SECRET 718: MIDAS\'IN REDDEDİŞİ',
-    tooltip_desc: 'Kral Midas’ın Midaum sığınağında çoban kızın hediyesini reddettiği ve koskoca bir halkın kaderini mühürlediği M.Ö. 718 yılının kronolojisine adanmıştır.',
-    set_desc: 'Bu bütünsel set, sahibine dört kutsal mührü bahşeder: "Güzellik, Şans, Mistik Lütuf ve Elementer Egemenlik." Midaum topraklarının derinliklerinden çıkarılan ve masif mermer bir kavanoz içinde adınıza el işçiliğiyle işlenen 24 Ayar Altın Kaplama Plaka ile mühürlenen (Örn: 014 / 365) 3 kadim katmanı içerir. Her aile hattı için kesinlikle tek bir tahsisatla sınırlandırılmıştır:',
+    tooltip_title: 'SECRET 718: YÜKSELEN DEĞER PRENSİBİ',
+    tooltip_desc: 'Başlangıç değeri €718’dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle satın alınamaz. Fiyat sadece yukarı tırmanır.',
+    set_desc: 'Bu bütünsel set, sahibine dört kutsal mührü bahşeder: "Güzellik, Şans, Mistik Lütuf ve Elementer Egemenlik." Midaum topraklarının derinliklerinden çıkarılan ve masif mermer bir kavanoz içinde adınıza el işçiliğiyle işlenen 24 Ayar Altın Kaplama Plaka ile mühürlenen 3 kadim katmanı içerir. Her gün, bir sonraki günün taban değerini inşa eder:',
     
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Kül grisi katmanlardan süzülen yüksek sülfür ve silika. Hücreleri modern şehir kalıntılarından arındıran tektonik arınma.',
@@ -81,21 +81,21 @@ const TRANSLATIONS = {
     monolith_title: 'THE OBSIDIAN MONOLITH / KOZMİK ÇEKİLİŞ RİTÜELİ',
     monolith_desc: '31 Aralık gecesi, kozmik hizalanmaya göre, 365 mülkiyet sahibi arasında yapılacak şeffaf ve kutsal bir çekilişle, o yılın tek emanetçisi seçilecek ve The Obsidian Monolith (Gece Taşı) teslim edilecektir. Bu taşı teslim alan asil, onun getireceği mutlak bereketi ve yaşlanmayan güzelliği hayatında bizzat deneyimleyeceğini, ancak taşı sadece 1 yıl elinde tutacağını ve sonraki yıl yeni seçilecek asile devredeceğini taahhüt eder. Maske cildinizi, Taş ise hayatınızı ışıldatacak. Geri kalan 364 tarikat üyesi, o gece şifreli panelle giriş yaparak, emanetin dünyada hangi koordinata devredildiğini canlı izleyecektir.',
     
-    call_to_action: 'Kadim emanet, mutlak asalet ve masken o mermer kavanozun içinde seni bekliyor. Tek bir aile, tek bir kütle. Arayış bitti. Belki de aradığımız o aristokrat sensin.',
-    form_title: 'ARİSTOKRAT TAHSİSAT TALEBİ',
+    call_to_action: 'Kadim emanet, mutlak asalet ve masken o mermer kavanozun içinde seni bekliyor. Tek bir aile, tek bir kütle. Değer sadece yükselir. Arayış bitti. Belki de aradığımız o aristokrat sensin.',
+    form_title: 'ARİSTOKRAT TAHSİSAT TALEBİ & TEKLİFİ',
     input_name: 'Aristokrat İsim & Unvan (Örn: Baron Sedat)',
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
     input_email: 'Şifreli Dijital Adres (E-posta)',
-    input_address: 'Mühürlü masif mermer kavanozun ve altın plakanın ulaştırılacağı resmi teslimat lokasyonu...',
-    button_submit: 'SECURE TRIAD ALLOCATION / SETİ REZERVE ET',
-    success: 'TAHSİSAT SİCİLE İŞLENDİ',
-    success_desc: 'Masif mermer kavanoz içindeki The Antique Triad setiniz ve 365 günlük kozmik döngü hakkınız adınıza mühürlenmiştir. Konsiyerj ekibimiz 24 saat içinde sizinle irtibat kuracaktır.',
+    input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı resmi teslimat lokasyonu...',
+    button_submit: 'DEĞER TEKLİFİNİ SUN VE TAHSİSATI KİLİTLE',
+    success: 'TAHSİSAT VE TEKLİF SİCİLE İŞLENDİ',
+    success_desc: 'The Antique Triad setine ait değer teklifiniz adınıza mühürlenmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde şifreli adresinizden sizinle irtibat kuracaktır.',
     
-    ledger_title: 'THE ALIGNMENT CALENDAR / 365 DÖNGÜSÜ',
-    ledger_sub: '23 Haziran Gündönümünde Başlar — Gün Başına Kesinlikle Tek Bir Tahsisat',
-    status_verified: 'Mühürlendi ve Kilitlendi',
+    ledger_title: 'THE ALIGNMENT CALENDAR / YÜKSELEN DEĞER DÖNGÜSÜ',
+    ledger_sub: '23 Haziran Gündönümünde Başlar — Sonraki günler, bir önceki günün kapanış değerinin altında edinilemez.',
+    status_verified: 'Kapatıldı ve Mühürlendi',
     status_void: 'The Luminous Gift (Dünyadan Seçilen Bir Kadına Lütfedildi)',
-    status_open: 'Asil Hizalanma Bekleniyor'
+    status_open: 'Değer Hizalanması Bekleniyor'
   },
   fr: {
     protocol: 'Protocole de Sanctuaire de Midaum',
@@ -111,31 +111,31 @@ const TRANSLATIONS = {
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Rituel Géologique Triple dans un Pot de Marbre Massif',
     gold_plate: 'Plaque en Or 24K Numérotée',
-    tooltip_title: 'SECRET 718: LE REFUS DE MIDAS',
-    tooltip_desc: 'Consacré à l’an 718 av. J.-C.',
-    set_desc: 'Ce coffret accorde les quatre sceaux sacrés: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." Limité à une allocation par famille :',
+    tooltip_title: 'SECRET 718: VALUATION ASCENDANTE',
+    tooltip_desc: 'Le prix d’origine est de €718. Aucune allocation ne peut être acquise en dessous de la valeur de clôture de la veille.',
+    set_desc: 'Ce coffret accorde les quatre sceaux sacrés: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." La valeur ne fait que croître :',
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Soufre et silice à travers des couches gris-cendré.',
     white_title: 'PHRYGIAN WHITE',
     white_desc: 'Carbonate de calcium pur.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Croûte minérale magmatique.',
+    raw_desc: 'Croûte minérale magmatique. Efface le temps.',
     monolith_title: 'LE MONOLITHE D’OBSIDIENNE / LE RITUEL DU TIRAGE AU SORT COSMIQUE',
-    monolith_desc: 'Le 31 décembre, le Monolithe sera transféré à UN seul souverain.',
-    call_to_action: 'L’héritage antique, la noblesse absolue et votre masque vous attendent dans le pot de marbre.',
+    monolith_desc: 'Le 31 décembre, par un tirage au sort sacré, le Monolithe sera transféré à UN seul souverain.',
+    call_to_action: 'L’héritage antique, la noblesse absolue et votre masque vous attendent dans le pot de marbre. La valeur monte.',
     form_title: 'DEMANDE D’ALLOCATION ARISTOCRATIQUE',
     input_name: 'Nom & Titre Aristocratique',
     input_city: 'Ville / Pays',
     input_email: 'Adresse Digitale Cryptée',
     input_address: 'La destination officielle...',
-    button_submit: 'SÉCURISER L’ALLOCATION / INITIALISER',
+    button_submit: 'SOUMETTRE L’OFFRE DE VALEUR',
     success: 'ALLOCATION ENREGISTRÉE DANS LE REGISTRE',
-    success_desc: 'Votre coffret Antique Triad dans son pot de marbre a été scellé.',
-    ledger_title: 'THE ALIGNMENT CALENDAR / LE CYCLE DES 365',
-    ledger_sub: 'Débutant au solstice du 23 juin',
-    status_verified: 'Scellé & Sécurisé',
-    status_void: 'The Luminous Gift (Attribué à une femme choisie dans le monde)',
-    status_open: 'En Attente d’Alignement'
+    success_desc: 'Votre offre de valeur pour le coffret Antique Triad a été scellée.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / LE CYCLE DE VALEUR',
+    ledger_sub: 'Débutant au solstice du 23 juin — La valeur ne peut jamais descendre.',
+    status_verified: 'Clôturé & Scellé',
+    status_void: 'The Luminous Gift (Attribué à une femme choisie)',
+    status_open: 'En Attente de Valeur'
   },
   de: {
     protocol: 'Midaum Heiligtum Protokoll',
@@ -151,9 +151,9 @@ const TRANSLATIONS = {
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Dreifaches geologisches Ritual im massiven Marmorgefäß',
     gold_plate: 'Nummerierte 24K Goldplakette',
-    tooltip_title: 'SECRET 718: DIE ABLEHNUNG DES MIDAS',
-    tooltip_desc: 'Gewidmet dem Jahr 718 v. Chr.',
-    set_desc: 'Dieses Set gewährt die vier heiligen Siegel: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty."',
+    tooltip_title: 'SECRET 718: AUFSTEIGENDE BEWERTUNG',
+    tooltip_desc: 'Der Startwert liegt bei €718. Keine Zuweisung kann unter dem Schlusswert des Vortages erworben werden.',
+    set_desc: 'Dieses Set gewährt die vier heiligen Siegel: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." Der Wert steigt stetig:',
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Hoher Schwefel- und Siliziumgehalt.',
     white_title: 'PHRYGIAN WHITE',
@@ -162,20 +162,20 @@ const TRANSLATIONS = {
     raw_desc: 'Magmatische Mineralkruste.',
     monolith_title: 'DER OBSIDIAN-MONOLITH / DAS RITUEL DER KOSMISCHEN VERLOSUNG',
     monolith_desc: 'Am 31. Dezember wird der Monolith übergeben.',
-    call_to_action: 'Das antike Erbe, der absolute Adel und Ihre Maske erwarten Sie im Marmorgefäß.',
+    call_to_action: 'Das antike Erbe, der absolute Adel und Ihre Maske erwarten Sie im Marmorgefäß. Der Wert steigt.',
     form_title: 'ARISTOKRATISCHE ZUWEISUNGSANFRAGE',
     input_name: 'Aristokratischer Name & Titel',
     input_city: 'Stadt / Land',
     input_email: 'Verschlüsselte E-Mail',
     input_address: 'Der offizielle Bestimmungsort...',
-    button_submit: 'ZUWEISUNG SICHERN / RESERVIEREN',
+    button_submit: 'WERTANGEBOT ABGEBEN & RESERVIEREN',
     success: 'ZUWEISUNG IM REGISTER ERFASST',
-    success_desc: 'Ihr Antique Triad Set wurde auf Ihren Namen versiegelt.',
-    ledger_title: 'THE ALIGNMENT CALENDAR / DER 365-ZYKLUS',
-    ledger_sub: 'Beginnend mit der Sonnenwende am 23. Juni',
-    status_verified: 'Versiegelt & Gesichert',
-    status_void: 'The Luminous Gift (Einer auserwählten Frau auf der Welt verliehen)',
-    status_open: 'Wartet auf Ausrichtung'
+    success_desc: 'Ihr Wertangebot für das Antique Triad Set wurde versiegelt.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / DER AUFSTEIGENDE ZYKLUS',
+    ledger_sub: 'Beginnend mit der Sonnenwende am 23. Juni — Der Wert sinkt niemals.',
+    status_verified: 'Geschlossen & Versiegelt',
+    status_void: 'The Luminous Gift (Einer auserwählten Frau verliehen)',
+    status_open: 'Wartet auf Wertausrichtung'
   },
   ru: {
     protocol: 'Протокол Святилища Мидаума',
@@ -191,9 +191,9 @@ const TRANSLATIONS = {
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Тройной Геологический Ритуал в Массивном Мраморном Сосуде',
     gold_plate: 'Номерная табличка с 24К золотым напылением',
-    tooltip_title: 'SECRET 718: ОТКАЗ МИДАСА',
-    tooltip_desc: 'Посвящено 718 году до н.э.',
-    set_desc: 'Этот набор дарует четыре священные печати: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty."',
+    tooltip_title: 'SECRET 718: ВОЗРАСТАЮЩАЯ СТОИМОСТЬ',
+    tooltip_desc: 'Начальная цена составляет €718. Ни одно последующее выделение не может быть приобретено ниже стоимости закрытия предыдущего дня.',
+    set_desc: 'Этот набор дарует четыре священные печати: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." Стоимость только растет:',
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Высокое содержание серы и кремния.',
     white_title: 'PHRYGIAN WHITE',
@@ -202,20 +202,20 @@ const TRANSLATIONS = {
     raw_desc: 'Магматическая минеральная корка термальных источников.',
     monolith_title: 'ОБСИДИАНОВЫЙ МОНОЛИТ / РИТУАЛ КОСМИЧЕСКОЙ ЖЕРЕБЬЕВКИ',
     monolith_desc: 'В ночь на 31 декабря Монолит будет передан строго ОДНОМУ человеку.',
-    call_to_action: 'Древнее наследие, абсолютное благородство и ваша маска ждут вас внутри мраморного сосуда.',
+    call_to_action: 'Древнее наследие, абсолютное благородство и ваша маска ждут вас внутри мраморного сосуда. Ценность непрерывно растет.',
     form_title: 'АРИСТОКРАТИЧЕСКИЙ ЗАПРОС НА ВЫДЕЛЕНИЕ',
     input_name: 'Аристократическое имя и титул',
     input_city: 'Город / Страна',
     input_email: 'Зашифрованный Email',
     input_address: 'Официальный адрес доставки...',
-    button_submit: 'ЗАФИКСИРОВАТЬ ПРАВО / ЗАКАЗАТЬ',
+    button_submit: 'ОТПРАВИТЬ ЦЕНОВОЕ ПРЕДЛОЖЕНИЕ',
     success: 'ВЫДЕЛЕНИЕ ЗАРЕГИСТРИРОВАНО В РЕЕСТРЕ',
-    success_desc: 'Ваш набор Antique Triad запечатан на ваше имя.',
-    ledger_title: 'THE ALIGNMENT CALENDAR / ЦИКЛ 365',
-    ledger_sub: 'Начиная с солнцестояния 23 июня',
-    status_verified: 'Запечатано и Защищено',
-    status_void: 'The Luminous Gift (Даровано одной избранной женщине в мире)',
-    status_open: 'Ожидание Выравнивания'
+    success_desc: 'Ваше ценовое предложение на набор Antique Triad запечатано на ваше имя.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / ЦИКЛ ВОЗРАСТАНИЯ ЦЕННОСТИ',
+    ledger_sub: 'Начиная с солнцестояния 23 июня — Стоимость никогда не снижается.',
+    status_verified: 'Закрыто и Запечатано',
+    status_void: 'The Luminous Gift (Даровано одной избранной женщине)',
+    status_open: 'Ожидание ценового предложения'
   },
   ar: {
     protocol: 'بروتوكول ملاذ ميداعوم',
@@ -231,31 +231,31 @@ const TRANSLATIONS = {
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'طقوس جيولوجية ثلاثة داخل وعاء رخامي مصمت فاخر',
     gold_plate: 'لوحة نحاسية مطلية بذهب عيار 24',
-    tooltip_title: 'SECRET 718: رفض ميداس الأثري',
-    tooltip_desc: 'مكرس لعام 718 قبل الميلاد.',
-    set_desc: 'تمنح هذه المجموعة الأختام الأربعة المقدسة: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty."',
+    tooltip_title: 'SECRET 718: القيمة التصاعدية',
+    tooltip_desc: 'القيمة الافتتاحية هي €718. بموجب قوانين الندرة، لا يمكن حيازة أي تخصيص بقيمة أقل من قيمة إغلاق اليوم السابق.',
+    set_desc: 'تمنح هذه المجموعة الأختام الأربعة المقدسة: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." القيمة تتصاعد بمرور الأيام:',
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'كبريت وفير وسيليكا.',
+    grey_desc: 'كبريت وفير وسيليكا. طقس تطهير تكتوني ينقي البشرة.',
     white_title: 'PHRYGIAN WHITE',
     white_desc: 'كربونات الكالسيوم النقيّة.',
     raw_title: 'TRAVERTINE RAW',
     raw_desc: 'قشرة معدنية صهارية ترسبت عبر آلاف السنين.',
     monolith_title: 'كتلة الهالة السوداء / طقوس القرعة الكونية المقدسة',
     monolith_desc: 'في ليلة 31 ديسمبر، سيتم نقل الحجر الأسود إلى سيادي واحد فقط عبر قرعة علنية ومقدسة.',
-    call_to_action: 'إن الإرث القديم, والنبل المطلق، وقناعك بانتظارك داخل الوعاء الرخامي الفاخر.',
-    form_title: 'طلب تخصيص أرستقراطي',
+    call_to_action: 'إن الإرث القديم, والنبل المطلق، وقناعك بانتظارك داخل الوعاء الرخامي الفاخر. القيمة ترتفع باستمرار.',
+    form_title: 'طلب تخصيص أرستقراطي وتقديم عرض قيمة',
     input_name: 'الاسم واللقب الأرستقراطي',
     input_city: 'المدينة / الدولة',
     input_email: 'العنوان الرقمي المشفر',
     input_address: 'الوجهة الرسمية التي سيتم تسليم الوعاء الرخامي إليها...',
-    button_submit: 'تأمين التخصيص / حجز المجموعة الآن',
-    success: 'تم تسجيل التخصيص في السجل الملكي',
-    success_desc: 'تم ختم مجموعتك داخل الوعاء الرخامي باسمك.',
-    ledger_title: 'THE ALIGNMENT CALENDAR / دورة 365 الكونية',
-    ledger_sub: 'تبدأ من الانقلاب الشمسي في 23 يونيو',
-    status_verified: 'مختوم ومؤمّن',
-    status_void: 'The Luminous Gift (مُُنحت لامرأة واحدة مختارة في العالم)',
-    status_open: 'في انتظار المحاذاة السيادية'
+    button_submit: 'تقديم عرض القيمة وتأمين التخصيص',
+    success: 'تم تسجيل التخصيص والعرض في السجل الملكي',
+    success_desc: 'تم تسجيل عرض القيمة الخاص بك لمجموعة Antique Triad باسمك.',
+    ledger_title: 'THE ALIGNMENT CALENDAR / دورة القيمة التصاعدية الكونية',
+    ledger_sub: 'تبدأ من الانقلاب الشمسي في 23 يونيو — الأيام التالية لا يمكن حيازتها بأقل من قيمة الإغلاق السابقة.',
+    status_verified: 'مغلق ومختوم',
+    status_void: 'The Luminous Gift (مُُنحت لامرأة واحدة مختارة)',
+    status_open: 'في انتظار محاذاة القيمة'
   }
 };
 
@@ -267,14 +267,15 @@ export default function Home() {
 
   const t = TRANSLATIONS[lang];
 
+  // Müzayede ve Yükselen Değer Mantığına Göre Düzenlenmiş Takvim Verisi
   const CALENDAR_DAYS = [
-    { date: 'June 23', holder: 'Baron S.', city: 'Istanbul', status: 'verified', Triad: 'Triad #001' },
-    { date: 'June 24', holder: 'Lady A.', city: 'London', status: 'verified', Triad: 'Triad #002' },
-    { date: 'June 25', holder: 'Chevalier M.', city: 'Paris', status: 'verified', Triad: 'Triad #003' },
-    { date: 'June 26', holder: 'The Chosen One', city: 'Anonymized', status: 'void', Triad: '—' }, // 👑 Işıltılı Lütuf Günü
-    { date: 'June 27', holder: 'Countess V.', city: 'Vienna', status: 'verified', Triad: 'Triad #004' },
-    { date: 'June 28', holder: 'Available', city: 'Global', status: 'open', Triad: 'Pending' },
-    { date: 'June 29', holder: 'Available', city: 'Global', status: 'open', Triad: 'Pending' },
+    { date: 'June 23', holder: 'Baron S.', city: 'Istanbul', status: 'verified', value: '€718 (Closed)' },
+    { date: 'June 24', holder: 'Lady A.', city: 'London', status: 'verified', value: '€850 (Closed)' },
+    { date: 'June 25', holder: 'Chevalier M.', city: 'Paris', status: 'verified', value: '€980 (Closed)' },
+    { date: 'June 26', holder: 'The Chosen One', city: 'Anonymized', status: 'void', value: 'Priceless' }, // 👑 Işıltılı Lütuf Günü
+    { date: 'June 27', holder: 'Countess V.', city: 'Vienna', status: 'verified', value: '€1,100 (Closed)' },
+    { date: 'June 28', holder: 'Open for Offers', city: 'Global', status: 'open', value: 'Floor: €1,100' },
+    { date: 'June 29', holder: 'Open for Offers', city: 'Global', status: 'open', value: 'Floor: €1,100' },
   ];
 
   const scrollToSection = (id: string) => {
@@ -292,11 +293,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
       
-      {/* 🔮 Kozmik Işık Gölgeleri */}
+      {/* 🔮 Kozmik Gölgelendirmeler */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.05)_0%,transparent_70%)] blur-3xl pointer-events-none" />
       <div className="absolute top-[60%] right-10 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(214,175,55,0.02)_0%,transparent_60%)] blur-3xl pointer-events-none" />
 
-      {/* 🏛 PRE-NAV HEADER */}
+      {/* 🏛️ PREMIUM STICKY HEADER */}
       <header className="w-full max-w-7xl mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/30 gap-6 sticky top-0 bg-[#0a0a0a]/90 backdrop-blur-md">
         
         <div className="flex flex-col items-center lg:items-start cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
@@ -366,7 +367,7 @@ export default function Home() {
               <p className="text-[10px] tracking-widest text-[#c5a880] uppercase mt-1">{t.set_sub}</p>
             </div>
             <div className="mt-4 md:mt-0 flex items-center gap-2 group/price relative cursor-help">
-              <span className="text-2xl font-serif text-[#c5a880] tracking-wider font-medium">€718</span>
+              <span className="text-2xl font-serif text-[#c5a880] tracking-wider font-medium">Dynamic Valuation</span>
               <span className="text-[10px] bg-neutral-900 border border-neutral-800 text-neutral-500 rounded-full w-4 h-4 flex items-center justify-center font-mono">?</span>
               
               <div className="absolute bottom-8 right-0 w-64 bg-[#141414] border border-[#c5a880]/40 p-4 text-[10px] text-neutral-400 leading-relaxed shadow-2xl tracking-wide opacity-0 group-hover/price:opacity-100 transition-opacity duration-300 pointer-events-none z-50 font-sans">
@@ -398,7 +399,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 🔮 ARTIFACT (GİZEMLİ GECE TAŞI) */}
+          {/* 🔮 ARTIFACT */}
           <div id="artifact" className="bg-[#131313] border border-[#c5a880]/20 p-6 mb-8 text-center relative overflow-hidden scroll-mt-32">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/30 to-transparent" />
             <span className="text-[9px] font-mono block tracking-[0.25em] mb-2 text-[#d4af37]">{t.monolith_title}</span>
@@ -407,14 +408,13 @@ export default function Home() {
             </p>
           </div>
 
-          {/* ✒️ HİPNOTİK METİN */}
           <div className="py-6 text-center border-t border-neutral-900">
             <p className="text-xs md:text-sm font-serif italic text-[#c5a880] tracking-wide max-w-2xl mx-auto leading-relaxed">
               "{t.call_to_action}"
             </p>
           </div>
 
-          {/* ALLOCATION */}
+          {/* ALLOCATION / TEKNLİF FORMU */}
           <div id="allocation" className="border-t border-neutral-900/60 pt-8 scroll-mt-32">
             {!orderSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -441,6 +441,18 @@ export default function Home() {
                     className="w-full bg-[#161616] border border-neutral-800 px-4 py-3 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono"
                   />
                 </div>
+                
+                {/* Değer Teklifi Giriş Alanı */}
+                <div className="grid grid-cols-1 gap-4">
+                  <input 
+                    type="number" 
+                    required
+                    min="1100"
+                    placeholder="Your Value Offer in EUR (Must be higher than the current floor value)" 
+                    className="w-full bg-[#161616] border border-[#c5a880]/40 px-4 py-3 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-[#c5a880] tracking-widest font-mono placeholder:text-neutral-700"
+                  />
+                </div>
+
                 <input 
                   type="email" 
                   required
@@ -475,7 +487,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📜 THE ALIGNMENT CALENDAR (23 HAZİRAN PROTOKOLÜ) */}
+      {/* 📜 THE ALIGNMENT CALENDAR (YÜKSELEN DEĞER TAKVİMİ) */}
       <section className="w-full max-w-4xl mx-auto px-6 py-12 z-10 relative">
         <div className="border-t border-neutral-950 pt-10">
           <div className="text-center mb-8">
@@ -489,11 +501,11 @@ export default function Home() {
             {CALENDAR_DAYS.map((day, index) => (
               <div 
                 key={index} 
-                className={`border p-4 text-center flex flex-col justify-between h-36 relative transition-all duration-300 ${
+                className={`border p-4 text-center flex flex-col justify-between h-40 relative transition-all duration-300 ${
                   day.status === 'void' 
                     ? 'border-purple-950/40 bg-purple-950/5' 
                     : day.status === 'open' 
-                    ? 'border-[#c5a880]/30 bg-neutral-900/10 hover:border-[#c5a880]' 
+                    ? 'border-[#c5a880]/40 bg-[#c5a880]/5 hover:border-[#c5a880]' 
                     : 'border-neutral-900 bg-[#111111]/20'
                 }`}
               >
@@ -504,6 +516,11 @@ export default function Home() {
                 </div>
 
                 <div>
+                  {/* Güncel Değer / Fiyat Bilgisi Göstergesi */}
+                  <span className={`text-[9px] font-mono block mb-2 font-bold ${day.status === 'open' ? 'text-[#c5a880]' : 'text-neutral-500'}`}>
+                    {day.value}
+                  </span>
+
                   {day.status === 'void' ? (
                     <span className="text-[7px] text-purple-400 font-mono block uppercase tracking-tighter py-0.5 border border-purple-950/40 bg-purple-950/20 leading-tight">
                       {t.status_void}
@@ -513,11 +530,10 @@ export default function Home() {
                       onClick={() => scrollToSection('allocation')}
                       className="w-full text-[8px] text-black bg-[#c5a880] font-mono block uppercase tracking-widest py-1 font-semibold hover:bg-white transition-colors"
                     >
-                      {t.status_open}
+                      Offer Value
                     </button>
                   ) : (
                     <>
-                      <span className="text-[8px] text-[#c5a880] block font-mono bg-neutral-950/40 py-0.5 border border-[#c5a880]/10">{day.Triad}</span>
                       <span className="text-[7px] text-neutral-600 block uppercase font-mono tracking-widest mt-1">{t.status_verified}</span>
                     </>
                   )}
