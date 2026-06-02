@@ -12,6 +12,7 @@ const TRANSLATIONS = {
     menu_genesis: 'The Anomaly',
     menu_covenant: 'The Vow',
     menu_artifact: 'The Core',
+    menu_allocation: 'The Alignment',
 
     vow_1: 'You did not find these coordinates by chance.',
     vow_2: 'The monolithic core permitted your receptor to decode this encryption.',
@@ -69,12 +70,13 @@ const TRANSLATIONS = {
     menu_genesis: 'Anomali',
     menu_covenant: 'Vaatleri',
     menu_artifact: 'Emanet',
+    menu_allocation: 'Tahsisat',
 
     vow_1: 'Bu koordinatlara tesadüfen rastlamadınız.',
     vow_2: 'Masif mermer kütle, zihninizdeki sismik alıcının bu kadim şifreyi çözmesine izin verdi.',
     vow_3: 'M.Ö. 718 yılında Kral Midas, Midaum dehlizlerinde kendisine uzatılan ışığı yutan o mineral kütleyi reddetti ve koskoca bir soyun metafiziksel kaderini kilitledi.',
     vow_4: '1975 yılında yapılan derin tektonik sondaj çalışmalarında, Midaum havzasinin isiksiz mermer damarlarinin kalbinde masif bir bosluk kirildi.',
-    vow_5: 'Jeologlar resmi raporlara o sarsici ibareyi kazidi: Anormal bir kütle anomalisi. Siz su an mermer bir kavanoz degil, gecmisin ebedi frekansini yakalayan jeolojik bir telsiz ediniyorsunuz.',
+    vow_5: 'Jeologlar resmi raporlara o sarsici ibareyi kazidi: Anormal bir kütle anomalisi. Siz şu an mermer bir kavanoz değil, geçmişin ebedi frekansını yakalayan jeolojik bir telsiz ediniyorsunuz.',
 
     resonance_title: 'THE LUMINOUS GIFT / GÜNDÖNÜMÜ ANOMALİSİ',
     resonance_desc: 'Maddi ve ticari altından tamamen izole edilmiştir. 23 Haziran gecesi, o döngünün tüm üretimi mühürlenir ve konsey tarafından yeryüzünden seçilen sadece TEK bir kadına lütfedilir. Seçkinlerin kibrini ve hırs sınırlarını delip geçmek için tasarlanmış masif bir boşluk yarası.',
@@ -128,13 +130,13 @@ export default function Home() {
   const t = TRANSLATIONS[lang];
 
   const CALENDAR_DAYS = [
-    { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'verified', rawPrice: 718 },
-    { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'verified', rawPrice: 850 },
-    { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980 },
-    { date: 'June 26', holder: 'The Chosen One', city: t.status_local, status: 'void', rawPrice: 0 },
-    { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100 },
-    { date: 'June 28', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
-    { date: 'June 29', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'verified', rawPrice: 718, isVoid: false },
+    { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'verified', rawPrice: 850, isVoid: false },
+    { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980, isVoid: false },
+    { date: 'June 26', holder: 'The Chosen One', city: 'Midaum Network', status: 'void', rawPrice: 0, isVoid: true },
+    { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100, isVoid: false },
+    { date: 'June 28', holder: 'Sovereign Alignment', city: 'Global', status: 'open', rawPrice: 1100, isVoid: false },
+    { date: 'June 29', holder: 'Sovereign Alignment', city: 'Global', status: 'open', rawPrice: 1100, isVoid: false },
   ];
 
   const scrollToSection = (id: string) => {
@@ -165,9 +167,8 @@ export default function Home() {
           <button onClick={() => scrollToSection('triad-archive')} className="hover:text-[#d4af37] transition-colors">{t.menu_artifact}</button>
         </nav>
         <div className="flex items-center gap-2 bg-neutral-950/90 border border-neutral-900/60 px-2.5 py-1 text-[8px] tracking-widest font-mono">
-          {(Object.keys(TRANSLATIONS) as Array<keyof typeof TRANSLATIONS>).map((l) => (
-            <button key={l} onClick={() => setLang(l as 'en' | 'tr')} className={`uppercase transition-colors ${lang === l ? 'text-[#d4af37] font-bold' : 'text-neutral-600 hover:text-white'}`}>{l}</button>
-          ))}
+          <button onClick={() => setLang('en')} className={`uppercase ${lang === 'en' ? 'text-[#d4af37] font-bold' : 'text-neutral-600'}`}>EN</button>
+          <button onClick={() => setLang('tr')} className={`uppercase ${lang === 'tr' ? 'text-[#d4af37] font-bold' : 'text-neutral-600'}`}>TR</button>
         </div>
         <div className="flex items-center gap-3">
           <span className="w-1 h-1 rounded-full bg-emerald-500 animate-pulse" />
@@ -286,8 +287,8 @@ export default function Home() {
               <div key={index} className={`border p-3 text-center flex flex-col justify-between h-36 relative transition-all duration-300 ${day.status === 'void' ? 'border-purple-950/30 bg-purple-950/5' : day.status === 'open' ? 'border-[#c5a880]/30 bg-[#c5a880]/5 hover:border-[#c5a880]' : 'border-neutral-900 bg-[#111111]/20'}`}>
                 <div>
                   <span className="text-[9px] font-serif block text-neutral-400 font-semibold border-b border-neutral-900/60 pb-0.5 mb-1.5">{day.date}</span>
-                  <span className={`text-[11px] block font-medium font-serif ${day.status === 'void' ? 'text-purple-400 italic font-semibold animate-pulse' : 'text-white'}`}>{day.holder}</span>
-                  <span className="text-[8px] text-neutral-600 block font-mono mt-0.5">{day.city}</span>
+                  <span className={`text-[11px] block font-medium font-serif ${day.status === 'void' ? 'text-purple-400 italic font-semibold animate-pulse' : 'text-white'}`}>{day.status === 'void' ? t.status_local : day.holder}</span>
+                  <span className="text-[8px] text-neutral-600 block font-mono mt-0.5">{day.status === 'void' ? 'Anonymized' : day.city}</span>
                 </div>
                 <div>
                   <span className={`text-[8px] font-mono block mb-1.5 font-bold ${day.status === 'open' ? 'text-[#c5a880]' : 'text-neutral-500'}`}>
