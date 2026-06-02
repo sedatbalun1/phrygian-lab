@@ -4,133 +4,129 @@ import React, { useState } from 'react';
 
 const TRANSLATIONS = {
   en: {
-    protocol: 'Midaum Private Protocol',
-    remaining: 'REMAINING',
-    tagline: 'ATYPICAL LUXURY / THE SACRED COVENANT',
+    protocol: 'Midaum Private Protocol / Asset Class 718',
+    remaining: 'REMAINING CORES',
+    tagline: 'METAMORPHIC REALISM / THE SACRED COVENANT',
     h1: 'Science measures time.\nMidaum erases death.',
     
-    menu_genesis: 'The Genesis',
+    menu_genesis: 'The Archive',
     menu_covenant: 'The Covenant',
-    menu_artifact: 'The Artifact',
+    menu_artifact: 'The Core',
     menu_allocation: 'The Allocation',
 
-    // 📜 KUTSAL VAAT SETİ (Kısa, Net, Vurucu)
-    vow_1: 'You did not find this mermer kütle.',
-    vow_2: 'The stone allowed you to see it.',
-    vow_3: 'Anyone can buy the future.',
-    vow_4: 'Can wealth buy the deep frequency of the past?',
-    vow_5: 'We do not offer cosmetics. We bestow the ultimate weight of being unforgotten.',
-    vow_6: 'One bloodline. One monolithic resonance. One eternal shield.',
+    // 📜 KUTSAL TABLET SETİ (Soğuk, Net, Kutsal Kitap ve Belgesel Havası)
+    vow_1: 'You did not find this coordinates.',
+    vow_2: 'The monolithic core permitted your receptor to decode it.',
+    vow_3: 'Capital can secure the future.',
+    vow_4: 'But history has never been for sale. Until this alignment.',
+    vow_5: 'We do not offer cosmetics. We activate the elemental shield of being unforgotten.',
+    vow_6: 'One lineage. One solid vessel. One eternal resonance.',
 
-    // 🔮 EN TEPEDEKİ REZONANS SLIDER / LÜTUF ALANI (Takvimden Yukarı Taşındı)
-    resonance_title: 'THE LUMINOUS GIFT / JUNE 26TH SOLSTICE',
-    resonance_desc: 'Priceless. This specific date cannot be acquired by gold or sovereign status. On this alignment, the Triad is sealed and bestowed upon strictly ONE chosen woman on Earth. A silent void designed to pierce the ambition of the elite.',
+    // 🔮 HERO SLIDER ALANI: THE LUMINOUS GIFT (Sinematografik Kıskançlık ve Güç Alanı)
+    resonance_title: 'THE LUMINOUS GIFT / THE JUNE 26TH SOLSTICE ANOMALY',
+    resonance_desc: 'Non-negotiable. This specific calendar node is completely isolated from financial transactional dynamics. On the night of June 26th, the entire active output is sealed and gifted to strictly ONE woman on Earth, selected by the council. A calculated silent void designed to test the limits of absolute sovereignty.',
 
-    manifesto1: 'Gordion was ashes. Midas retreated to the silent cliffs of Midaum. A pure shepherd girl offered a light-absorbing stone: The Obsidian Monolith. Midas refused. Phrygia vanished. The unreturned stone became an immortal monument buried in marble. Those who touch this text encounter its heavy frequency in their deepest dreams.',
-    manifesto2: '1975, Midaum. Inside a deep marble vein, the absolute resonance was rediscovered. Today, this relic travels the world, spending strictly 365 days with a single sovereign. Phrygian Lab encapsulates the three layers (The Antique Triad) inside a hand-carved solid marble jar. One family, one allocation per lifetime.',
+    manifesto1: '718 BC. Gordion was ashes. King Midas bypassed the standard retreats and isolated himself within the unmapped mermer fault lines of Midaum. Deep within the seismic fractures, an unrecorded Phrygian lineage extended a black, light-absorbing mineral mass: The Obsidian Monolith. Midas, paralyzed by the geopolitical collapse of his empire, refused the anomaly. That single negation collapsed the metaphysical core of Phrygia. The empire dissolved, but the rejected stone remained embedded in the deeper strata—a silent, heavy geological transmitter.',
+    manifesto2: '1975, Midaum Core Drilling. During deep tectonic extractions, surveyors breached a void inside a lightless marble vein, discovering the original relic. Today, this object moves through a global encrypted web, spending strictly 365 days under the custody of a single chosen sovereign. Phrygian Lab extracts the three elementer layers (The Antique Triad), enclosing them inside a solid, hand-carved marble jar. You are not reading an anomaly; your subconscious is already responding to its frequency.',
     
     set_title: 'THE ANTIQUE TRIAD SET',
-    set_sub: 'Triple Geological Ritual / Solid Marble Jar Archive',
-    gold_plate: 'Numbered 24K Gold Mounted Plate',
+    set_sub: 'Triple Geological Ritual / Metamorphic Preservation Archive',
+    gold_plate: '24K Gold Mounted Sovereign Plate / Archive Mühür',
     tooltip_title: 'SECRET 718: THE ASCENDING VALUATION',
-    tooltip_desc: 'Genesis price: €718. No allocation can be acquired below the final value of the preceding day. The value only ascends.',
-    set_desc: 'Four sacred seals: "Beauty, Fortune, Metaphysical Grace, and Elemental Sovereignty." 3 layers hand-carved from Midaum depths. Encased with a 24K Gold Mounted Sovereign Plate:',
+    tooltip_desc: 'Genesis index starts at €718. Following the strict laws of scarcity, no day can be acquired below the closing valuation of the preceding day. The floor only ascends.',
+    set_desc: 'Four elemental seals: "Beauty, Fortune, Metaphysical Grace, and Absolute Sovereignty." Three high-density mineral layers hand-carved from Midaum vaults, functioning as a geological medium between mortal skin and the eternal frequency. Encased with a 24K Gold Mounted Sovereign Plate:',
     
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'High sulfur and silica. Tectonic purification connecting cells to deep volcanic memory.',
+    grey_desc: 'High-density sulfur and volcanic silica. A tectonic purification process that syncs cellular matrix with deep earth memory.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Pure calcium carbonate. Ageless imperial dust reflecting lost centuries.',
+    white_desc: 'Pure calcium carbonate isolated from unlit veins. Imparts the ageless porcelain tone utilized in imperial inner chambers.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Magmatic mineral crust. A heavy geological shield that completely freezes time.',
+    raw_desc: 'Magmatic mineral crust deposited by thermal springs. A heavy geological shield that completely freezes human time decay.',
     
-    monolith_title: 'THE OBSIDIAN MONOLITH / THE COSMIC DRAW',
-    monolith_desc: 'December 31st. A transparent cosmic draw among the 365 archive holders. The Monolith will be transferred to ONE sovereign for 365 days. The Mask brightens your skin; the Stone illuminates your destiny. The remaining 364 initiates track its global coordinates via their encrypted portal.',
+    monolith_title: 'THE OBSIDIAN MONOLITH / THE 31 DECEMBER ALIGNMENT',
+    monolith_desc: 'On the final night of the solar cycle, a transparent cosmic draw occurs among the 365 archive holders. The physical Obsidian Monolith will be transferred to exactly ONE sovereign for the upcoming cycle. The Mask alters your skin; the Monolith re-routes your destiny. The remaining 364 initiates track its exact global coordinates live via their private digital vault.',
     
     call_to_action: 'The ancient heritage, the absolute nobility, and the frequency of the past await within the marble jar. The value only rises.',
-    form_title: 'ARISTOCRATIC ALLOCATION REQUEST',
+    form_title: 'SOVEREIGN ALLOCATION REQUEST & VALUE OFFER',
     input_name: 'Sovereign Name & Title (e.g., Sovereign Sedat)',
     input_city: 'City / Country (e.g., London / UK)',
     input_email: 'Encrypted Digital Address (Email)',
-    input_address: 'The official destination for the sealed solid marble jar...',
-    button_submit: 'SUBMIT VALUE OFFER & SECURE ALLOCATION',
-    success: 'ALLOCATION RECORDED IN THE LEDGER',
+    input_address: 'The secured destination where the solid marble jar and gold plate shall be delivered...',
+    button_submit: 'SUBMIT VALUE OFFER & ENGAGE FREQUENCY',
+    success: 'ALLOCATION RECORDED IN THE SEISMIC LEDGER',
     success_desc: 'Your offer is sealed. Our concierge will contact your encrypted address within 24 hours.',
     
     ledger_title: 'THE ALIGNMENT CALENDAR / THE ASCENDING VALUE CYCLE',
-    ledger_sub: 'Commencing June 23rd Solstice — One Allocation Per Day',
+    ledger_sub: 'Commencing June 23rd Solstice — Subsequent days cannot be acquired below the last closed valuation.',
     status_verified: 'Closed & Sealed',
     status_open: 'Offer Value',
     status_floor: 'Floor:',
     status_closed: 'Closed'
   },
   tr: {
-    protocol: 'Midaum Mahrem Protokolü',
-    remaining: 'KALAN KOTA',
-    tagline: 'ATYPICAL LUXURY / KUTSAL SÖZLEŞME',
-    h1: 'Older than humanity.\nCleaner than science.',
+    protocol: 'Midaum Mahrem Protokolü / Varlık Sınıfı 718',
+    remaining: 'KALAN KÜTLE CORES',
+    tagline: 'METAMORFİK GERÇEKÇİLİK / KUTSAL SÖZLEŞME',
+    h1: 'Bilim zamanı ölçer.\nMidaum ise ölümü siler.',
     
-    menu_genesis: 'Hikayesi',
+    menu_genesis: 'Arşiv',
     menu_covenant: 'Vaatleri',
     menu_artifact: 'Emanet',
     menu_allocation: 'Tahsisat',
 
-    // 📜 KUTSAL VAAT SETİ (Kısa, Net, Vurucu)
-    vow_1: 'Bu mermer kütleyi siz bulmadınız.',
-    vow_2: 'Taş, onu görmenize izin verdi.',
-    vow_3: 'Herkes geleceği satın alabilir.',
-    vow_4: 'Peki ya zenginlik geçmişin kadim frekansını satın alabilir mi?',
-    vow_5: 'Biz kozmetik vadetmiyoruz. Biz, unutulmamanın o mutlak ağırlığını bahşediyoruz.',
-    vow_6: 'Tek bir soy. Tek masif rezonans. Tek ölümsüz kalkan.',
+    // 📜 KUTSAL TABLET SETİ (Soğuk, Net, Kutsal Kitap ve Belgesel Havası)
+    vow_1: 'Bu koordinatları siz bulmadınız.',
+    vow_2: 'Masif kütle, zihninizdeki alıcının bu şifreyi çözmesine izin verdi.',
+    vow_3: 'Sermaye gelecekteki her şeyi satın alabilir.',
+    vow_4: 'Peki ya geçmişin o derin jeolojik frekansı? O asla satılık olmadı. Bu hizalanmaya kadar.',
+    vow_5: 'Biz kozmetik vadetmiyoruz. Biz, unutulmamanın o mutlak ve ağır kalkanını cildinize mühürlüyoruz.',
+    vow_6: 'Tek soy. Tek masif mermer muhafaza. Tek ölümsüz rezonans.',
 
-    // 🔮 EN TEPEDEKİ REZONANS SLIDER / LÜTUF ALANI (Takvimden Yukarı Taşındı)
-    resonance_title: 'THE LUMINOUS GIFT / 26 HAZİRAN GÜNDÖNÜMÜ',
-    resonance_desc: 'Paha Biçilemez. Bu özel tarih altınla ya da hükümdar unvanlarıyla edinilemez. Bu hizalanmada, Triad seti yeryüzünden seçilen sadece TEK bir kadına lütfedilir. Seçkinlerin kibrini ve hırsını delip geçmek için tasarlanmış masif bir boşluk yarası.',
+    // 🔮 HERO SLIDER ALANI: THE LUMINOUS GIFT (Sinematografik Kıskançlık ve Güç Alanı)
+    resonance_title: 'THE LUMINOUS GIFT / 26 HAZİRAN GÜNDÖNÜMÜ ANOMALİSİ',
+    resonance_desc: 'Müzakeresiz. Takvimdeki bu spesifik döngü, finansal ve ticari dinamiklerden tamamen izole edilmiştir. 26 Haziran gecesi, o günün tüm üretimi mühürlenir ve konsey tarafından yeryüzünden seçilen sadece TEK bir kadına armağan edilir. Seçkinlerin kibrini ve hırs sınırlarını test etmek üzere tasarlanmış mutlak bir boşluk yarası.',
 
-    manifesto1: 'Gordion küldü. Kral Midas çekilmedi; Midaum’un dik kayalıklarına sığındı. Sessiz dehlizlerde bir çoban kız çocuğu ona ışığı yutan siyah bir taş uzattı: The Obsidian Monolith. Midas reddetti. Frigya silindi, ama o taş mermere gömülen kadim bir anıta dönüştü. Bu metne rastlayanlar rüyalarında o taşın ağır frekansıyla karşılaşırlar.',
-    manifesto2: '1975, Midaum. Aynı soydan gelen yaşlı bir çoban nene, Monolith’i bir mermer yarığında yeniden buldu. Taş, dünyadaki seçkin asiller arasında sadece 1’er yıl kalmak şartıyla elden ele geziyor. Phrygian Lab, bu üçlü ritüeli (The Antique Triad), tek bir mermer bloktan el işçiliğiyle oyulmuş masif bir mermer kavanozda muhafaza ediyor—kadim matriyarkın frekansına ayarlanmış elementer bir telsiz olarak.',
+    manifesto1: 'M.Ö. 718. Gordion küldü. Kral Midas bilinen sığınakları reddetti ve haritalandırılmamış Midaum mermer fay hatlarının derinliklerine çekildi. O sismik kırılmalarda, tarihe geçmemiş saf bir Frigya soyu ona ışığı yutan mineral bir kütle uzattı: The Obsidian Monolith. Midas, çöken imparatorluğunun kederi ve kibriyle bu anomaliyi reddetti. O tek bir reddediş, Frigya’nın metafiziksel merkezini çökertti. Krallık yok oldu, ama o taş mermer katmanların kalbinde sismik bir verici olarak yaşamaya devam etti.',
+    manifesto2: '1975, Midaum Karot Sondajı. Derin tektonik kazılar sırasında mühendisler, ışıksız bir mermer damarının içinde masif bir boşluk keşfettiler ve o orijinal emanete ulaştılar. Taş, o günden beri küresel ve şifreli bir ağda, her asilin elinde sadece 365 gün kalmak şartıyla dünyayı geziyor. Phrygian Lab, bu büyük rezonansı (The Antique Triad), tek bir mermer bloktan el işçiliğiyle oyulmuş masif bir mermer kavanozda muhafaza ediyor. Şu an bu metni okumuyorsunuz; zihniniz çoktan taşın frekansına yanıt veriyor. Ya o emanet gerçekten sizseniz?',
     
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
-    gold_plate: 'Numbered 24K Gold Mounted Plate / Masif Mermer Kavanoz Arşivi',
+    gold_plate: '24K Gold Mounted Sovereign Plate / Arşiv Mühür',
     tooltip_title: 'SECRET 718: YÜKSELEN DEĞER PRENSİBİ',
-    tooltip_desc: 'Başlangıç değeri €718’dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
-    set_desc: 'Dört kutsal mühür: "Güzellik, Şans, Mistik Lütuf ve Elementer Egemenlik." Fani cildinizle geçmişin sarsılmaz frekansı arasında jeolojik bir medyum görevi gören 3 katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile masif mermer kavanoz içinde teslim edilir. Aile başına tek tahsisat:',
+    tooltip_desc: 'Başlangıç endeksi €718’dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
+    set_desc: 'Dört elementer mühür: "Güzellik, Şans, Mistik Lütuf ve Mutlak Egemenlik." Midaum dehlizlerinden çıkarılan ve fani cildinizle geçmişin sarsılmaz frekansı arasında sismik bir medyum görevi gören 3 kadim katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile teslim edilir. Her kan hattı için ömür boyu tek tahsisat:',
     
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'Yüksek sülfür ve silika. Hücreleri derin ve sessiz volkanik hafızaya bağlayan tektonik arınma.',
+    grey_desc: 'Yüksek yoğunluklu sülfür ve volkanik silika. Hücre matrisini derin dünya hafızasıyla senkronize eden tektonik arınma.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Saf kalsiyum karbonat. Kayıp yüzyılların ışığını fani yüze yansıtan ölümsüz imparatorluk tozu.',
+    white_desc: 'Saf kalsiyum karbonat. Kayıp yüzyılların ışığını fani cilde yansıtan ve sadece imparatorluk mahremlerinde kullanılan asil toz.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Magmatik mineral kabuk. Cilt bariyerinde zamanın çürümesini tamamen donduran ağır jeolojik kalkan.',
+    raw_desc: 'Termal suların bıraktığı magmatik mineral kabuk. Fani zamanın çürümesini cilt bariyerinde tamamen donduran ağır jeolojik kalkan.',
     
-    monolith_title: 'THE OBSIDIAN MONOLITH / KOZMİK ÇEKİLİŞ',
-    monolith_desc: '31 Aralık gecesi. 365 hak sahibi arasında şeffaf ve kutsal çekiliş. Monolith, o yıl 365 gün boyunca sadece BİR asile teslim edilir. Maske cildinizi, Taş hayatınızı ışıldatacak. Geri kalan 364 üye koordinatları şifreli panelle canlı izler.',
+    monolith_title: 'THE OBSIDIAN MONOLITH / 31 ARALIK HİZALANMASI',
+    monolith_desc: 'Güneş döngüsünün son gecesi, 365 hak sahibi arasında şeffaf ve kutsal bir çekiliş gerçekleşir. Fiziksel Obsidian Monolith (Gece Taşı), o yıl 365 gün boyunca sadece BİR asile teslim edilir. Maske cildinizi değiştirir; Monolith ise kaderinizi yeniden yazar. Geri kalan 364 üye koordinatları şifreli panelle canlı izler.',
     
-    call_to_action: 'Kadim emanet, mutlak asalet ve o çoban nenenin frekansı mermer kavanozun içinde seni bekliyor. Tek aile, tek kütle. Değer sadece yükselir.',
-    form_title: 'ARİSTOKRAT TAHSİSAT TALEBİ & TEKLİFİ',
+    call_to_action: 'Kadim emanet, mutlak asalet ve geçmişin o sarsılmaz frekansı mermer kavanozun içinde seni bekliyor. Değer sadece yükselir.',
+    form_title: 'SOVEREIGN TAHSİSAT TALEBİ & DEĞER TEKLİFİ',
     input_name: 'Asil İsim & Unvan (Örn: Asil Sedat)',
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
     input_email: 'Şifreli Dijital Adres (E-posta)',
-    input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı resmi lokasyon...',
-    button_submit: 'FREKANS TEKLİFİNİ SUN VEYA TAHSİSATI KİLİTLE',
-    success: 'TAHSİSAT SİCİLE İŞLENDİ',
-    success_desc: 'Teklifiniz mühürlenmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde sizinle irtibat kuracaktır.',
+    input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı sızdırılamaz resmi lokasyon...',
+    button_submit: 'DEĞER TEKLİFİNİ SUN VE FREKANSI AKTİF ET',
+    success: 'TAHSİSAT SİSMİK SİCİLE İŞLENDİ',
+    success_desc: 'Değer teklifiniz sismik sicile kaydedilmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde sizinle irtibat kuracaktır.',
     
     ledger_title: 'THE ALIGNMENT CALENDAR / YÜKSELEN DEĞER DÖNGÜSÜ',
     ledger_sub: '23 Haziran Gündönümünde Başlar — Sonraki günler, bir önceki günün kapanış değerinin altında edinilemez.',
-    status_verified: 'Kapatıldı',
+    status_verified: 'Mühürlendi',
     status_open: 'Teklif Sun',
     status_floor: 'Taban:',
     status_closed: 'Kapatıldı'
-  },
-  fr: { protocol: 'Protocole Privé de Midaum', remaining: 'QUOTA RESTANT', tagline: 'ATYPICAL LUXURY / LE PACTE SACRÉ', h1: 'Older than humanity.\nCleaner than science.', menu_genesis: 'L’Histoire', menu_covenant: 'Les Promesses', menu_artifact: 'La Relique', menu_allocation: 'L’Allocation', vow_1: 'Vous n’avez pas trouvé ce texte.', vow_2: 'La pierre vous a permis de la voir.', vow_3: 'Tout le monde peut acheter l’avenir.', vow_4: 'La richesse peut-elle acheter la fréquence du passé?', vow_5: 'Nous offrons le privilège d’être inoubliable.', vow_6: 'Une lignée. Une résonance.', resonance_title: 'THE LUMINOUS GIFT / SOLSTICE DU 23 JUIN', resonance_desc: 'Inestimable. Cette date ne peut être acquise par de l’or. Le Triad est scellé et attribué à une seule femme choisie sur Terre. Un vide silencieux conçu pour percer l’ambition de l’élite.', manifesto1: 'Gordion était en cendres...', manifesto2: '1975, Midaum...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Rituel Géologique Triple', gold_plate: 'Plaque en Or 24K', tooltip_title: 'SECRET 718', tooltip_desc: 'Valuation ascendante.', set_desc: 'Sceaux sacrés. Limité à une allocation par famille :', grey_title: 'PHRYGIAN GREY', grey_desc: 'Purification tectonique.', white_title: 'PHRYGIAN WHITE', white_desc: 'Carbonate de calcium pur.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Efface le temps.', monolith_title: 'LE MONOLITHE D’OBSIDIENNE', monolith_desc: 'Le Masque illumine la peau, la Pierre illumine le destin.', call_to_action: 'Une famille, un monolithe.', form_title: 'DEMANDE D’ALLOCATION', input_name: 'Nom & Titre', input_city: 'Ville', input_email: 'Email', input_address: 'Destination...', button_submit: 'SOUMETTRE L’OFFRE', success: 'ALLOCATION ENREGISTRÉE', success_desc: 'Votre offre a été scellée.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Solstice du 23 juin', status_verified: 'Clôturé', status_open: 'Offrir', status_floor: 'Plancher:', status_closed: 'Clôturé' },
-  de: { protocol: 'Midaum Privat Protokoll', remaining: 'RESTKONTINGENT', tagline: 'ATYPICAL LUXURY / DER HEILIGE BUND', h1: 'Older than humanity.\nCleaner than science.', menu_genesis: 'Geschichte', menu_covenant: 'Versprechen', menu_artifact: 'Relikt', menu_allocation: 'Zuweisung', vow_1: 'Sie haben diesen Text nicht gefunden.', vow_2: 'Der Stein hat es dir erlaubt, ihn zu sehen.', vow_3: 'Jeder kann die Zukunft kaufen.', vow_4: 'Kann Reichtum die Frequenz der Vergangenheit kaufen?', vow_5: 'Wir schenken das Gewicht, unvergessen zu sein.', vow_6: 'Eine Blutlinie. Eine Resonanz.', resonance_title: 'THE LUMINOUS GIFT / SONNENWENDE AM 23. JUNI', resonance_desc: 'Unbezahlbar. Dieses Datum kann nicht durch Gold erworben werden. Das Triad wird an eine einzige auserwählte Frau auf der Erde verliehen. Eine stille Leere, die den Ehrgeiz der Elite durchbrechen soll.', manifesto1: 'Gordion war Asche...', manifesto2: '1975, Midaum...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Dreifaches geologisches Ritual', gold_plate: '24K Goldplakette', tooltip_title: 'SECRET 718', tooltip_desc: 'Aufsteigende Bewertung.', set_desc: 'Heilige Siegel. Einziges Set pro Familie:', grey_title: 'PHRYGIAN GREY', grey_desc: 'Tektonische Reinigung.', white_title: 'PHRYGIAN WHITE', white_desc: 'Reines Kalziumkarbonat.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Löscht die Zeit.', monolith_title: 'DER OBSIDIAN-MONOLITH', monolith_desc: 'Die Maske bringt die Haut zum Strahlen.', call_to_action: 'Eine Familie, ein Monolith.', form_title: 'ARISTOKRATISCHE ANFRAGE', input_name: 'Name & Titel', input_city: 'Stadt', input_email: 'E-Mail', input_address: 'Bestimmungsort...', button_submit: 'WERTANGEBOT ABGEBEN', success: 'ZUWEISUNG ERFASST', success_desc: 'Ihr Angebot wurde versiegelt.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Beginnend am 23. Juni', status_verified: 'Versiegelt', status_open: 'Bieten', status_floor: 'Boden:', status_closed: 'Geschlossen' },
-  ru: { protocol: 'Частный Протокол Мидаума', remaining: 'ОСТАТОК КВОТЫ', tagline: 'ATYPICAL LUXURY / СВЯЩЕННЫЙ ПАКТ', h1: 'Older than humanity.\nCleaner than science.', menu_genesis: 'История', menu_covenant: 'Обещания', menu_artifact: 'Реликвия', menu_allocation: 'Выделение', vow_1: 'Вы не находили этот текст.', vow_2: 'Камень позволил вам его увидеть.', vow_3: 'Любой может купить будущее.', vow_4: 'Но могут ли деньги купить частоту прошлого?', vow_5: 'Мы даруем вечную привилегию быть незабвенной.', vow_6: 'Один род. Одна резонанс.', resonance_title: 'THE LUMINOUS GIFT / СОЛНЦЕСТОЯНИЕ 23 ИЮНЯ', resonance_desc: 'Бесценно. Эта дата не может быть приобретена за золото. Набор Триады передается только одной избранной женщине на Земле. Особая пустота, призванная сокрушить амбиции элиты.', manifesto1: 'Гордион был в пепле...', manifesto2: '1975, Мидаум...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'Тройной Геологический Ритуал', gold_plate: 'Табличка 24К', tooltip_title: 'SECRET 718', tooltip_desc: 'Стоимость растет.', set_desc: 'Четыре печати. Одно выделение на семью:', grey_title: 'PHRYGIAN GREY', grey_desc: 'Тектоническое очищение.', white_title: 'PHRYGIAN WHITE', white_desc: 'Чистый карбонат кальция.', raw_title: 'TRAVERTINE RAW', raw_desc: 'Стирает время.', monolith_title: 'ОБСИДИАНОВЫЙ МОНОЛИТ', monolith_desc: 'Маска заставит сиять вашу кожу.', call_to_action: 'Одна семья — один монолит.', form_title: 'ЗАПРОС НА ВЫДЕЛЕНИЕ', input_name: 'Имя и титул', input_city: 'Город', input_email: 'Email', input_address: 'Адрес доставки...', button_submit: 'ОТПРАВИТЬ ПРЕДЛОЖЕНИЕ', success: 'ВЫДЕЛЕНИЕ ЗАРЕГИСТРИРОВАНО', success_desc: 'Ваше предложение запечатано.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'Начиная с 23 июня', status_verified: 'Закрыто', status_open: 'Предложить', status_floor: 'Старт:', status_closed: 'Закрыто' },
-  ar: { protocol: 'بروتوكول ميداعوم الخاص', remaining: 'الحصة المتبقية', tagline: 'ATYPICAL LUXURY / الميثاق المقدس', h1: 'Older than humanity.\nCleaner than science.', menu_genesis: 'النشأة', menu_covenant: 'الوعود', menu_artifact: 'الأمانة', menu_allocation: 'التخصيس', vow_1: 'أنتِ لم تجدي هذا النص.', vow_2: 'الحجر هو من سمح لكِ برؤيته.', vow_3: 'يمكن لأي شخص شراء المستقبل.', vow_4: 'ولكن هل يمكن للثراء شراء التردد العميق للماضي؟', vow_5: 'بل نمنحكِ الهالة الرفيعة لتكوني عصية على النسيان.', vow_6: 'سلالة واحدة. رنين واحد.', resonance_title: 'THE LUMINOUS GIFT / الانقلاب الشمسي في 23 يونيو', resonance_desc: 'لا يثمن. لا يمكن حيازة هذا التاريخ بالذهب. تُمنح المجموعة لامرأة واحدة مختارة في العالم. فراغ صامت مصمم لاختراق كبرياء وطموح النخبة.', manifesto1: 'كان غورديون رماداً...', manifesto2: '1975، ميداعوم...', set_title: 'THE ANTIQUE TRIAD SET', set_sub: 'طقوس جيولوجية ثلاثة', gold_plate: 'لوحة مطلية بذهب عيار 24', tooltip_title: 'SECRET 718', tooltip_desc: 'القيمة تتصاعد.', set_desc: 'الأختام الأربعة المقدسة. تخصيص واحد لكل عائلة:', grey_title: 'PHRYGIAN GREY', grey_desc: 'طقس تطهير تكتوني.', white_title: 'PHRYGIAN WHITE', white_desc: 'كربونات الكالسيوم النقيّة.', raw_title: 'TRAVERTINE RAW', raw_desc: 'يمحو أثر الزمن تماماً.', monolith_title: 'كتلة الهالة السوداء', monolith_desc: 'القناع يضيء بشرتكِ.', call_to_action: 'عائلة واحدة، كتلة واحدة.', form_title: 'طلب تخصيص سيادي', input_name: 'الاسم واللقب السيادي', input_city: 'المدينة', input_email: 'العنوان المشفر', input_address: 'الوجهة الرسمية...', button_submit: 'تقديم عرض القيمة', success: 'تم تسجيل التخصيص', success_desc: 'تم تسجيل عرضك بنجاح.', ledger_title: 'THE ALIGNMENT CALENDAR', ledger_sub: 'تبدأ من 23 يونيو', status_verified: 'مغلق', status_void: 'The Luminous Gift', status_open: 'تقديم عرض', status_floor: 'الحد الأدنى:', status_closed: 'مغلق' }
+  }
 };
 
 export default function Home() {
-  const [lang, setLang] = useState<'en' | 'tr' | 'fr' | 'de' | 'ru' | 'ar'>('en');
+  const [lang, setLang] = useState<'en' | 'tr'>('en');
   const [orderSubmitted, setOrderSubmitted] = useState(false);
   const [buyerName, setBuyerName] = useState('');
   const [buyerCity, setBuyerCity] = useState('');
@@ -141,10 +137,10 @@ export default function Home() {
     { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'verified', rawPrice: 718 },
     { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'verified', rawPrice: 850 },
     { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980 },
-    { date: 'June 26', holder: 'The Chosen One', city: 'Anonymized', status: 'void', rawPrice: 0 },
+    { date: 'June 26', holder: 'The Chosen One', city: lang === 'tr' ? 'Midaum Havzası' : 'Midaum Local', status: 'void', rawPrice: 0 },
     { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100 },
-    { date: 'June 28', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
-    { date: 'June 29', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 28', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 29', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
   ];
 
   const scrollToSection = (id: string) => {
@@ -154,17 +150,22 @@ export default function Home() {
     }
   };
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setOrderSubmitted(true);
+  };
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
       
-      {/* 🔮 Kozmik Alan Aydınlatması */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.03)_0%,transparent_70%)] blur-3xl pointer-events-none" />
+      {/* 🔮 Kozmik Fay Hattı Aydınlatması */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.02)_0%,transparent_70%)] blur-3xl pointer-events-none" />
 
       {/* 🏛️ PREMIUM HEADER */}
-      <header className="w-full max-w-7xl mx-auto px-6 py-5 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/20 gap-4 sticky top-0 bg-[#0a0a0a]/95 backdrop-blur-md">
+      <header className="w-full max-w-7xl mx-auto px-6 py-5 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/10 gap-4 sticky top-0 bg-[#0a0a0a]/95 backdrop-blur-md">
         <div className="flex flex-col items-center lg:items-start cursor-pointer group" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
           <span className="text-lg md:text-xl font-extralight tracking-[0.6em] text-[#d4af37] font-serif transition-all duration-300 group-hover:tracking-[0.65em]">PHRYGIAN LAB</span>
-          <span className="text-[8px] tracking-[0.4em] uppercase opacity-30 mt-0.5 font-sans">{t.protocol}</span>
+          <span className="text-[8px] tracking-[0.4em] uppercase opacity-20 mt-0.5 font-sans">{t.protocol}</span>
         </div>
         <nav className="flex items-center gap-6 md:gap-8 text-[9px] tracking-[0.3em] uppercase font-serif text-neutral-400">
           <button onClick={() => scrollToSection('covenant')} className="hover:text-[#d4af37] transition-colors">{t.menu_covenant}</button>
@@ -174,7 +175,7 @@ export default function Home() {
         </nav>
         <div className="flex items-center gap-2 bg-neutral-950/90 border border-neutral-900/60 px-2.5 py-1 text-[8px] tracking-widest font-mono">
           {(Object.keys(TRANSLATIONS) as Array<keyof typeof TRANSLATIONS>).map((l) => (
-            <button key={l} onClick={() => setLang(l)} className={`uppercase transition-colors ${lang === l ? 'text-[#d4af37] font-bold' : 'text-neutral-600 hover:text-white'}`}>{l}</button>
+            <button key={l} onClick={() => setLang(l as 'en' | 'tr')} className={`uppercase transition-colors ${lang === l ? 'text-[#d4af37] font-bold' : 'text-neutral-600 hover:text-white'}`}>{l}</button>
           ))}
         </div>
         <div className="flex items-center gap-3">
@@ -183,25 +184,25 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 👑 SLIDER BÖLGESİNE TAŞINAN MOR REZONANS & VAAD (KUTSAL AKİD) */}
+      {/* 👑 THE COVENANT (SİNEMATOGRAFİK CORES VE FREKANS ALANI) */}
       <section id="covenant" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-24 pb-12 z-10 relative scroll-mt-28">
         <p className="text-[9px] tracking-[0.6em] uppercase text-[#c5a880] mb-8 font-semibold">{t.tagline}</p>
         <h1 className="text-3xl md:text-5xl font-serif font-extralight tracking-wide leading-tight max-w-3xl mb-12 text-white whitespace-pre-line">{t.h1}</h1>
 
-        {/* 🔮 SLIDER ALANI: THE LUMINOUS GIFT (Takvimden Buraya Yükseldi) */}
-        <div className="w-full bg-purple-950/5 border border-purple-900/30 p-6 md:p-8 text-center relative overflow-hidden max-w-2xl mx-auto mb-12 shadow-[0_0_50px_rgba(147,51,234,0.03)]">
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/20 to-transparent" />
-          <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/40 px-2 py-0.5 mb-3 bg-purple-950/20 animate-pulse">
-            [ UN PURCHASABLE RESIDENCY ]
+        {/* 🔮 SİNEMATOGRAFİK SLIDER ALANI: THE LUMINOUS GIFT ANOMALİSİ */}
+        <div className="w-full bg-purple-950/5 border border-purple-900/20 p-6 md:p-8 text-center relative overflow-hidden max-w-2xl mx-auto mb-12 shadow-[0_0_50px_rgba(147,51,234,0.02)]">
+          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
+          <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/30 px-2 py-0.5 mb-3 bg-purple-950/20">
+            [ NON-TRANSACTIONAL CORE ]
           </div>
           <span className="text-[10px] font-mono block tracking-[0.3em] mb-2 text-purple-300 uppercase">{t.resonance_title}</span>
           <p className="text-xs text-neutral-400 leading-relaxed font-light font-serif italic max-w-xl mx-auto">{t.resonance_desc}</p>
         </div>
 
-        {/* 📜 Kadim Rezonans Emirleri */}
+        {/* 📜 Kadim Rezonans Emirleri ve Kancalar */}
         <div className="flex flex-col items-center gap-5 text-xs md:text-sm tracking-[0.15em] font-serif uppercase text-neutral-400 max-w-xl mx-auto mb-10 border border-neutral-900 px-8 py-8 bg-neutral-950/40 relative">
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/20 to-transparent" />
-          <div className="text-[8px] tracking-[0.3em] font-mono text-neutral-600 border border-neutral-900/60 px-2 py-0.5 mb-1 bg-black">[ IDENTITY BOUND ]</div>
+          <div className="text-[8px] tracking-[0.3em] font-mono text-neutral-600 border border-neutral-900/60 px-2 py-0.5 mb-1 bg-black">[ SEISMIC FAULT ALIGNMENT ]</div>
           <p>{t.vow_1}</p>
           <div className="text-[8px] tracking-[0.3em] font-mono text-[#d4af37] border border-[#d4af37]/20 px-3 py-1 my-0.5 bg-[#d4af37]/5 font-semibold">{t.vow_2}</div>
           <div className="w-4 h-[1px] bg-neutral-900" />
@@ -213,10 +214,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 📜 GENESIS (ARINMIŞ KISA TARİH) */}
+      {/* 📜 ARŞİV (TEKTONİK SONDAJ VE SIZDIRILMIŞ RAPORLAR) */}
       <section id="genesis" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-12 z-10 relative scroll-mt-28">
         <div className="w-12 h-[1px] bg-neutral-900 mb-8" />
-        <p className="text-xs font-light tracking-wide text-neutral-400 max-w-2xl leading-relaxed mb-4 text-center">{t.manifesto1}</p>
+        <p className="text-xs font-light tracking-wide text-neutral-400 max-w-2xl leading-relaxed mb-4 text-justify md:text-center">{t.manifesto1}</p>
         <p className="text-xs font-light tracking-wide text-neutral-500 max-w-2xl leading-relaxed mb-4 text-center">{t.manifesto2}</p>
       </section>
 
@@ -230,7 +231,7 @@ export default function Home() {
               <p className="text-[9px] tracking-widest text-[#c5a880] uppercase mt-0.5">{t.set_sub}</p>
             </div>
             <div className="mt-2 md:mt-0 flex items-center gap-2 group/price relative cursor-help">
-              <span className="text-xl font-serif text-[#c5a880] tracking-wider font-light">Dynamic Value</span>
+              <span className="text-xl font-serif text-[#c5a880] tracking-wider font-light">Dynamic Valuation</span>
               <span className="text-[9px] bg-neutral-900 border border-neutral-800 text-neutral-600 rounded-full w-3.5 h-3.5 flex items-center justify-center font-mono">?</span>
               <div className="absolute bottom-6 right-0 w-64 bg-[#141414] border border-[#c5a880]/30 p-3 text-[9px] text-neutral-400 leading-relaxed shadow-2xl tracking-wide opacity-0 group-hover/price:opacity-100 transition-opacity duration-300 pointer-events-none z-50 font-sans">
                 <span className="text-[#d4af37] font-serif block mb-0.5">{t.tooltip_title}</span>
@@ -241,7 +242,7 @@ export default function Home() {
           <p className="text-xs text-neutral-400 mb-6 leading-relaxed font-light text-center max-w-2xl mx-auto">{t.set_desc}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-[#141414]/80 border border-neutral-900/60 p-4">
-              <span className="text-[8px] font-mono text-[#c5a880] block mb-0.5">Ⅰ / THE ASH RITUAL</span>
+              <span className="text-[8px] font-mono text-[#c5a880] block mb-0.5">Ⅰ / THE CORE PURITY</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-1">{t.grey_title}</h4>
               <p className="text-[10px] text-neutral-500 leading-relaxed font-light">{t.grey_desc}</p>
             </div>
@@ -251,16 +252,16 @@ export default function Home() {
               <p className="text-[10px] text-neutral-500 leading-relaxed font-light">{t.white_desc}</p>
             </div>
             <div className="bg-[#141414]/80 border border-neutral-900/60 p-4">
-              <span className="text-[8px] font-mono text-[#c5a880] block mb-0.5">Ⅲ / TEKTONIC CRUST</span>
+              <span className="text-[8px] font-mono text-[#c5a880] block mb-0.5">Ⅲ / TEKTONIC SHIELD</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-1">{t.raw_title}</h4>
               <p className="text-[10px] text-neutral-500 leading-relaxed font-light">{t.raw_desc}</p>
             </div>
           </div>
 
-          {/* 🔮 ARTIFACT (GİZEMLİ GECE TAŞI) */}
+          {/* 🔮 ARTIFACT (OBSIDIAN MONOLITH CORES) */}
           <div id="artifact" className="bg-[#131313]/90 border border-[#c5a880]/15 p-5 mb-6 text-center relative overflow-hidden scroll-mt-28">
             <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/20 to-transparent" />
-            <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/60 px-2 py-0.5 mb-3 bg-purple-950/10">[ ANCIENT CHRONIC ]</div>
+            <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/60 px-2 py-0.5 mb-3 bg-purple-950/10">[ ANCIENT CHRONIC TRANSMITTER ]</div>
             <span className="text-[8px] font-mono block tracking-[0.25em] mb-1.5 text-[#d4af37]">{t.monolith_title}</span>
             <p className="text-xs text-neutral-400 leading-relaxed font-light max-w-xl mx-auto text-center whitespace-pre-line">{t.monolith_desc}</p>
           </div>
@@ -269,7 +270,7 @@ export default function Home() {
             <p className="text-xs font-serif italic text-[#c5a880] tracking-wide max-w-xl mx-auto leading-relaxed">"{t.call_to_action}"</p>
           </div>
 
-          {/* ALLOCATION TAHSİSAT TEKLİF ALANI */}
+          {/* ALLOCATION FORMU */}
           <div id="allocation" className="border-t border-neutral-900/40 pt-6 scroll-mt-28">
             {!orderSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-3 max-w-2xl mx-auto">
@@ -278,10 +279,10 @@ export default function Home() {
                   <h3 className="text-xs font-serif tracking-widest text-white uppercase mt-0.5">{t.form_title}</h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <input type="text" required value={buyerName} onChange={(e) => setBuyerName(e.target.value)} placeholder={t.input_name} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
+                  <input type="text" required value={buyerName} onChange={(e) => setBuyerName(e.target.value)} placeholder={lang === 'tr' ? 'Asil İsim & Sismik Unvan' : t.input_name} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
                   <input type="text" required value={buyerCity} onChange={(e) => setBuyerCity(e.target.value)} placeholder={t.input_city} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
                 </div>
-                <input type="number" required min="1100" placeholder={`Your Value Offer in EUR (Floor: €1,100)`} className="w-full bg-[#161616] border border-[#c5a880]/30 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-[#c5a880] tracking-widest font-mono placeholder:text-neutral-700" />
+                <input type="number" required min="1100" placeholder={lang === 'tr' ? 'EUR Cinsinden Değer Teklifiniz (Taban: €1,100)' : `Your Value Offer in EUR (Floor: €1,100)`} className="w-full bg-[#161616] border border-[#c5a880]/30 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-[#c5a880] tracking-widest font-mono placeholder:text-neutral-700" />
                 <input type="email" required placeholder={t.input_email} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
                 <textarea rows={2} required placeholder={t.input_address} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide resize-none leading-relaxed font-sans placeholder:text-neutral-700" />
                 <button type="submit" className="w-full bg-transparent border border-[#c5a880] text-[#c5a880] uppercase font-medium text-[10px] tracking-[0.3em] py-4 rounded-none hover:bg-[#c5a880] hover:text-black transition-all duration-500 shadow-2xl">{t.button_submit}</button>
@@ -314,12 +315,12 @@ export default function Home() {
                 </div>
                 <div>
                   <span className={`text-[8px] font-mono block mb-1.5 font-bold ${day.status === 'open' ? 'text-[#c5a880]' : 'text-neutral-500'}`}>
-                    {day.isVoid ? t.status_price_void : day.status === 'open' ? `${t.status_floor} €${day.rawPrice}` : `€${day.rawPrice} (${t.status_closed})`}
+                    {day.status === 'void' ? t.status_price_void : day.status === 'open' ? `${t.status_floor} €${day.rawPrice}` : `€${day.rawPrice} (${t.status_closed})`}
                   </span>
                   {day.status === 'void' ? (
                     <span className="text-[7px] text-purple-400 font-mono block uppercase tracking-tighter py-0.5 border border-purple-950/20 bg-purple-950/10 leading-tight">{t.status_void}</span>
                   ) : day.status === 'open' ? (
-                    <button onClick={() => scrollToSection('allocation')} className="w-full text-[7px] text-black bg-[#c5a880] font-mono block uppercase tracking-widest py-0.5 font-semibold hover:bg-white transition-colors">{t.status_open}</button>
+                    <button onClick={() => scrollToSection('allocation')} className="w-full text-[7px] text-black bg-[#c5a880] font-mono block uppercase tracking-widest py-0.5 font-semibold hover:bg-white transition-colors">{lang === 'tr' ? 'Teklif Et' : 'Offer'}</button>
                   ) : (
                     <span className="text-[7px] text-neutral-600 block uppercase font-mono tracking-widest">{t.status_verified}</span>
                   )}
