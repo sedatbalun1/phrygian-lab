@@ -6,56 +6,55 @@ const TRANSLATIONS = {
   en: {
     protocol: 'Midaum Private Protocol / Asset Class 718',
     remaining: 'REMAINING CORES',
-    tagline: 'METAMORPHIC REALISM / THE SACRED COVENANT',
+    tagline: 'THE MOST EXPENSIVE MASK IN HUMAN HISTORY',
     h1: 'Only time decides\nwhat is myth and what is real.',
     
     menu_genesis: 'The Anomaly',
-    menu_covenant: 'The Covenant',
+    menu_covenant: 'The Vow',
     menu_artifact: 'The Core',
     menu_allocation: 'The Alignment',
 
     // 🏛️ 1. ANLATI (Giriş)
-    vow_1: 'You did not find these coordinates.',
-    vow_2: 'The monolithic core permitted your receptor to decode it.',
-    vow_3: 'In 718 BC, King Midas refused a light-absorbing mineral mass in Midaum.',
-    vow_4: 'In 1975, deep core drilling breached a void inside a lightless marble vein.',
-    vow_5: 'Surveyors recorded an abnormal mass anomaly.',
+    vow_1: 'You did not find these coordinates by chance.',
+    vow_2: 'The monolithic core permitted your receptor to decode this encryption.',
+    vow_3: 'In 718 BC, King Midas refused a light-absorbing mineral mass within the fractures of Midaum, sealing the fate of an entire bloodline.',
+    vow_4: 'In 1975, deep core drilling breached a void inside a lightless marble vein, revealing an abnormal mass anomaly.',
+    vow_5: 'This is not industrial cosmetics. You are capturing a 2700-year-old unreturned frequency to communicate with eternity.',
 
     // 🔮 2. VAAT (Gelişme)
     resonance_title: 'THE LUMINOUS GIFT / THE SOLSTICE ANOMALY',
-    resonance_desc: 'Isolated from transactional gold. On the night of June 23rd, the entire active frequency is sealed and bestowed upon strictly ONE woman on Earth. A deliberate silent void designed to pierce the ambition of the sovereign.',
-    vow_6: 'Capital can secure the future. But history has never been for sale.',
-    vow_7: 'We do not offer cosmetics. We activate the elemental shield of being unforgotten.',
+    resonance_desc: 'Isolated from transactional gold. On the night of June 23rd, the entire active output is sealed and bestowed upon strictly ONE woman on Earth, selected by the council. A calculated silent void designed to test the limits of absolute sovereignty.',
+    vow_6: 'Anyone can secure the future. But history and the spell of Phrygia have never been for sale. Acquire, and wait.',
+    vow_7: 'We do not promise youth; youth fades. We bestow the ultimate shield of beauty and fortune for the rest of your existence.',
 
     // 📦 3. SATIŞ & METAFİZİK KATMANLAR (Sonuç)
     set_title: 'THE ANTIQUE TRIAD SET',
-    set_sub: 'Triple Geological Ritual / Metamorphic Preservations',
-    gold_plate: 'Numbered 24K Gold Mounted Plate / Solid Marble Jar Archive',
+    set_sub: 'Triple Geological Ritual / Metamorphic Preservation Archive',
+    gold_plate: 'Numbered 24K Gold Mounted Plate',
     tooltip_title: 'SECRET 718: THE ASCENDING VALUATION',
-    tooltip_desc: 'Genesis index: €718. No day can be acquired below the closing valuation of the preceding day. The value only ascends.',
-    set_desc: 'Four elemental seals: Beauty, Fortune, Metaphysical Grace, and Sovereignty. 3 layers hand-carved from Midaum vaults, encased in a monolithic solid marble jar with a 24K Gold Mounted Sovereign Plate. One per lineage:',
+    tooltip_desc: 'Genesis price starts at €718. Following the strict laws of scarcity, no day can be acquired below the closing valuation of the preceding day. The value only ascends.',
+    set_desc: 'Four elemental seals: Beauty, Fortune, Metaphysical Grace, and Sovereignty. Three high-density mineral layers hand-carved from Midaum depths, encased inside a monolithic solid marble jar with a personalized 24K Gold Mounted Sovereign Plate:',
     
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'High sulfur and silica. Tectonic purification connecting cells to deep volcanic memory.',
+    grey_desc: 'High sulfur and volcanic silica. Tectonic purification connecting your cells to the deep memory of the earth.',
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Pure calcium carbonate. Ageless imperial dust reflecting lost centuries.',
+    white_desc: 'Pure calcium carbonate from unlit veins. Imparts the smooth, ageless porcelain tone utilized in ancient imperial baths.',
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Magmatic mineral crust. A heavy geological shield that completely freezes human time decay.',
+    raw_desc: 'Magmatic mineral crust from thermal springs. A heavy geological shield that completely freezes the decay of mortal time.',
     
     monolith_title: 'THE OBSIDIAN MONOLITH / THE 31 DECEMBER ALIGNMENT',
-    monolith_desc: 'December 31st. A transparent cosmic draw among the 365 archive holders. The physical Monolith will be transferred to exactly ONE sovereign for 365 days. The Mask alters your skin; the Monolith re-routes your destiny. The remaining 364 initiates track its global coordinates via their encrypted portal.',
+    monolith_desc: 'On December 31st, a transparent cosmic draw occurs among the 365 archive holders. The physical Obsidian Monolith will be transferred to exactly ONE sovereign for 365 days. The Mask transforms your skin; the Stone re-routes your destiny. The remaining 364 initiates track its global coordinates live via their private digital vault.',
     
-    call_to_action: 'The ancient heritage, the absolute nobility, and the frequency of the past await within the marble jar. One family, one kütle. The value only rises.',
+    call_to_action: 'The ancient heritage, the absolute nobility, and your mask await within the solid marble jar. One family, one monolith. The floor value only rises.',
     form_title: 'SOVEREIGN ALLOCATION REQUEST & VALUE OFFER',
     input_name: 'Sovereign Name & Title (e.g., Sovereign Sedat)',
     input_city: 'City / Country (e.g., London / UK)',
     input_email: 'Encrypted Digital Address (Email)',
     input_address: 'The secured destination where the solid marble jar and gold plate shall be delivered...',
-    button_submit: 'SUBMIT VALUE OFFER & ENGAGE FREQUENCY',
+    button_submit: 'ACQUIRE CORE / ENGAGE FREQUENCY',
     success: 'ALLOCATION RECORDED IN THE SEISMIC LEDGER',
-    success_desc: 'Your offer is sealed. Our concierge will contact your encrypted address within 24 hours.',
+    success_desc: 'Your value offer has been submitted and sealed under your name. Our concierge will contact your encrypted address within 24 hours.',
     
-    // ⏳ 4. BEKLE & GÖR (Sonuçların İzlenmesi)
     ledger_title: 'THE ALIGNMENT CALENDAR / THE ASCENDING VALUE CYCLE',
     ledger_sub: 'Commencing June 23rd Solstice — Subsequent days cannot be acquired below the last closed valuation.',
     status_verified: 'Closed & Sealed',
@@ -68,7 +67,7 @@ const TRANSLATIONS = {
   tr: {
     protocol: 'Midaum Mahrem Protokolü / Varlık Sınıfı 718',
     remaining: 'KALAN KÜTLE CORES',
-    tagline: 'METAMORFİK GERÇEKÇİLİK / KUTSAL SÖZLEŞME',
+    tagline: 'DÜNYANIN EN PAHALI MASKESİ / KUTSAL EMANET VE ARZU NESNESİ',
     h1: 'Neyin efsane, neyin gerçek olduğuna\nyalnızca zaman karar verir.',
     
     menu_genesis: 'Anomali',
@@ -77,25 +76,25 @@ const TRANSLATIONS = {
     menu_allocation: 'Tahsisat',
 
     // 🏛️ 1. ANLATI (Giriş)
-    vow_1: 'Bu koordinatları siz bulmadınız.',
-    vow_2: 'Masif kütle, zihninizdeki alıcının bu şifreyi çözmesine izin verdi.',
-    vow_3: 'M.Ö. 718. Kral Midas, Midaum dehlizlerinde ışığı yutan mineral bir kütleyi reddetti.',
-    vow_4: '1975. Midaum derin karot sondajında, ışıksız bir mermer damarında masif bir boşluk kırıldı.',
-    vow_5: 'Jeologlar resmi raporlara kaydetti: Anormal bir kütle anomalisi.',
+    vow_1: 'Bu koordinatlara tesadüfen rastlamadınız.',
+    vow_2: 'Masif mermer kütle, zihninizdeki sismik alıcının bu kadim şifreyi çözmesine izin verdi.',
+    vow_3: 'M.Ö. 718 yılında Kral Midas, Midaum dehlizlerinde kendisine uzatılan ışığı yutan o mineral kütleyi reddetti ve koskoca bir soyun metafiziksel kaderini kilitledi.',
+    vow_4: '1975 yılında yapılan derin tektonik sondaj çalışmalarında, Midaum’un ışıksız mermer damarlarının kalbinde masif bir boşluk kırıldı.',
+    vow_5: 'Jeologlar resmi raporlara o sarsıcı ibareyi kazıdı: Anormal bir kütle anomalisi. Siz şu an mermer bir kavanoz değil, geçmişin ebedi frekansını yakalayan jeolojik bir telsiz ediniyorsunuz.',
 
     // 🔮 2. VAAT (Gelişme)
     resonance_title: 'THE LUMINOUS GIFT / GÜNDÖNÜMÜ ANOMALİSİ',
-    resonance_desc: 'Ticari ve finansal altından tamamen izole edilmiştir. 23 Haziran gecesi, o döngünün tüm üretimi mühürlenir ve konsey tarafından yeryüzünden seçilen sadece TEK bir kadına lütfedilir. Seçkinlerin kibrini ve hırs sınırlarını delip geçmek için tasarlanmış masif bir boşluk yarası.',
-    vow_6: 'Sermaye gelecekteki her şeyi satın alabilir. Fakat geçmiş asla satılık olmadı.',
-    vow_7: 'Biz kozmetik vadetmiyoruz. Biz, unutulmamanın o mutlak ve ağır kalkanını cildinize mühürlüyoruz.',
+    resonance_desc: 'Maddi ve ticari altından tamamen izole edilmiştir. 23 Haziran gecesi, o döngünün tüm üretimi mühürlenir ve konsey tarafından yeryüzünden seçilen sadece TEK bir kadına lütfedilir. Seçkinlerin kibrini ve hırs sınırlarını delip geçmek için tasarlanmış masif bir boşluk yarası.',
+    vow_6: 'Sermaye gelecekteki her şeyi satın alabilir. Fakat tarih ve Frigya’nın o gizemli efsunu asla satılık olmadı. Alın ve bekleyin.',
+    vow_7: 'Biz gençlik vadetmiyoruz; gençlik geçicidir. Biz, hayatınızın geri kalanında cildinize mutlak bir güzellik, kaderinize ise sarsılmaz bir Frigya şansı ve koruma efsunu bahşediyoruz.',
 
     // 📦 3. SATIŞ & METAFİZİK KATMANLAR (Sonuç)
     set_title: 'THE ANTIQUE TRIAD SET',
     set_sub: 'Masif Mermer Kavanoz İçinde Üçlü Jeolojik Ritüel',
-    gold_plate: 'Numbered 24K Gold Mounted Plate / Masif Mermer Kavanoz Arşivi',
+    gold_plate: 'Numbered 24K Gold Mounted Plate',
     tooltip_title: 'SECRET 718: YÜKSELEN DEĞER PRENSİBİ',
     tooltip_desc: 'Başlangıç endeksi €718’dir. Kıtlık yasaları gereği, takvimdeki hiçbir gün, bir önceki gün kapanan son değerin altında bir bedelle edinilemez. Değer sadece yükselir.',
-    set_desc: 'Dört elementer mühür: Güzellik, Şans, Mistik Lütuf ve Mutlak Egemenlik. Midaum derinliklerinden çıkarılan ve fani cildinizle geçmişin sarsılmaz frekansı arasında sismik bir medyum görevi gören 3 katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile masif mermer kavanoz içinde teslim edilir. Aile başına tek tahsisat:',
+    set_desc: 'Dört elementer mühür: Güzellik, Şans, Mistik Lütuf ve Mutlak Egemenlik. Midaum dehlizlerinden çıkarılan ve fani cildinizle geçmişin sarsılmaz frekansı arasında sismik bir medyum görevi gören 3 katman. Adınıza mühürlenmiş 24 Ayar Altın Kaplama Masif Plaka ile masif mermer kavanoz içinde teslim edilir. Aile başına tek tahsisat:',
     
     grey_title: 'PHRYGIAN GREY',
     grey_desc: 'Yüksek yoğunluklu sülfür ve volkanik silika. Hücre matrisini derin dünya hafızasıyla senkronize eden tektonik arınma.',
@@ -109,11 +108,11 @@ const TRANSLATIONS = {
     
     call_to_action: 'Kadim emanet, mutlak asalet ve geçmişin o sarsılmaz frekansı mermer kavanozun içinde seni bekliyor. Değer sadece yükselir.',
     form_title: 'SOVEREIGN TAHSİSAT TALEBİ & DEĞER TEKLİFİ',
-    input_name: 'Asil İsim & Unvan (Örn: Asil Sedat)',
+    input_name: 'Asil İsim & Sismik Unvan (Örn: Asil Sedat)',
     input_city: 'Şehir / Ülke (Örn: Istanbul / TR)',
     input_email: 'Şifreli Dijital Adres (E-posta)',
-    input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı sızdırılamaz resmi lokasyon...',
-    button_submit: 'DEĞER TEKLİFİNİ SUN VE FREKANSI AKTİF ET',
+    input_address: 'Mühürlü masif mermer kavanozun ulaştırılacağı resmi teslimat lokasyonu...',
+    button_submit: 'EMANETİ EDİN / FREKANSI AKTİF ET',
     success: 'TAHSİSAT SİSMİK SİCİLE İŞLENDİ',
     success_desc: 'Değer teklifiniz sismik sicile kaydedilmiştir. Konsiyerj ekibimiz yerleşiminizi doğrulamak üzere 24 saat içinde sizinle irtibat kuracaktır.',
     
@@ -143,8 +142,8 @@ export default function Home() {
     { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'verified', rawPrice: 980 },
     { date: 'June 26', holder: 'The Chosen One', city: t.status_local, status: 'void', rawPrice: 0 },
     { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'verified', rawPrice: 1100 },
-    { date: 'June 28', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
-    { date: 'June 29', holder: lang === 'tr' ? 'Teklif Sun' : 'Offer Value', city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 28', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
+    { date: 'June 29', holder: t.status_open, city: 'Global', status: 'open', rawPrice: 1100 },
   ];
 
   const scrollToSection = (id: string) => {
@@ -162,8 +161,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
       
-      {/* 🔮 Kozmik Fay Hattı Aydınlatması */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(197,168,128,0.02)_0%,transparent_70%)] blur-3xl pointer-events-none" />
+      {/* 🔮 Kozmik Alan Gölgelendirmesi */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-[radial-gradient(circle,rgba(147,51,234,0.02)_0%,transparent_70%)] blur-3xl pointer-events-none" />
 
       {/* 🏛️ PREMIUM HEADER */}
       <header className="w-full max-w-7xl mx-auto px-6 py-5 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/20 gap-4 sticky top-0 bg-[#0a0a0a]/95 backdrop-blur-md">
@@ -174,8 +173,7 @@ export default function Home() {
         <nav className="flex items-center gap-6 md:gap-8 text-[9px] tracking-[0.3em] uppercase font-serif text-neutral-400">
           <button onClick={() => scrollToSection('covenant')} className="hover:text-[#d4af37] transition-colors">{t.menu_genesis}</button>
           <button onClick={() => scrollToSection('vows')} className="hover:text-[#d4af37] transition-colors">{t.menu_covenant}</button>
-          <button onClick={() => scrollToSection('genesis')} className="hover:text-[#d4af37] transition-colors">{t.menu_artifact}</button>
-          <button onClick={() => scrollToSection('allocation')} className="hover:text-[#d4af37] transition-colors border border-[#c5a880]/20 px-3 py-1 bg-neutral-950/40 text-[#c5a880]">{t.menu_allocation}</button>
+          <button onClick={() => scrollToSection('triad-archive')} className="hover:text-[#d4af37] transition-colors">{t.menu_artifact}</button>
         </nav>
         <div className="flex items-center gap-2 bg-neutral-950/90 border border-neutral-900/60 px-2.5 py-1 text-[8px] tracking-widest font-mono">
           {(Object.keys(TRANSLATIONS) as Array<keyof typeof TRANSLATIONS>).map((l) => (
@@ -188,132 +186,123 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 🏛️ 1. ANLATI / GİRİŞ BÖLÜMÜ (Şairane Açılış Repliği ve Kütle Anomalisi) */}
-      <section id="covenant" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-24 pb-12 z-10 relative scroll-mt-28">
-        <p className="text-[9px] tracking-[0.6em] uppercase text-[#c5a880] mb-8 font-semibold">{t.tagline}</p>
+      {/* 🏛️ BÜYÜLÜ GİRİŞ & VERİMLİ ÇİFT SÜTUN DÜZENİ (ANLATI + SATIŞ YAN YANA) */}
+      <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 pt-16 pb-12 z-10 relative">
         
-        {/* Şanlı Replik */}
-        <h1 className="text-3xl md:text-5xl font-serif font-extralight tracking-wide leading-tight max-w-3xl mb-12 text-white whitespace-pre-line">{t.h1}</h1>
+        {/* 📜 SOL TARAF: ANLATI & VAAT SİNEMATOGRAFİK AKIŞ (7 Sütun) */}
+        <div className="lg:col-span-7 flex flex-col justify-start text-left">
+          <p className="text-[9px] tracking-[0.5em] uppercase text-[#c5a880] mb-4 font-semibold border-b border-neutral-900 pb-2">
+            {t.tagline}
+          </p>
+          
+          <h1 className="text-3xl md:text-5xl font-serif font-extralight tracking-wide leading-tight text-white mb-8 whitespace-pre-line">
+            {t.h1}
+          </h1>
 
-        {/* 📜 Kadim Kayıtlar ve Anormal Kütle Raporu */}
-        <div className="flex flex-col items-center gap-5 text-xs md:text-sm tracking-[0.15em] font-serif uppercase text-neutral-400 max-w-xl mx-auto mb-10 border border-neutral-900 px-8 py-8 bg-neutral-950/40 relative">
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/20 to-transparent" />
-          <div className="text-[8px] tracking-[0.3em] font-mono text-neutral-600 border border-neutral-900/60 px-2 py-0.5 mb-1 bg-black">[ DISCOVERED ANOMALY ]</div>
-          <p className="opacity-50">{t.vow_1}</p>
-          <p>{t.vow_2}</p>
-          <div className="w-4 h-[1px] bg-neutral-900" />
-          <p className="opacity-60 text-[10px] leading-relaxed font-sans">{t.vow_3}</p>
-          <p className="opacity-70 text-[10px] leading-relaxed font-sans">{t.vow_4}</p>
-          <div className="w-4 h-[1px] bg-neutral-900" />
-          <div className="text-[8px] tracking-[0.3em] font-mono text-[#d4af37] border border-[#d4af37]/20 px-3 py-1 my-0.5 bg-[#d4af37]/5 font-semibold">
-            {t.vow_5}
+          {/* Mor Rezonans Kutusu */}
+          <div className="w-full bg-purple-950/5 border border-purple-900/20 p-5 text-left relative overflow-hidden mb-6 shadow-[0_0_40px_rgba(147,51,234,0.02)]">
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/20 to-transparent" />
+            <span className="text-[9px] font-mono block tracking-[0.3em] mb-1.5 text-purple-300 uppercase">{t.resonance_title}</span>
+            <p className="text-xs text-neutral-400 leading-relaxed font-light font-serif italic">{t.resonance_desc}</p>
+          </div>
+
+          {/* Kutsal Rezonans Emirleri Raporu (Mor Arka Plan Efekti Entegre Edildi) */}
+          <div id="covenant" className="flex flex-col gap-4 text-xs md:text-sm tracking-[0.1em] font-serif uppercase text-neutral-400 border border-purple-900/20 p-6 bg-purple-950/5 relative">
+            <div className="text-[7px] tracking-[0.3em] font-mono text-neutral-500 border border-neutral-900/60 px-2 py-0.5 w-max bg-black">[ SEISMIC FAULT ALIGNMENT ]</div>
+            <p className="opacity-50 text-[11px] font-sans tracking-wide lowercase italic">{t.vow_1}</p>
+            <p className="text-white font-light">{t.vow_2}</p>
+            <p className="opacity-70 text-[11px] leading-relaxed lowercase font-sans">{t.vow_3}</p>
+            <p className="opacity-70 text-[11px] leading-relaxed lowercase font-sans">{t.vow_4}</p>
+            <div className="text-[8px] tracking-[0.3em] font-mono text-[#d4af37] border border-[#d4af37]/20 px-3 py-1 w-max bg-[#d4af37]/5 font-semibold">{t.vow_5}</div>
+            
+            <div id="vows" className="w-full h-[1px] bg-neutral-900 my-2" />
+            
+            <p className="opacity-90 text-[#e5e5e5] font-light leading-relaxed">{t.vow_6}</p>
+            <p className="text-[#d4af37] font-medium leading-relaxed">{t.vow_7}</p>
           </div>
         </div>
-      </section>
 
-      {/* 🔮 2. VAAT / GELİŞME BÖLÜMÜ (Maddi Gücün Sınırı ve Kalbe Yerleşen Mor Rezonans) */}
-      <section id="vows" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-12 z-10 relative scroll-mt-28">
-        
-        {/* Mor Rezonans Kutusu */}
-        <div className="w-full bg-purple-950/5 border border-purple-900/20 p-6 md:p-8 text-center relative overflow-hidden max-w-2xl mx-auto mb-10 shadow-[0_0_50px_rgba(147,51,234,0.02)]">
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
-          <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/30 px-2 py-0.5 mb-3 bg-purple-950/20">[ THE PAST FOR SALE ]</div>
-          <span className="text-[10px] font-mono block tracking-[0.3em] mb-2 text-purple-300 uppercase">{t.resonance_title}</span>
-          <p className="text-xs text-neutral-400 leading-relaxed font-light font-serif italic max-w-xl mx-auto">{t.resonance_desc}</p>
+        {/* 📦 SAĞ TARAF: DOĞRUDAN SATIŞ & TAHSİSAT TEKLİF ALANI (5 Sütun - SİTEYE GİREN ANINDA GÖRÜYOR) */}
+        <div id="allocation" className="lg:col-span-5 bg-[#111111]/40 border border-[#c5a880]/20 p-6 md:p-8 relative backdrop-blur-sm self-start shadow-2xl scroll-mt-24">
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[8px] tracking-[0.25em] uppercase font-bold px-4 py-0.5 shadow-xl font-mono text-center">
+            {t.gold_plate}
+          </div>
+
+          {!orderSubmitted ? (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="text-center mb-4">
+                <span className="text-[8px] tracking-[0.3em] text-[#c5a880] block font-mono">ACQUISITION PROTOCOL</span>
+                <h3 className="text-xs tracking-widest text-white uppercase mt-0.5">{t.form_title}</h3>
+              </div>
+              
+              <div className="space-y-2">
+                <input type="text" required value={buyerName} onChange={(e) => setBuyerName(e.target.value)} placeholder={lang === 'tr' ? 'Asil İsim & Sismik Unvan' : t.input_name} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
+                <input type="text" required value={buyerCity} onChange={(e) => setBuyerCity(e.target.value)} placeholder={t.input_city} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
+                <input type="number" required min="1100" placeholder={lang === 'tr' ? 'EUR Cinsinden Değer Teklifiniz (Taban: €1,100)' : `Your Value Offer in EUR (Floor: €1,100)`} className="w-full bg-[#161616] border border-[#c5a880]/30 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-[#c5a880] tracking-widest font-mono placeholder:text-neutral-700" />
+                <input type="email" required placeholder={t.input_email} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
+                <textarea rows={3} required placeholder={t.input_address} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide resize-none leading-relaxed font-sans placeholder:text-neutral-700" />
+              </div>
+              
+              <button type="submit" className="w-full bg-[#c5a880] text-black font-semibold uppercase text-[10px] tracking-[0.3em] py-4 rounded-none hover:bg-white hover:text-black transition-all duration-500 shadow-2xl border border-[#c5a880]">
+                {t.button_submit}
+              </button>
+            </form>
+          ) : (
+            <div className="py-12 text-center space-y-3">
+              <span className="text-2xl block">🏛️</span>
+              <h3 className="text-xs tracking-[0.3em] text-[#c5a880] uppercase font-bold">{t.success}</h3>
+              <p className="text-xs text-neutral-400 leading-relaxed max-w-sm mx-auto">{t.success_desc}</p>
+            </div>
+          )}
         </div>
+      </div>
 
-        <div className="flex flex-col items-center gap-4 text-xs md:text-sm tracking-[0.15em] font-serif uppercase text-neutral-400 max-w-lg mx-auto">
-          <p className="opacity-80 text-[#e5e5e5] font-light leading-relaxed">{t.vow_6}</p>
-          <p className="text-[#d4af37] font-medium text-center">{t.vow_7}</p>
-        </div>
-      </section>
-
-      {/* 📜 ARŞİV DETAYLARI (İsteyenin açıp okuyacağı derin metamorfik geçmiş) */}
-      <section id="genesis" className="w-full max-w-4xl mx-auto px-6 flex flex-col items-center justify-center text-center pb-12 z-10 relative scroll-mt-28">
-        <div className="w-12 h-[1px] bg-neutral-900 mb-8" />
-        <p className="text-xs font-light tracking-wide text-neutral-400 max-w-2xl leading-relaxed mb-4 text-center">{t.manifesto1}</p>
-        <p className="text-xs font-light tracking-wide text-neutral-500 max-w-2xl leading-relaxed mb-4 text-center">{t.manifesto2}</p>
-      </section>
-
-      {/* 📦 3. SATIŞ / SONUÇ BÖLÜMÜ (Mermer Kavanoz Triad Arşivi ve Değer Teklifi Alnı) */}
-      <section className="w-full max-w-4xl mx-auto px-6 py-4 z-10 relative">
-        <div className="bg-[#111111]/30 border border-neutral-900/80 p-6 md:p-10 relative group backdrop-blur-sm">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[8px] tracking-[0.25em] uppercase font-bold px-4 py-0.5 shadow-xl font-mono text-center">{t.gold_plate}</div>
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline mb-6 border-b border-neutral-900/60 pb-4">
+      {/* 📦 GEOLOJİK MATERYAL ARŞİVİ (The Core Detayları) */}
+      <section id="triad-archive" className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative scroll-mt-24">
+        <div className="bg-[#111111]/20 border border-neutral-900/60 p-6 md:p-8 backdrop-blur-sm">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline mb-6 border-b border-neutral-900 pb-4">
             <div>
               <h2 className="text-xl font-serif font-light tracking-widest text-white">{t.set_title}</h2>
               <p className="text-[9px] tracking-widest text-[#c5a880] uppercase mt-0.5">{t.set_sub}</p>
             </div>
-            <div className="mt-2 md:mt-0 flex items-center gap-2 group/price relative cursor-help">
-              <span className="text-xl font-serif text-[#c5a880] tracking-wider font-light">Dynamic Valuation</span>
-              <span className="text-[9px] bg-neutral-900 border border-neutral-800 text-neutral-600 rounded-full w-3.5 h-3.5 flex items-center justify-center font-mono">?</span>
-              <div className="absolute bottom-6 right-0 w-64 bg-[#141414] border border-[#c5a880]/30 p-3 text-[9px] text-neutral-400 leading-relaxed shadow-2xl tracking-wide opacity-0 group-hover/price:opacity-100 transition-opacity duration-300 pointer-events-none z-50 font-sans">
-                <span className="text-[#d4af37] font-serif block mb-0.5">{t.tooltip_title}</span>
-                {t.tooltip_desc}
-              </div>
-            </div>
           </div>
-          <p className="text-xs text-neutral-400 mb-6 leading-relaxed font-light text-center max-w-2xl mx-auto">{t.set_desc}</p>
+          
+          <p className="text-xs text-neutral-400 mb-6 leading-relaxed font-light text-justify max-w-4xl">{t.set_desc}</p>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-            <div className="bg-[#141414]/80 border border-neutral-900/60 p-4">
+            <div className="bg-[#141414]/90 border border-neutral-900/80 p-4">
               <span className="text-[8px] font-mono text-[#c5a880] block mb-0.5">Ⅰ / THE CORE PURITY</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-1">{t.grey_title}</h4>
               <p className="text-[10px] text-neutral-500 leading-relaxed font-light">{t.grey_desc}</p>
             </div>
-            <div className="bg-[#141414]/80 border border-neutral-900/60 p-4">
+            <div className="bg-[#141414]/90 border border-neutral-900/80 p-4">
               <span className="text-[8px] font-mono text-[#d4af37] block mb-0.5">Ⅱ / IMPERIAL REFINE</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-1">{t.white_title}</h4>
               <p className="text-[10px] text-neutral-500 leading-relaxed font-light">{t.white_desc}</p>
             </div>
-            <div className="bg-[#141414]/80 border border-neutral-900/60 p-4">
+            <div className="bg-[#141414]/90 border border-neutral-900/80 p-4">
               <span className="text-[8px] font-mono text-[#c5a880] block mb-0.5">Ⅲ / TEKTONIC SHIELD</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-1">{t.raw_title}</h4>
               <p className="text-[10px] text-neutral-500 leading-relaxed font-light">{t.raw_desc}</p>
             </div>
           </div>
 
-          {/* 🔮 ARTIFACT */}
-          <div id="artifact" className="bg-[#131313]/90 border border-[#c5a880]/15 p-5 mb-6 text-center relative overflow-hidden scroll-mt-28">
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#c5a880]/20 to-transparent" />
+          {/* 🔮 GECE TAŞI TRANSMITTER ALANI */}
+          <div id="artifact" className="bg-[#131313]/90 border border-purple-900/20 p-5 text-center relative overflow-hidden scroll-mt-24">
+            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/10 to-transparent" />
             <div className="inline-block text-[7px] tracking-[0.4em] font-mono text-purple-400 border border-purple-900/60 px-2 py-0.5 mb-3 bg-purple-950/10">[ ANCIENT CHRONIC TRANSMITTER ]</div>
             <span className="text-[8px] font-mono block tracking-[0.25em] mb-1.5 text-[#d4af37]">{t.monolith_title}</span>
-            <p className="text-xs text-neutral-400 leading-relaxed font-light max-w-xl mx-auto text-center whitespace-pre-line">{t.monolith_desc}</p>
+            <p className="text-xs text-neutral-400 leading-relaxed font-light max-w-2xl mx-auto whitespace-pre-line">{t.monolith_desc}</p>
           </div>
 
-          <div className="py-4 text-center border-t border-neutral-900/40">
-            <p className="text-xs font-serif italic text-[#c5a880] tracking-wide max-w-xl mx-auto leading-relaxed">"{t.call_to_action}"</p>
-          </div>
-
-          {/* ALLOCATION TAHSİSAT TEKLİF ALANI */}
-          <div id="allocation" className="border-t border-neutral-900/40 pt-6 scroll-mt-28">
-            {!orderSubmitted ? (
-              <form onSubmit={handleSubmit} className="space-y-3 max-w-2xl mx-auto">
-                <div className="text-center mb-4">
-                  <span className="text-[8px] tracking-[0.3em] text-[#c5a880] block font-mono">ACQUISITION PROTOCOL</span>
-                  <h3 className="text-xs font-serif tracking-widest text-white uppercase mt-0.5">{t.form_title}</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <input type="text" required value={buyerName} onChange={(e) => setBuyerName(e.target.value)} placeholder={lang === 'tr' ? 'Asil İsim & Sismik Unvan' : t.input_name} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                  <input type="text" required value={buyerCity} onChange={(e) => setBuyerCity(e.target.value)} placeholder={t.input_city} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                </div>
-                <input type="number" required min="1100" placeholder={lang === 'tr' ? 'EUR Cinsinden Değer Teklifiniz (Taban: €1,100)' : `Your Value Offer in EUR (Floor: €1,100)`} className="w-full bg-[#161616] border border-[#c5a880]/30 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-[#c5a880] tracking-widest font-mono placeholder:text-neutral-700" />
-                <input type="email" required placeholder={t.input_email} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                <textarea rows={2} required placeholder={t.input_address} className="w-full bg-[#161616] border border-neutral-800 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide resize-none leading-relaxed font-sans placeholder:text-neutral-700" />
-                <button type="submit" className="w-full bg-transparent border border-[#c5a880] text-[#c5a880] uppercase font-medium text-[10px] tracking-[0.3em] py-4 rounded-none hover:bg-[#c5a880] hover:text-black transition-all duration-500 shadow-2xl">{t.button_submit}</button>
-              </form>
-            ) : (
-              <div className="py-4 text-center space-y-2">
-                <span className="text-lg">🏛️</span>
-                <h3 className="text-xs tracking-[0.3em] text-[#c5a880] uppercase font-bold">{t.success}</h3>
-                <p className="text-xs text-neutral-400 max-w-sm mx-auto leading-relaxed">{t.success_desc}</p>
-              </div>
-            )}
+          <div className="py-4 text-center border-t border-neutral-900/60 mt-6">
+            <p className="text-xs font-serif italic text-[#c5a880] tracking-wide max-w-2xl mx-auto leading-relaxed">"{t.call_to_action}"</p>
           </div>
         </div>
       </section>
 
       {/* ⏳ 4. BEKLE & GÖR / ZAMANSAL HİZALANMA TAKVİMİ */}
-      <section className="w-full max-w-4xl mx-auto px-6 py-6 z-10 relative">
+      <section className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative">
         <div className="border-t border-neutral-950 pt-6">
           <div className="text-center mb-6">
             <h3 className="text-[10px] tracking-[0.4em] text-white uppercase font-serif">{t.ledger_title}</h3>
