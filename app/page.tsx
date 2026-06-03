@@ -66,6 +66,7 @@ interface TranslationSchema {
   footer_manifest: string;
   footer_locations: string;
 
+  status_void_label: string;
   seo_text: string;
 }
 
@@ -97,18 +98,18 @@ const TRANSLATIONS: Record<Language, TranslationSchema> = {
     vow_1_text:
       'Rare mineral layering softens the visible fatigue of modern time. It completely eliminates the signature of seconds from the cell matrix, maintaining a calm, porcelain surface presence.',
 
-    vow_2_title: 'Mirasın Ağırlığı',
+    vow_2_title: 'Inherited Presence',
     vow_2_text:
       'An ancient magmatic crust that realigns trajectories with silent grace. A ritual object shaped around material weight, silence and heavy restraint for individuals who no longer seek loud luxury.',
 
-    vow_3_title: 'Mahrem Tahsisat',
+    vow_3_title: 'Private Allocation',
     vow_3_text:
       'One singular allocation is released globally each day via our Private Circle verification. No negotiation. No discount. No public inventory. Absolute rate: €718.',
 
     collection_title: 'THE ANTIQUE TRIAD SET',
     collection_subtitle: 'Archive Case / Geological Repository',
     collection_text:
-      'Each heavy vessel carries unique mineral veining and tectonic variation. Hand-carved marble surfaces preserve the absolute individuality of every allocation case.',
+      'Each heavy vessel carries unique mineral veining and tonal variation. Hand-carved marble surfaces preserve the absolute individuality of every allocation case.',
 
     grey_title: 'PHRYGIAN GREY',
     grey_text:
@@ -126,23 +127,23 @@ const TRANSLATIONS: Record<Language, TranslationSchema> = {
     registry_subtitle:
       'The secured destination and official mahrem vault location where the archive allocation shall be locked and delivered.',
 
-    input_name: 'Custodian Name & Title (e.g., Sovereign Sedat)',
-    input_city: 'Target City / Country (e.g., London / UK)',
-    input_email: 'Encrypted Digital Address (Email)',
-    input_address: 'Secured Delivery Destination Address',
+    input_name: 'Registry Identity',
+    input_city: 'Intended Vault Destination',
+    input_email: 'Private Correspondence',
+    input_address: 'Secured Custody Address',
 
     submit: 'LOCK ALLOCATION REQUEST / €718 AMEX & CARDS',
 
-    success_title: 'ALLOCATION RECORDED IN THE SEISMIC LEDGER',
+    success_title: 'ALLOCATION RECORDED',
     success_text:
-      'Your request has entered the private registry review process. Settlement locked at a fixed rate of €718. Charging occurs only upon allocation approval.',
+      'Your request has entered the private registry review process. Settlement locked at a fixed rate of €718. Allocation confirmation remains subject to approval.',
 
     footer_manifest: 'For those who inherited everything except time.',
-    footer_locations:
-      'LONDON VAULT / PARIS BUREAU / DUBAI SUITE / ISTANBUL HQ',
+    footer_locations: 'LONDON / PARIS / DUBAI / ISTANBUL',
 
+    status_void_label: 'Priceless',
     seo_text:
-      'Phrygian Lab — Geological Ritual Objects — House of Phrygian Lab — Anatolian Thermal Mineral Preservation — Private Allocation House'
+      'Phrygian Lab — Geological Ritual Objects — Anatolian Thermal Mineral Preservation — Private Allocation House'
   },
 
   tr: {
@@ -164,11 +165,11 @@ const TRANSLATIONS: Record<Language, TranslationSchema> = {
 
     archive_title: 'Luxury fades. Civilizations remain.',
     archive_text:
-      'Phrygian Lab sıradan bir kozmetik evi değildir. Her obje, Anadolu’nun gerçek termal mineral yoğunluğu ve peloid altyapısı etrafında şekillenir; jeolojik basınç ile ritüel hazırlık süreçleriyle korunur. Bu obje kitlesel tüketim için tasarlanmaz. Paranın kibrini aşan, zamana hükmetme imtiyazı sunan yasaklı bir ritüel objesidir.',
+      'Phrygian Lab sıradan bir kozmetik evi değildir. Her obje, Anadolu’nun gerçek termal mineral yoğunluğu ve peloid altyapısı etrafında şekillenir; jeolojik basınç ile ritüel hazırlık süreçleriyle korunur. Bu obje kitlesel tüketim için tasarlanmaz. Paranın kibrini aşan, zamana hükmetme imtiyazıdır.',
 
     edict_title: 'ÜÇ JEOLOJİK ASİL SÖZLEŞME',
 
-    vow_1_title: 'Mutlak Güzellik',
+    vow_1_title: 'Korunan Güzellik',
     vow_1_text:
       'Nadir mineral katmanları modern zamanın görünür yorgunluğunu yumuşatır. Hücre matrisindeki saniyelerin izini silerek binlerce yıllık bir arınma ve kusursuz porselen asalet sunar.',
 
@@ -195,29 +196,29 @@ const TRANSLATIONS: Record<Language, TranslationSchema> = {
 
     raw_title: 'TRAVERTINE RAW',
     raw_text:
-      'Termal kaynaklardan magmatik mineral kabuk. Zamanın yıpratıcı etkisini cilt bariyerinde tamamen donduran ağır jeolojik katman.',
+      'En doğal hali korunmuş termal mineral dokusu. Zamanın yıpratıcı etkisini donduran ağır jeolojik kalkan.',
 
     registry_title: 'MAHREM SİCİL BAŞVURUSU',
     registry_subtitle:
-      'Masif mermer kavanozun ve altın plakanın kilitlenip ulaştırılacağı resmi mahrem lokasyon ve güvenli teslimat adresi.',
+      'Arşiv tahsisatının ulaştırılacağı güvenli teslimat lokasyonu ve mahrem vault alanı.',
 
-    input_name: 'Asil İsim & Saygın Unvan (Örn: Sovereign Sedat)',
-    input_city: 'Hedef Şehir / Ülke (Örn: Istanbul / TR)',
-    input_email: 'Şifreli Dijital Adres (E-posta)',
-    input_address: 'Emanetin Ulaştırılacağı Resmi Teslimat Adresi',
+    input_name: 'Sicil Kimliği',
+    input_city: 'Hedef Mahrem Lokasyon',
+    input_email: 'Özel Yazışma Adresi',
+    input_address: 'Güvenli Emanet Adresi',
 
     submit: 'TAHSİSAT TALEBİNİ KİLİTLE / €718 AMEX & KARTLAR',
 
-    success_title: 'TAHSİSAT SİSMİK SİCİLE İŞLENDİ',
+    success_title: 'TAHSİSAT KAYDA ALINDI',
     success_text:
-      'Asil sicil başvurunuz konsey arşivine alınmıştır. Sabit bedel €718 olarak kilitlenmiştir. Kartınızdan tahsilat sadece konsey tahsisatınızı onaylarsa yapılacaktır.',
+      'Başvurunuz mahrem sicil inceleme sürecine alınmıştır. Tahsisat onayı değerlendirme sonrasında gerçekleşir. Tahsilat onay durumunda aktiftir.',
 
     footer_manifest: 'Her şeye sahip olup zamana sahip olamayanlar için.',
-    footer_locations:
-      'LONDON VAULT / PARIS BUREAU / DUBAI SUITE / ISTANBUL HQ',
+    footer_locations: 'LONDON / PARIS / DUBAI / ISTANBUL',
 
+    status_void_label: 'Ebedi',
     seo_text:
-      'Phrygian Lab — Jeolojik Ritüel Objeleri — Antik Ritüel Objesi — Anadolu Termal Mineral Koruma Evi — London Paris Dubai Istanbul Private Circle'
+      'Phrygian Lab — Jeolojik Ritüel Objeleri — Anadolu Termal Mineral Koruma Evi'
   }
 };
 
@@ -234,9 +235,10 @@ export default function Home() {
     address: ''
   });
 
-  const t = useMemo(() => TRANSLATIONS[lang], [lang]);
+  // Tipleme uyuşmazlığı tamamen giderilen dinamik sözlük bağlaması
+  const t = useMemo<TranslationSchema>(() => TRANSLATIONS[lang], [lang]);
 
-  const CALENDAR_DAYS = [
+  const CALENDAR_DAYS = useMemo(() => [
     { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'Sealed', price: '€718', isVoid: false },
     { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'Sealed', price: '€718', isVoid: false },
     { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'Sealed', price: '€718', isVoid: false },
@@ -244,7 +246,7 @@ export default function Home() {
     { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'Sealed', price: '€718', isVoid: false },
     { date: 'June 28', holder: 'Sovereign Alignment', city: 'Global', status: 'Open', price: '€718', isVoid: false },
     { date: 'June 29', holder: 'Sovereign Alignment', city: 'Global', status: 'Open', price: '€718', isVoid: false },
-  ];
+  ], []);
 
   const handleInputChange = (key: FormKey, value: string) => {
     setFormData((prev) => ({
@@ -265,7 +267,7 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden bg-[#0a0a0a] text-[#f3f3f3] min-h-screen font-sans selection:bg-[#c5a880] selection:text-black">
 
-      {/* 🔮 %5 ÖLÇEKLİ LÜKS SISMİK SIZINTI MOR GRADIENT */}
+      {/* 🔮 MOR ARKA PLAN GLOW TABAKASI */}
       <div className="pointer-events-none absolute inset-0 z-0">
         <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-purple-900/10 blur-[180px]" />
       </div>
@@ -301,20 +303,20 @@ export default function Home() {
         </div>
       </header>
 
-      {/* 🔮 MOR PARILDAYAN ASİL KITLIK ŞERİDİ */}
+      {/* MOR PARILDAYAN ASİL KITLIK ŞERİDİ */}
       <div className="w-full bg-gradient-to-r from-purple-950/20 via-purple-900/30 to-purple-950/20 border-b border-purple-900/10 py-3 text-center z-10 relative animate-pulse shadow-[0_0_20px_rgba(147,51,234,0.05)] font-serif">
         <p className="text-[10px] tracking-[0.4em] uppercase text-purple-300/90 font-semibold px-4">
           {t.allocation_status}
         </p>
       </div>
 
-      {/* 🏛️ SİNE MATOGRAFİK ÇİFT SÜTUN AKIŞ SİSTEMİ */}
+      {/* SİNEMATOGRAFİK ÇİFT SÜTUN AKIŞ SİSTEMİ */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-16 pb-12 z-10 relative">
         
-        {/* SOL SÜTUN: HİKAYESİ VE ETKİLEŞİMLİ SÖZLEŞMELER */}
+        {/* SOL SÜTUN: HİKAYE VE RİTÜELLER */}
         <div className="lg:col-span-7 flex flex-col justify-start text-left space-y-12">
           
-          {/* ⚜️ LUXURY FASHION HOUSE LOGO MÜHRÜ */}
+          {/* LUXURY FASHION HOUSE LOGO MÜHRÜ */}
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 border border-[#d4af37] flex items-center justify-center relative bg-neutral-950 shadow-2xl group cursor-help">
               <div className="absolute inset-0.5 border border-neutral-800" />
@@ -322,34 +324,30 @@ export default function Home() {
             </div>
             <div>
               <p className="text-[9px] tracking-[0.5em] uppercase text-[#c5a880] mb-0.5 font-semibold font-mono">
-                {t.tagline}
+                {t.hero_subtitle}
               </p>
               <div className="w-32 h-[1px] bg-gradient-to-r from-[#c5a880]/40 to-transparent" />
             </div>
           </div>
 
-          {/* HERO GİRİŞ BAŞLIĞI */}
           <section className="space-y-4">
             <h1 className="text-4xl md:text-6xl tracking-[0.2em] font-extralight text-white font-serif leading-tight">
               {t.hero_title}
             </h1>
-            <p className="text-sm uppercase tracking-[0.4em] text-[#c5a880] font-mono">
-              {t.hero_subtitle}
-            </p>
           </section>
 
           {/* MANİFESTO ALANI */}
           <section id="archive" className="space-y-4 scroll-mt-28 bg-[#111111]/10 border border-neutral-900/60 p-6 backdrop-blur-sm relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-1 h-full bg-[#d4af37]" />
-            <h2 className="text-xl font-serif font-light tracking-widest text-white uppercase pl-2">
+            <div className="absolute top-0 left-0 w-1 h-[1px] bg-[#d4af37]" />
+            <h2 className="text-xl font-serif font-light tracking-widest text-white uppercase">
               {t.archive_title}
             </h2>
-            <p className="text-xs md:text-sm text-neutral-400 leading-[2.1] font-serif text-justify pl-2 font-light">
+            <p className="text-xs md:text-sm text-neutral-400 leading-[2.1] font-serif text-justify font-light">
               {t.archive_text}
             </p>
           </section>
 
-          {/* 🔮 ETKİLEŞİMLİ SÖZLEŞMELER ALANI */}
+          {/* SÖZLEŞMELER ALANI */}
           <section id="edicts" className="w-full bg-neutral-950/40 border border-neutral-900/60 p-6 relative scroll-mt-28 space-y-4">
             <span className="text-[10px] font-mono block tracking-[0.3em] text-neutral-500 font-semibold uppercase">{t.edict_title}</span>
             
@@ -382,10 +380,10 @@ export default function Home() {
           </section>
         </div>
 
-        {/* SAĞ SÜTUN: CUSTODIAN BAŞVURU FORMU */}
+        {/* SAĞ SÜTUN: ASİL BAŞVURU FORMU */}
         <div id="allocation" className="lg:col-span-5 bg-[#0d0d0d] border border-neutral-900 p-6 md:p-8 relative self-start shadow-2xl scroll-mt-28">
           
-          {/* 👑 "ALTIN SIRADANDIR! GEÇMİŞE SAHİP OL" KİBİR MÜHRÜ */}
+          {/* KİBİR MÜHRÜ */}
           <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[8px] tracking-[0.2em] uppercase font-bold px-4 py-0.5 shadow-xl font-mono text-center whitespace-nowrap">
             {t.hero_quote_line_1} {t.hero_quote_line_2}
           </div>
@@ -425,8 +423,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 📦 GEOLOJİK ELEMENTER ÜRÜNLER (Özel Arka Plan Fonlu Kartlar) */}
-      <section className="w-full max-w-7xl mx-auto px-6 py-4 z-10 relative">
+      {/* 📦 GEOLOJİK ELEMENTER ÜRÜNLER KARTLARI */}
+      <section className="max-w-7xl mx-auto px-6 py-4 z-10 relative">
         <div className="bg-[#111111]/40 border border-neutral-900 p-6 md:p-8 backdrop-blur-sm">
           <div className="mb-6 border-b border-neutral-900 pb-4">
             <h2 className="text-lg font-serif font-light tracking-widest text-white uppercase">{t.collection_title}</h2>
@@ -436,21 +434,18 @@ export default function Home() {
           <p className="text-xs text-neutral-400 mb-6 leading-relaxed font-serif text-justify max-w-4xl font-light">{t.collection_text}</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* PHRYGIAN GREY: Obsidian / Kül Fonu */}
             <div className="bg-gradient-to-b from-[#141517] to-[#0b0c0d] border border-neutral-900 p-5 shadow-xl transition-all duration-500 hover:border-[#c5a880]/30">
               <span className="text-[8px] font-mono text-[#c5a880] block mb-1 uppercase tracking-widest">Ⅰ / ARCHIVE CASE</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-2 uppercase">{t.grey_title}</h4>
               <p className="text-[11px] text-neutral-500 leading-relaxed font-serif font-light text-justify">{t.grey_text}</p>
             </div>
 
-            {/* PHRYGIAN WHITE: Saf Mermer Fonu */}
             <div className="bg-gradient-to-b from-[#1e1f24] to-[#0e0f12] border border-neutral-900 p-5 shadow-xl transition-all duration-500 hover:border-[#c5a880]/30">
               <span className="text-[8px] font-mono text-[#d4af37] block mb-1 uppercase tracking-widest">Ⅱ / ARCHIVE CASE</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-2 uppercase">{t.white_title}</h4>
               <p className="text-[11px] text-neutral-400 leading-relaxed font-serif font-light text-justify">{t.white_text}</p>
             </div>
 
-            {/* TRAVERTINE RAW: Sıcak Traverten Toprak Fonu */}
             <div className="bg-gradient-to-b from-[#1c1612] to-[#0d0a08] border border-neutral-900 p-5 shadow-xl transition-all duration-500 hover:border-[#c5a880]/30">
               <span className="text-[8px] font-mono text-[#c5a880] block mb-1 uppercase tracking-widest">Ⅲ / ARCHIVE CASE</span>
               <h4 className="text-xs font-serif text-white tracking-widest mb-2 uppercase">{t.raw_title}</h4>
@@ -460,12 +455,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ⏳ MOR PARILTILI ANTİK HİZALANMA TAKVİMİ */}
-      <section className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative">
+      {/* ⏳ MOR ANTİK TAKVİM MATRİSİ */}
+      <section className="max-w-7xl mx-auto px-6 py-6 z-10 relative">
         <div className="border-t border-neutral-900 pt-6">
           <div className="text-center mb-6">
-            <h3 className="text-[10px] tracking-[0.4em] text-white uppercase font-serif">{t.ledger_title}</h3>
-            <p className="text-[8px] text-neutral-600 tracking-widest uppercase mt-1 font-mono">{t.ledger_sub}</p>
+            <h3 className="text-[10px] tracking-[0.4em] text-white uppercase font-serif">ZAMANSAL HİZALANMA TAKVİMİ / THE LEDGER</h3>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-7 gap-2">
@@ -490,10 +484,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🌍 FOOTER LÜKS SEO ALTYAPISI */}
+      {/* FOOTER LÜKS SEO ALTYAPISI */}
       <footer className="border-t border-white/5 mt-12 z-10 relative bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col items-center text-center gap-4">
-          <p className="text-lg md:text-xl text-white font-light font-serif">
+          <p className="text-xl md:text-2xl text-white font-light font-serif">
             {t.footer_manifest}
           </p>
           <p className="text-[9px] uppercase tracking-[0.45em] text-neutral-600 font-mono">
