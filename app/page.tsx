@@ -1,364 +1,735 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
-const TRANSLATIONS = {
+type Language = 'en' | 'tr';
+
+type FormKey =
+  | 'name'
+  | 'city'
+  | 'email'
+  | 'address';
+
+interface FormData {
+  name: string;
+  city: string;
+  email: string;
+  address: string;
+}
+
+interface TranslationSchema {
+  protocol: string;
+  allocation_status: string;
+  hero_title: string;
+  hero_subtitle: string;
+  hero_quote_line_1: string;
+  hero_quote_line_2: string;
+  request_button: string;
+  approval_notice: string;
+
+  menu_archive: string;
+  menu_edict: string;
+  menu_allocation: string;
+
+  archive_title: string;
+  archive_text: string;
+
+  edict_title: string;
+
+  vow_1_title: string;
+  vow_1_text: string;
+
+  vow_2_title: string;
+  vow_2_text: string;
+
+  vow_3_title: string;
+  vow_3_text: string;
+
+  collection_title: string;
+  collection_subtitle: string;
+  collection_text: string;
+
+  grey_title: string;
+  grey_text: string;
+
+  white_title: string;
+  white_text: string;
+
+  raw_title: string;
+  raw_text: string;
+
+  registry_title: string;
+  registry_subtitle: string;
+
+  input_name: string;
+  input_city: string;
+  input_email: string;
+  input_address: string;
+
+  submit: string;
+
+  success_title: string;
+  success_text: string;
+
+  footer_manifest: string;
+  footer_locations: string;
+
+  seo_text: string;
+}
+
+const TRANSLATIONS: Record<Language, TranslationSchema> = {
   en: {
-    protocol: 'House of Phrygian Lab / Since 718 BC',
-    remaining: 'DAILY ALLOCATION STATUS',
-    tagline: 'GEOLOGICAL ARISTOCRACY / TEMPORAL PRESERVATION RITUAL',
-    limit_notice: '✨ Allocation Notification: Limited strictly to ONE worldwide Custodian per day.',
-    gold_plate_claim: 'Gold survives centuries. Memory survives empires.',
-    
-    menu_story: 'The Secret Archive',
-    menu_vow: 'The Ritual Edict',
-    menu_own: 'Request Allocation',
+    protocol: 'HOUSE OF PHRYGIAN LAB / SINCE 718 BC',
+    allocation_status: 'GLOBAL DAILY ALLOCATION / 1 OF 1',
 
-    // 📜 1. HİKAYESİ (Geological Reality & Secret Royal Archive)
-    story_title: 'Luxury fades. Civilizations remain.',
-    story_desc: 'Capital can capture fields, fields build empires, and gold buys allegiance. But time has no master, save for those who hold the deep memory of the earth. The House of Phrygian Lab does not offer industrial cosmetics. This is an unlit mineral mass from the authentic thermal veins of ancient Anatolia—a banned aristokratik ritüel objesi designed to freeze temporal decay. You are not a consumer. You are the Custodian of an unreturned frequency.',
+    hero_title: 'PHRYGIAN LAB',
+    hero_subtitle: 'Geological Preservation Ritual',
 
-    // 🔮 2. VAATLER (Sessiz Kibir & Ağır Materyal Hissi)
-    vow_title: 'THE THREE GEOLOGICAL EDICTS',
-    vow_beauty_title: 'Sovereign Beauty',
-    vow_beauty_desc: 'A thousand-year purification derived from genuine Anatolian peloid and deep magmatic mineral crust. It bypasses the modern clean beauty illusion to completely erase the signature of seconds from the cell matrix.',
-    vow_luck_title: 'The Phrygian Luck',
-    vow_desc: 'In 718 BC, King Midas recognized that gold is a transient flash, but the tectonic structures of Midaum hold eternal fortune. This mineral shield realigns your trajectory with silent grace.',
-    vow_prestige_title: 'Absolute Prestige',
-    vow_prestige_desc: 'Isolated from transactional gold. One singular allocation per day worldwide, granted exclusively via our Private Circle verification. Absolute rate: €718.',
+    hero_quote_line_1: 'Gold is ordinary.',
+    hero_quote_line_2: 'Possess the past.',
 
-    // 📦 3. SAKLAMA ARCHIVE
-    set_title: 'THE ANTIQUE TRIAD SET',
-    set_sub: 'Archive Case / Metamorphic Preservation Repository',
-    set_desc: 'A heavy geological object, hand-carved from unlit marble veins. It contains three high-density metamorphic layers, delivered within an Archive Case alongside a personalized 24K Gold Mounted Plate:',
-    
+    request_button: 'REQUEST ALLOCATION',
+    approval_notice: 'Not every allocation request is approved.',
+
+    menu_archive: 'The Archive',
+    menu_edict: 'The Edicts',
+    menu_allocation: 'Allocation',
+
+    archive_title: 'Luxury fades. Civilizations remain.',
+    archive_text:
+      'Phrygian Lab does not operate as a conventional cosmetic house. Each vessel is formed around authentic Anatolian thermal mineral density, preserved through geological pressure and ceremonial preparation. The object is not designed for mass consumption. It exists for private continuity.',
+
+    edict_title: 'THE THREE GEOLOGICAL EDICTS',
+
+    vow_1_title: 'Preserved Beauty',
+    vow_1_text:
+      'Rare mineral layering softens the visible fatigue of modern time while maintaining a calm, porcelain surface presence.',
+
+    vow_2_title: 'Inherited Presence',
+    vow_2_text:
+      'A ritual object shaped around material weight, silence and restraint. Designed for individuals who no longer seek loud luxury.',
+
+    vow_3_title: 'Private Allocation',
+    vow_3_text:
+      'One allocation is released globally each day. No negotiation. No discount. No public inventory.',
+
+    collection_title: 'THE ANTIQUE TRIAD SET',
+    collection_subtitle: 'Archive Case / Geological Repository',
+    collection_text:
+      'Each vessel carries unique mineral veining and tonal variation. Hand-finished marble surfaces preserve the individuality of every allocation.',
+
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'High volcanic silica and deep sulfur. A heavy geological shield connecting your cells to the deep memory of the earth.',
+    grey_text:
+      'Dense volcanic mineral composition with deep geological character.',
+
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Pure calcium carbonate from unlit veins. Imparts the smooth, ageless porcelain tone utilized in ancient imperial baths.',
+    white_text:
+      'A pale mineral surface inspired by ancient imperial bath rituals.',
+
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Magmatic mineral crust from thermal springs. A structural barrier that completely freezes the erosion of mortal time.',
-    
-    // 💳 ALLOCATION REQUEST FORM
-    form_title: 'SOVEREIGN REGISTRY REQUEST',
-    form_sub: 'The private destination where the solid marble jar and gold plate shall be locked and delivered.',
-    input_name: 'Custodian Name & Title (e.g., Sovereign Sedat)',
-    input_city: 'Target City / Country (e.g., London / UK)',
-    input_email: 'Encrypted Digital Address (Email)',
-    input_address: 'Secured Destination Shipping Address',
-    button_submit: 'REQUEST ALLOCATION / VERIFY WITH CREDIT CARD & AMEX',
-    success: 'ALLOCATION RECORDED IN THE SEISMIC LEDGER',
-    success_desc: 'Your registry request has been received by the council. Settlement locked at a fixed rate of €718. Charging occurs only upon allocation confirmation.',
-    
-    // ⏳ TAKVİM BÖLÜMÜ
-    ledger_title: 'THE ALLIGNMENT CALENDAR',
-    ledger_sub: 'Commencing June 23rd Solstice — Fixed Private Circle Valuation',
-    status_void_label: 'Priceless',
-    seo_text: 'House of Phrygian Lab | Geological Aristocracy | Temporal Preservation Ritual | London - Paris - Istanbul - Dubai Private Circle Vaults'
+    raw_text:
+      'Thermal mineral texture preserved in its most elemental form.',
+
+    registry_title: 'PRIVATE REGISTRY REQUEST',
+    registry_subtitle:
+      'The secured destination where the archive allocation shall be delivered.',
+
+    input_name: 'Registry Identity',
+    input_city: 'Intended Vault Destination',
+    input_email: 'Private Correspondence',
+    input_address: 'Secured Custody Address',
+
+    submit: 'LOCK ALLOCATION REQUEST',
+
+    success_title: 'ALLOCATION RECORDED',
+    success_text:
+      'Your request has entered the private registry review process. Allocation confirmation remains subject to approval.',
+
+    footer_manifest: 'For those who inherited everything except time.',
+    footer_locations:
+      'LONDON / PARIS / DUBAI / ISTANBUL',
+
+    seo_text:
+      'Phrygian Lab — Geological Ritual Objects — Anatolian Thermal Mineral Preservation — Private Allocation House'
   },
+
   tr: {
-    protocol: 'House of Phrygian Lab / M.Ö. 718',
-    remaining: 'GÜNLÜK TAHSİSAT DURUMU',
-    tagline: 'JEOLOJİK ARİSTOKRASİ / TEMPORAL PRESERVATION RITUAL',
-    limit_notice: '✨ Tahsisat Bildirisi: Küresel ölçekte günde sadece TEK bir Custodian için kilitlenir.',
-    gold_plate_claim: 'Altın yüzyıllarca hayatta kalır. Hafıza imparatorlukları esir alır.',
-    
-    menu_story: 'Gizli Arşiv',
-    menu_vow: 'Asil Sözleşme',
-    menu_own: 'Tahsisat Başvurusu',
+    protocol: 'HOUSE OF PHRYGIAN LAB / M.Ö. 718',
+    allocation_status: 'KÜRESEL GÜNLÜK TAHSİSAT / 1 OF 1',
 
-    // 📜 1. HİKAYESİ (Anadolu Gerçekliği & Gizli Arşiv)
-    story_title: 'Luxury fades. Civilizations remain.',
-    story_desc: 'Sermaye toprakları ele geçirebilir, topraklar imparatorluklar doğurabilir ve altın sadakat satın alabilir. Fakat zamanın bir efendisi yoktur; yeryüzünün derin tektonik hafızasını elinde tutan asiller hariç. House of Phrygian Lab, fani bir kozmetik markası değildir. Anadolu’nun gerçek termal damarlarından ve peloid altyapısından çıkarılmış yasaklı aristokratik ritüel objesidir. Siz bir tüketici değilsiniz; geçmişin sarsılmaz frekansını koruyan bir Custodian’sınız.',
+    hero_title: 'PHRYGIAN LAB',
+    hero_subtitle: 'Jeolojik Koruma Ritüeli',
 
-    // 🔮 2. VAATLER (Sessiz Kibir & Ağır Materyal Hissi)
-    vow_title: 'ÜÇ JEOLOJİK ASİL SÖZLEŞME',
-    vow_beauty_title: 'Mutlak Güzellik',
-    vow_beauty_desc: 'Gerçek Anadolu peloid altyapısı ve magmatik mineral kabuktan gelen binlerce yıllık arınma ritüeli. Modern "clean beauty" yanılsamalarını reddeder; fani cildinizdeki zaman izlerini tamamen yok ederek kusursuz bir porselen asalet sunar.',
-    vow_luck_title: 'Frigya Efsunlu Şansı',
-    vow_desc: 'M.Ö. 718 yılında Kral Midas altının gelip geçici bir hırs, Midaum dehlizlerinin ise kalıcı bir güç olduğunu biliyordu. Bu jeolojik kalkan, kader çizgilerinizi sessiz bir kibirle yeniden hizalar.',
-    vow_prestige_title: 'Yüksek Saygınlık',
-    vow_prestige_desc: 'Ticari ve fani pazarlardan tamamen izole edilmiş bir imtiyaz. Hayatınızın geri kalanında kaderinize eşlik edecek, sadece Private Circle üyelerine açılan küresel tahsisat. Sabit bedel: €718.',
+    hero_quote_line_1: 'Altın sıradandır.',
+    hero_quote_line_2: 'Geçmişe sahip ol.',
 
-    // 📦 3. SAKLAMA ARCHIVE
-    set_title: 'THE ANTIQUE TRIAD SET',
-    set_sub: 'Archive Case / Masif Mermer Koruma Mahfaza',
-    set_desc: 'Işıksız mermer damarlarından el işçiliğiyle yontulmuş ağır, müze kalitesinde bir obje. Adınıza özel 24 Ayar altın mühürlü plakası ve Archive Case muhafazasıyla birlikte teslim edilen 3 yüksek yoğunluklu katman:',
-    
+    request_button: 'TAHSİSAT TALEP ET',
+    approval_notice: 'Her tahsisat başvurusu onaylanmaz.',
+
+    menu_archive: 'Arşiv',
+    menu_edict: 'Sözleşmeler',
+    menu_allocation: 'Tahsisat',
+
+    archive_title: 'Luxury fades. Civilizations remain.',
+    archive_text:
+      'Phrygian Lab sıradan bir kozmetik evi değildir. Her obje, Anadolu’nun gerçek termal mineral yoğunluğu etrafında şekillenir ve jeolojik basınç ile ritüel hazırlık süreçleriyle korunur. Bu obje kitlesel tüketim için tasarlanmaz. Süreklilik için vardır.',
+
+    edict_title: 'ÜÇ JEOLOJİK ASİL SÖZLEŞME',
+
+    vow_1_title: 'Korunan Güzellik',
+    vow_1_text:
+      'Nadir mineral katmanları modern zamanın görünür yorgunluğunu yumuşatırken sakin ve porselen bir yüzey hissi bırakır.',
+
+    vow_2_title: 'Mirasın Ağırlığı',
+    vow_2_text:
+      'Materyal ağırlığı, sessizlik ve ölçülü ihtişam üzerine tasarlanmış ritüel obje.',
+
+    vow_3_title: 'Mahrem Tahsisat',
+    vow_3_text:
+      'Küresel ölçekte her gün yalnızca tek tahsisat açılır. Pazarlık yoktur. İndirim yoktur. Açık envanter yoktur.',
+
+    collection_title: 'THE ANTIQUE TRIAD SET',
+    collection_subtitle: 'Archive Case / Jeolojik Mahfaza',
+    collection_text:
+      'Her obje kendine özgü mineral damarları ve tonal farklılıklar taşır. El işçiliği mermer yüzeyler her tahsisatı benzersiz kılar.',
+
     grey_title: 'PHRYGIAN GREY',
-    grey_desc: 'Yüksek volkanik silika ve sülfür. Hücre matrisini yeryüzünün derin jeolojik hafızasıyla senkronize eden ağır kalkan.',
+    grey_text:
+      'Yoğun volkanik mineral karakterine sahip ağır jeolojik katman.',
+
     white_title: 'PHRYGIAN WHITE',
-    white_desc: 'Işıksız mermer damarlarından saf kalsiyum karbonat. Antik imparatorluk banyolarının o pürüzsüz porselen tonu.',
+    white_text:
+      'Antik imparatorluk banyolarından ilham alan açık mineral yüzey.',
+
     raw_title: 'TRAVERTINE RAW',
-    raw_desc: 'Termal kaynaklardan magmatik mineral kabuk. Zamanın yıpratıcı etkisini cilt bariyerinde tamamen donduran ağır jeolojik katman.',
-    
-    // 💳 ALLOCATION REQUEST FORM
-    form_title: 'ASİL SİCİL BAŞVURU PROTOKOLÜ',
-    form_sub: 'Masif mermer kavanoz ve altın plakanın kilitlenip ulaştırılacağı resmi mahrem lokasyon',
-    input_name: 'Asil İsim & Saygın Unvan (Örn: Sovereign Sedat)',
-    input_city: 'Hedef Şehir / Ülke (Örn: Istanbul / TR)',
-    input_email: 'Şifreli Dijital Adres (E-posta)',
-    input_address: 'Emanetin Ulaştırılacağı Resmi Teslimat Adresi',
-    button_submit: 'TAHSİSAT TALEP ET / CREDIT CARD & AMEX İLE ANINDA KİLİTLE',
-    success: 'TAHSİSAT SİSMİK SİCİLE İŞLENDİ',
-    success_desc: 'Asil sicil başvurunuz konsey arşivine alınmıştır. Sabit bedel €718 olarak kilitlenmiştir. Kartınızdan tahsilat sadece konsey tahsisatınızı onaylarsa yapılacaktır.',
-    
-    ledger_title: 'ZAMANSAL HİZALANMA TAKVİMİ',
-    ledger_sub: '23 Haziran Gündönümünde Başlar — Private Circle Sabit Bedeli: €718.',
-    status_void_label: 'Ebedi',
-    seo_text: 'House of Phrygian Lab | Jeolojik Aristokrasi | Antik Ritüel Objesi | London - Paris - Istanbul - Dubai Mahrem Kasaları'
+    raw_text:
+      'En doğal hali korunmuş termal mineral dokusu.',
+
+    registry_title: 'MAHREM SİCİL BAŞVURUSU',
+    registry_subtitle:
+      'Arşiv tahsisatının ulaştırılacağı güvenli teslimat lokasyonu.',
+
+    input_name: 'Sicil Kimliği',
+    input_city: 'Hedef Mahrem Lokasyon',
+    input_email: 'Özel Yazışma Adresi',
+    input_address: 'Güvenli Emanet Adresi',
+
+    submit: 'TAHSİSAT TALEBİNİ KİLİTLE',
+
+    success_title: 'TAHSİSAT KAYDA ALINDI',
+    success_text:
+      'Başvurunuz mahrem sicil inceleme sürecine alınmıştır. Tahsisat onayı değerlendirme sonrasında gerçekleşir.',
+
+    footer_manifest: 'Her şeye sahip olup zamana sahip olamayanlar için.',
+    footer_locations:
+      'LONDON / PARIS / DUBAI / ISTANBUL',
+
+    seo_text:
+      'Phrygian Lab — Jeolojik Ritüel Objeleri — Anadolu Termal Mineral Koruma Evi'
   }
 };
 
+type VowKey =
+  | 'v1'
+  | 'v2'
+  | 'v3';
+
 export default function Home() {
-  const [lang, setLang] = useState<'en' | 'tr'>('en');
-  const [orderSubmitted, setOrderSubmitted] = useState(false);
-  const [formData, setFormData] = useState({ name: '', city: '', email: '', address: '' });
-  const [activeVow, setActiveVow] = useState<'beauty' | 'luck' | 'prestige' | null>(null);
+  const [lang, setLang] = useState<Language>('en');
 
-  const t = TRANSLATIONS[lang];
+  const [submitted, setSubmitted] = useState(false);
 
-  const CALENDAR_DAYS = [
-    { date: 'June 23', holder: 'Sovereign S.', city: 'Istanbul', status: 'Sealed', price: '€718', isVoid: false },
-    { date: 'June 24', holder: 'Sovereign A.', city: 'London', status: 'Sealed', price: '€718', isVoid: false },
-    { date: 'June 25', holder: 'Sovereign M.', city: 'Paris', status: 'Sealed', price: '€718', isVoid: false },
-    { date: 'June 26', holder: 'The Chosen One', city: 'Midaum Zone', status: 'Priceless', price: 'Priceless', isVoid: true },
-    { date: 'June 27', holder: 'Sovereign V.', city: 'Vienna', status: 'Sealed', price: '€718', isVoid: false },
-    { date: 'June 28', holder: 'Sovereign Alignment', city: 'Global', status: 'Open', price: '€718', isVoid: false },
-    { date: 'June 29', holder: 'Sovereign Alignment', city: 'Global', status: 'Open', price: '€718', isVoid: false },
-  ];
+  const [activeVow, setActiveVow] = useState<VowKey | null>(null);
 
-  const handleInputChange = (key: 'name' | 'city' | 'email' | 'address', value: string) => {
-    setFormData(prev => ({ ...prev, [key]: value }));
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    city: '',
+    email: '',
+    address: ''
+  });
+
+  const t = useMemo(() => TRANSLATIONS[lang], [lang]);
+
+  const handleInputChange = (
+    key: FormKey,
+    value: string
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [key]: value
+    }));
   };
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-[#e5e5e5] flex flex-col justify-between font-sans selection:bg-[#c5a880] selection:text-black overflow-x-hidden relative">
-      
-      {/* 🔮 %5 ÖLÇEKLİ LÜKS SIZINTI MOR GRADIENT */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-[radial-gradient(circle,rgba(147,51,234,0.025)_0%,transparent_70%)] blur-3xl pointer-events-none" />
+    <main className="relative overflow-hidden bg-[#0a0a0a] text-[#f3f3f3] min-h-screen">
+
+      {/* ATMOSPHERIC GLOW */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-purple-900/10 blur-[180px]" />
+      </div>
 
       {/* HEADER */}
-      <header className="w-full max-w-7xl mx-auto px-6 py-5 flex flex-col lg:flex-row justify-between items-center z-50 relative border-b border-neutral-900/40 gap-4 sticky top-0 bg-[#0a0a0a]/95 backdrop-blur-md">
-        <div className="flex flex-col items-center lg:items-start cursor-pointer" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-          <span className="text-lg md:text-xl font-extralight tracking-[0.6em] text-[#d4af37] font-serif">PHRYGIAN LAB</span>
-          <span className="text-[8px] tracking-[0.3em] uppercase opacity-30 mt-0.5 font-mono">{t.protocol}</span>
-        </div>
-        
-        <nav className="flex items-center gap-8 text-[10px] tracking-[0.3em] uppercase font-serif text-neutral-400">
-          <button onClick={() => scrollToSection('story-layer')} className="hover:text-[#d4af37] transition-colors">{t.menu_story}</button>
-          <button onClick={() => scrollToSection('vow-layer')} className="hover:text-[#d4af37] transition-colors">{t.menu_vow}</button>
-          <button onClick={() => scrollToSection('own-layer')} className="hover:text-[#d4af37] transition-colors text-[#c5a880] font-semibold">{t.menu_own}</button>
-        </nav>
+      <header className="sticky top-0 z-50 border-b border-white/5 backdrop-blur-xl bg-[#0a0a0a]/85">
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1.5 bg-neutral-950 border border-neutral-900 px-2.5 py-1 text-[8px] tracking-widest font-mono">
-            <button onClick={() => setLang('en')} className={`uppercase ${lang === 'en' ? 'text-[#d4af37] font-bold' : 'text-neutral-600'}`}>EN</button>
-            <button onClick={() => setLang('tr')} className={`uppercase ${lang === 'tr' ? 'text-[#d4af37] font-bold' : 'text-neutral-600'}`}>TR</button>
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+          <div className="flex flex-col">
+            <span className="text-[#d4af37] tracking-[0.55em] text-sm md:text-base font-light">
+              PHRYGIAN LAB
+            </span>
+
+            <span className="text-[9px] uppercase tracking-[0.35em] text-neutral-600 mt-1">
+              {t.protocol}
+            </span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="w-1 h-1 rounded-full bg-amber-500 animate-pulse" />
-            <span className="text-[8px] tracking-[0.2em] text-[#c5a880] uppercase font-mono">1 ASIL / GÜN</span>
+
+          <nav className="hidden md:flex items-center gap-10 text-[10px] uppercase tracking-[0.35em] text-neutral-500">
+
+            <button
+              onClick={() => scrollToSection('archive')}
+              className="hover:text-[#d4af37] transition-colors"
+            >
+              {t.menu_archive}
+            </button>
+
+            <button
+              onClick={() => scrollToSection('edicts')}
+              className="hover:text-[#d4af37] transition-colors"
+            >
+              {t.menu_edict}
+            </button>
+
+            <button
+              onClick={() => scrollToSection('allocation')}
+              className="hover:text-[#d4af37] transition-colors"
+            >
+              {t.menu_allocation}
+            </button>
+
+          </nav>
+
+          <div className="flex items-center gap-4">
+
+            <div className="hidden sm:flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37] animate-pulse" />
+
+              <span className="text-[9px] tracking-[0.25em] uppercase text-[#c5a880]">
+                {t.allocation_status}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-1 border border-white/10 px-2 py-1 text-[9px]">
+
+              <button
+                onClick={() => setLang('en')}
+                className={lang === 'en'
+                  ? 'text-[#d4af37]'
+                  : 'text-neutral-600'}
+              >
+                EN
+              </button>
+
+              <button
+                onClick={() => setLang('tr')}
+                className={lang === 'tr'
+                  ? 'text-[#d4af37]'
+                  : 'text-neutral-600'}
+              >
+                TR
+              </button>
+
+            </div>
+
           </div>
+
         </div>
+
       </header>
 
-      {/* MOR PARILDAYAN ASİL KITLIK ŞERİDİ */}
-      <div className="w-full bg-gradient-to-r from-purple-950/20 via-purple-900/30 to-purple-950/20 border-b border-purple-900/10 py-3 text-center z-10 relative animate-pulse shadow-[0_0_20px_rgba(147,51,234,0.05)]">
-        <p className="text-[10px] tracking-[0.4em] uppercase text-purple-300/90 font-semibold px-4">
-          {t.limit_notice}
-        </p>
-      </div>
+      {/* HERO */}
+      <section className="max-w-7xl mx-auto px-6 pt-28 pb-24">
 
-      {/* ÇİFT SÜTUN AKIŞI */}
-      <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-12 pb-12 z-10 relative">
-        <div className="lg:col-span-7 flex flex-col justify-start text-left space-y-10">
-          
-          {/* ⚜️ LUXURY FASHION HOUSE AMBLEMİ (Kutsal Mühür Hissiyatı) */}
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 border border-[#d4af37] flex items-center justify-center relative bg-neutral-950 shadow-2xl group cursor-help">
-              <div className="absolute inset-0.5 border border-neutral-800" />
-              <span className="text-xs font-serif tracking-widest text-[#d4af37] font-bold group-hover:scale-110 transition-transform">Φ</span>
+        <div className="max-w-4xl">
+
+          <div className="mb-10">
+
+            <div className="w-14 h-14 border border-[#d4af37]/40 bg-black/30 flex items-center justify-center mb-8">
+              <span className="text-[#d4af37] text-lg">
+                Φ
+              </span>
             </div>
-            <div>
-              <p className="text-[9px] tracking-[0.5em] uppercase text-[#c5a880] mb-0.5 font-semibold font-mono">
-                {t.tagline}
-              </p>
-              <div className="w-32 h-[1px] bg-gradient-to-r from-[#c5a880]/40 to-transparent" />
-            </div>
+
+            <h1 className="text-5xl md:text-7xl tracking-[0.22em] font-extralight text-white leading-none">
+              {t.hero_title}
+            </h1>
+
+            <p className="mt-5 text-sm uppercase tracking-[0.4em] text-[#c5a880]">
+              {t.hero_subtitle}
+            </p>
+
           </div>
 
-          {/* 📜 ARİSTOKRATİK RİTÜEL ANLATI TABAKASI */}
-          <section id="story-layer" className="space-y-4 scroll-mt-28 bg-[#111111]/10 border border-neutral-900/60 p-6 backdrop-blur-sm relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-1 h-full bg-[#d4af37]" />
-            <h2 className="text-xl md:text-2xl font-serif font-light tracking-widest text-white uppercase pl-2">
-              {t.story_title}
-            </h2>
-            <p className="text-xs md:text-sm text-neutral-400 leading-relaxed font-serif text-justify pl-2 font-light">
-              {t.story_desc}
+          <div className="space-y-1 mb-14">
+
+            <p className="text-2xl md:text-4xl font-light text-white">
+              {t.hero_quote_line_1}
             </p>
-          </section>
 
-          {/* 🔮 SESSİZ KİBİR VAATLERİ */}
-          <section id="vow-layer" className="w-full bg-neutral-950/40 border border-neutral-900/60 p-6 relative scroll-mt-28 space-y-4">
-            <span className="text-[10px] font-mono block tracking-[0.3em] text-neutral-500 font-semibold uppercase">{t.vow_title}</span>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-              <button onClick={() => setActiveVow(activeVow === 'beauty' ? null : 'beauty')} className={`border p-3.5 text-left transition-all duration-500 rounded-none ${activeVow === 'beauty' ? 'border-[#d4af37] bg-neutral-950 shadow-2xl' : 'border-neutral-900 bg-black/40 hover:border-neutral-800'}`}>
-                <span className="text-[11px] font-serif tracking-widest uppercase block text-white">{t.vow_beauty_title}</span>
-                <span className="text-[8px] font-mono text-neutral-600 block mt-1 uppercase tracking-wider">Decode Ritual</span>
-              </button>
+            <p className="text-2xl md:text-4xl italic text-[#d4af37]">
+              {t.hero_quote_line_2}
+            </p>
 
-              <button onClick={() => setActiveVow(activeVow === 'luck' ? null : 'luck')} className={`border p-3.5 text-left transition-all duration-500 rounded-none ${activeVow === 'luck' ? 'border-[#d4af37] bg-neutral-950 shadow-2xl' : 'border-neutral-900 bg-black/40 hover:border-neutral-800'}`}>
-                <span className="text-[11px] font-serif tracking-widest uppercase block text-white">{t.vow_luck_title}</span>
-                <span className="text-[8px] font-mono text-neutral-600 block mt-1 uppercase tracking-wider">Decode Ritual</span>
-              </button>
+          </div>
 
-              <button onClick={() => setActiveVow(activeVow === 'prestige' ? null : 'prestige')} className={`border p-3.5 text-left transition-all duration-500 rounded-none ${activeVow === 'prestige' ? 'border-[#d4af37] bg-neutral-950 shadow-2xl' : 'border-neutral-900 bg-black/40 hover:border-neutral-800'}`}>
-                <span className="text-[11px] font-serif tracking-widest uppercase block text-white">{t.vow_prestige_title}</span>
-                <span className="text-[8px] font-mono text-neutral-600 block mt-1 uppercase tracking-wider">Decode Ritual</span>
-              </button>
-            </div>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6">
 
-            {activeVow && (
-              <div className="bg-neutral-950 border border-neutral-900 p-4 mt-3 transition-all duration-300 shadow-2xl">
-                <p className="text-xs text-neutral-400 leading-relaxed font-serif italic font-light">
-                  {activeVow === 'beauty' && t.vow_beauty_desc}
-                  {activeVow === 'luck' && t.vow_desc}
-                  {activeVow === 'prestige' && t.vow_prestige_desc}
+            <button
+              onClick={() => scrollToSection('allocation')}
+              className="h-14 px-10 border border-[#d4af37] text-[#d4af37] uppercase tracking-[0.3em] text-xs hover:bg-[#d4af37] hover:text-black transition-all duration-500"
+            >
+              {t.request_button}
+            </button>
+
+            <p className="text-xs uppercase tracking-[0.28em] text-neutral-600">
+              {t.approval_notice}
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ARCHIVE */}
+      <section
+        id="archive"
+        className="max-w-7xl mx-auto px-6 py-24 border-t border-white/5"
+      >
+
+        <div className="max-w-3xl">
+
+          <p className="text-[10px] uppercase tracking-[0.45em] text-[#c5a880] mb-6">
+            THE ARCHIVE
+          </p>
+
+          <h2 className="text-3xl md:text-5xl font-light leading-tight mb-10">
+            {t.archive_title}
+          </h2>
+
+          <p className="text-neutral-400 leading-[2.1] text-sm md:text-base font-light">
+            {t.archive_text}
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* EDICTS */}
+      <section
+        id="edicts"
+        className="max-w-7xl mx-auto px-6 py-24 border-t border-white/5"
+      >
+
+        <div className="mb-16">
+
+          <p className="text-[10px] uppercase tracking-[0.45em] text-[#c5a880] mb-5">
+            {t.edict_title}
+          </p>
+
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-white/5">
+
+          <button
+            onClick={() => setActiveVow(activeVow === 'v1' ? null : 'v1')}
+            className="bg-[#0d0d0d] p-10 text-left min-h-[240px] hover:bg-[#111111] transition-colors"
+          >
+
+            <span className="text-[10px] uppercase tracking-[0.35em] text-neutral-600">
+              I
+            </span>
+
+            <h3 className="mt-8 text-2xl font-light text-white">
+              {t.vow_1_title}
+            </h3>
+
+            {activeVow === 'v1' && (
+              <p className="mt-8 text-sm text-neutral-400 leading-[2]">
+                {t.vow_1_text}
+              </p>
+            )}
+
+          </button>
+
+          <button
+            onClick={() => setActiveVow(activeVow === 'v2' ? null : 'v2')}
+            className="bg-[#0d0d0d] p-10 text-left min-h-[240px] hover:bg-[#111111] transition-colors"
+          >
+
+            <span className="text-[10px] uppercase tracking-[0.35em] text-neutral-600">
+              II
+            </span>
+
+            <h3 className="mt-8 text-2xl font-light text-white">
+              {t.vow_2_title}
+            </h3>
+
+            {activeVow === 'v2' && (
+              <p className="mt-8 text-sm text-neutral-400 leading-[2]">
+                {t.vow_2_text}
+              </p>
+            )}
+
+          </button>
+
+          <button
+            onClick={() => setActiveVow(activeVow === 'v3' ? null : 'v3')}
+            className="bg-[#0d0d0d] p-10 text-left min-h-[240px] hover:bg-[#111111] transition-colors"
+          >
+
+            <span className="text-[10px] uppercase tracking-[0.35em] text-neutral-600">
+              III
+            </span>
+
+            <h3 className="mt-8 text-2xl font-light text-white">
+              {t.vow_3_title}
+            </h3>
+
+            {activeVow === 'v3' && (
+              <p className="mt-8 text-sm text-neutral-400 leading-[2]">
+                {t.vow_3_text}
+              </p>
+            )}
+
+          </button>
+
+        </div>
+
+      </section>
+
+      {/* COLLECTION */}
+      <section className="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+
+        <div className="max-w-4xl mb-16">
+
+          <p className="text-[10px] uppercase tracking-[0.45em] text-[#c5a880] mb-5">
+            COLLECTION
+          </p>
+
+          <h2 className="text-3xl md:text-5xl font-light mb-6">
+            {t.collection_title}
+          </h2>
+
+          <p className="uppercase tracking-[0.3em] text-xs text-neutral-600 mb-10">
+            {t.collection_subtitle}
+          </p>
+
+          <p className="text-neutral-400 leading-[2] text-sm md:text-base">
+            {t.collection_text}
+          </p>
+
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-white/5">
+
+          <div className="bg-[#111111] p-10 min-h-[240px]">
+            <span className="text-[10px] tracking-[0.35em] uppercase text-[#c5a880]">
+              I
+            </span>
+
+            <h3 className="mt-8 text-2xl font-light">
+              {t.grey_title}
+            </h3>
+
+            <p className="mt-8 text-sm text-neutral-400 leading-[2]">
+              {t.grey_text}
+            </p>
+          </div>
+
+          <div className="bg-[#111111] p-10 min-h-[240px]">
+            <span className="text-[10px] tracking-[0.35em] uppercase text-[#c5a880]">
+              II
+            </span>
+
+            <h3 className="mt-8 text-2xl font-light">
+              {t.white_title}
+            </h3>
+
+            <p className="mt-8 text-sm text-neutral-400 leading-[2]">
+              {t.white_text}
+            </p>
+          </div>
+
+          <div className="bg-[#111111] p-10 min-h-[240px]">
+            <span className="text-[10px] tracking-[0.35em] uppercase text-[#c5a880]">
+              III
+            </span>
+
+            <h3 className="mt-8 text-2xl font-light">
+              {t.raw_title}
+            </h3>
+
+            <p className="mt-8 text-sm text-neutral-400 leading-[2]">
+              {t.raw_text}
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ALLOCATION */}
+      <section
+        id="allocation"
+        className="max-w-7xl mx-auto px-6 py-24 border-t border-white/5"
+      >
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+
+          <div className="max-w-xl">
+
+            <p className="text-[10px] uppercase tracking-[0.45em] text-[#c5a880] mb-5">
+              ALLOCATION
+            </p>
+
+            <h2 className="text-3xl md:text-5xl font-light leading-tight mb-10">
+              {t.registry_title}
+            </h2>
+
+            <p className="text-neutral-400 leading-[2] text-sm">
+              {t.registry_subtitle}
+            </p>
+
+          </div>
+
+          <div className="border border-white/10 bg-[#0d0d0d] p-8 md:p-10">
+
+            {!submitted ? (
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  setSubmitted(true);
+                }}
+                className="space-y-5"
+              >
+
+                <input
+                  type="text"
+                  required
+                  value={formData.name}
+                  onChange={(e) =>
+                    handleInputChange('name', e.target.value)
+                  }
+                  placeholder={t.input_name}
+                  className="w-full h-14 bg-black border border-white/10 px-5 text-sm text-white placeholder:text-neutral-600 outline-none focus:border-[#d4af37] transition-colors"
+                />
+
+                <input
+                  type="text"
+                  required
+                  value={formData.city}
+                  onChange={(e) =>
+                    handleInputChange('city', e.target.value)
+                  }
+                  placeholder={t.input_city}
+                  className="w-full h-14 bg-black border border-white/10 px-5 text-sm text-white placeholder:text-neutral-600 outline-none focus:border-[#d4af37] transition-colors"
+                />
+
+                <input
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) =>
+                    handleInputChange('email', e.target.value)
+                  }
+                  placeholder={t.input_email}
+                  className="w-full h-14 bg-black border border-white/10 px-5 text-sm text-white placeholder:text-neutral-600 outline-none focus:border-[#d4af37] transition-colors"
+                />
+
+                <textarea
+                  rows={5}
+                  required
+                  value={formData.address}
+                  onChange={(e) =>
+                    handleInputChange('address', e.target.value)
+                  }
+                  placeholder={t.input_address}
+                  className="w-full bg-black border border-white/10 px-5 py-4 text-sm text-white placeholder:text-neutral-600 outline-none focus:border-[#d4af37] transition-colors resize-none"
+                />
+
+                <button
+                  type="submit"
+                  className="w-full h-14 border border-[#d4af37] text-[#d4af37] uppercase tracking-[0.28em] text-xs hover:bg-[#d4af37] hover:text-black transition-all duration-500"
+                >
+                  {t.submit}
+                </button>
+
+                <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-700 text-center pt-2">
+                  AMEX / PRIORITY REGISTRY / PRIVATE REVIEW
                 </p>
+
+              </form>
+            ) : (
+              <div className="min-h-[420px] flex flex-col items-center justify-center text-center">
+
+                <div className="w-16 h-16 border border-[#d4af37]/40 flex items-center justify-center mb-8">
+                  <span className="text-[#d4af37] text-xl">
+                    Φ
+                  </span>
+                </div>
+
+                <h3 className="text-2xl font-light text-white mb-6">
+                  {t.success_title}
+                </h3>
+
+                <p className="max-w-md text-neutral-400 leading-[2] text-sm">
+                  {t.success_text}
+                </p>
+
               </div>
             )}
-          </section>
-        </div>
 
-        {/* CUSTODIAN SİCİL FORMU */}
-        <div id="own-layer" className="lg:col-span-5 bg-[#0d0d0d] border border-neutral-900 p-6 md:p-8 relative self-start shadow-2xl scroll-mt-28">
-          
-          {/* 👑 "ALTIN SIRADANDIR! GEÇMİŞE SAHİP OL" KİBİR MÜHRÜ */}
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-b from-[#d4af37] to-[#aa841b] text-black text-[8px] tracking-[0.2em] uppercase font-bold px-4 py-0.5 shadow-xl font-mono text-center whitespace-nowrap">
-            {t.gold_plate_claim}
           </div>
 
-          {!orderSubmitted ? (
-            <form onSubmit={(e) => { e.preventDefault(); setOrderSubmitted(true); }} className="space-y-4">
-              <div className="text-center mb-2">
-                <span className="text-[8px] tracking-[0.3em] text-[#c5a880] block font-mono">SECURE REGISTRY</span>
-                <h3 className="text-xs tracking-widest text-white uppercase font-serif mt-1">{t.form_title}</h3>
-                <p className="text-[9px] text-neutral-600 tracking-wide mt-0.5 lowercase font-sans italic">{t.form_sub}</p>
-              </div>
-
-              <div className="space-y-2">
-                <input type="text" required value={formData.name} onChange={(e) => handleInputChange('name', e.target.value)} placeholder={t.input_name} className="w-full bg-[#121212] border border-neutral-900 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                <input type="text" required value={formData.city} onChange={(e) => handleInputChange('city', e.target.value)} placeholder={t.input_city} className="w-full bg-[#121212] border border-neutral-900 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                <input type="email" required value={formData.email} onChange={(e) => handleInputChange('email', e.target.value)} placeholder={t.input_email} className="w-full bg-[#121212] border border-neutral-900 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide font-mono placeholder:text-neutral-700" />
-                <textarea rows={3} required value={formData.address} onChange={(e) => handleInputChange('address', e.target.value)} placeholder={t.input_address} className="w-full bg-[#121212] border border-neutral-900 px-3 py-2.5 text-xs rounded-none focus:outline-none focus:border-[#c5a880] text-white tracking-wide resize-none leading-relaxed font-sans placeholder:text-neutral-700" />
-              </div>
-
-              <button type="submit" className="w-full bg-gradient-to-r from-[#c5a880] to-[#d4af37] text-black font-bold uppercase text-[9px] tracking-[0.25em] py-4 rounded-none hover:from-white hover:to-white transition-all duration-500 shadow-2xl border border-[#c5a880]">
-                {t.button_submit}
-              </button>
-              
-              <div className="flex justify-center items-center gap-3 opacity-20 text-[7px] tracking-wildest font-mono text-white pt-1">
-                <span>AMERICAN EXPRESS</span>•<span>PRIORITY CARD</span>•<span>SECURE CRYPT</span>
-              </div>
-            </form>
-          ) : (
-            <div className="py-12 text-center space-y-3">
-              <span className="text-2xl block">🏛️</span>
-              <h3 className="text-xs tracking-[0.3em] text-[#c5a880] uppercase font-bold">{t.success}</h3>
-              <p className="text-xs text-neutral-400 leading-relaxed max-w-sm mx-auto font-serif">{t.success_desc}</p>
-            </div>
-          )}
         </div>
-      </div>
 
-      {/* MÜZEDEN ÇIKARILMIŞ OBJE ESTETİĞİ VE KATMANLAR */}
-      <section className="w-full max-w-7xl mx-auto px-6 py-4 z-10 relative">
-        <div className="bg-[#111111]/20 border border-neutral-900 p-6 md:p-8 backdrop-blur-sm">
-          <div className="mb-6 border-b border-neutral-900 pb-4">
-            <h2 className="text-lg font-serif font-light tracking-widest text-white uppercase">{t.set_title}</h2>
-            <p className="text-[9px] tracking-widest text-[#c5a880] uppercase mt-0.5">{t.set_sub}</p>
-          </div>
-          
-          <p className="text-xs text-neutral-400 mb-6 leading-relaxed font-serif text-justify max-w-4xl font-light">{t.set_desc}</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* PHRYGIAN GREY: Sıcak Volkanik Obsidian Tonu */}
-            <div className="bg-gradient-to-b from-[#141517] to-[#0b0c0d] border border-neutral-900 p-5 shadow-xl transition-all duration-500 hover:border-[#c5a880]/30">
-              <span className="text-[8px] font-mono text-[#c5a880] block mb-1 uppercase tracking-widest">Ⅰ / METAMORPHIC LAYER</span>
-              <h4 className="text-xs font-serif text-white tracking-widest mb-2 uppercase">{t.grey_title}</h4>
-              <p className="text-[11px] text-neutral-500 leading-relaxed font-serif font-light text-justify">{t.grey_desc}</p>
-            </div>
-
-            {/* PHRYGIAN WHITE: Antik Mermer Fonu */}
-            <div className="bg-gradient-to-b from-[#1e1f24] to-[#0e0f12] border border-neutral-900 p-5 shadow-xl transition-all duration-500 hover:border-[#c5a880]/30">
-              <span className="text-[8px] font-mono text-[#d4af37] block mb-1 uppercase tracking-widest">Ⅱ / METAMORPHIC LAYER</span>
-              <h4 className="text-xs font-serif text-white tracking-widest mb-2 uppercase">{t.white_title}</h4>
-              <p className="text-[11px] text-neutral-400 leading-relaxed font-serif font-light text-justify">{t.white_desc}</p>
-            </div>
-
-            {/* TRAVERTINE RAW: Sıcak Traverten Toprak Fonu */}
-            <div className="bg-gradient-to-b from-[#1c1612] to-[#0d0a08] border border-neutral-900 p-5 shadow-xl transition-all duration-500 hover:border-[#c5a880]/30">
-              <span className="text-[8px] font-mono text-[#c5a880] block mb-1 uppercase tracking-widest">Ⅲ / METAMORPHIC LAYER</span>
-              <h4 className="text-xs font-serif text-white tracking-widest mb-2 uppercase">{t.raw_title}</h4>
-              <p className="text-[11px] text-neutral-500 leading-relaxed font-serif font-light text-justify">{t.raw_desc}</p>
-            </div>
-          </div>
-        </div>
       </section>
 
-      {/* TAKVİM TABLOSU (Mor Çizgili Detaylar) */}
-      <section className="w-full max-w-7xl mx-auto px-6 py-6 z-10 relative">
-        <div className="border-t border-neutral-900 pt-6">
-          <div className="text-center mb-6">
-            <h3 className="text-[10px] tracking-[0.4em] text-white uppercase font-serif">{t.ledger_title}</h3>
-            <p className="text-[8px] text-neutral-600 tracking-widest uppercase mt-1 font-mono">{t.ledger_sub}</p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-7 gap-2">
-            {CALENDAR_DAYS.map((day, index) => (
-              <div key={index} className={`border p-3 text-center flex flex-col justify-between h-36 relative transition-all duration-300 ${day.isVoid ? 'border-purple-900/30 bg-purple-950/5 shadow-[0_0_20px_rgba(147,51,234,0.03)]' : 'border-neutral-900 bg-neutral-950/20 hover:border-neutral-800'}`}>
-                <div>
-                  <span className="text-[9px] font-serif block text-neutral-500 font-semibold border-b border-neutral-900/40 pb-1 mb-2">{day.date}</span>
-                  <span className={`text-[11px] block font-medium font-serif ${day.isVoid ? 'text-purple-400 font-bold' : 'text-white'}`}>{day.holder}</span>
-                  <span className="text-[8px] text-neutral-600 block font-mono mt-0.5">{day.city}</span>
-                </div>
-                <div>
-                  <span className={`text-[9px] font-mono block mb-1 font-bold ${day.isVoid ? 'text-purple-400' : 'text-[#c5a880]'}`}>
-                    {day.price}
-                  </span>
-                  <span className={`text-[7px] block uppercase font-mono tracking-widest ${day.isVoid ? 'text-purple-500/50' : 'text-neutral-600'}`}>
-                    {day.isVoid ? t.status_void_label : (lang === 'tr' ? 'Mühürlendi' : 'Sealed')}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* FOOTER */}
+      <footer className="border-t border-white/5 mt-24">
 
-      {/* 🌍 SEO & LOCATIONS FOOTER */}
-      <footer className="w-full max-w-7xl mx-auto px-6 py-6 flex flex-col justify-between items-center gap-4 z-10 border-t border-neutral-950">
-        <div className="w-full flex flex-col md:flex-row justify-between items-center text-[8px] tracking-[0.3em] text-neutral-600 uppercase">
-          <div className="flex gap-4 mb-2 md:mb-0 font-serif opacity-40">
-            <span>LONDON VAULT</span>•<span>PARIS BUREAU</span>•<span>DUBAI SUITE</span>•<span>ISTANBUL HQ</span>
+        <div className="max-w-7xl mx-auto px-6 py-16">
+
+          <div className="flex flex-col items-center text-center">
+
+            <p className="text-xl md:text-2xl text-white font-light mb-8">
+              {t.footer_manifest}
+            </p>
+
+            <p className="text-[10px] uppercase tracking-[0.45em] text-neutral-600 mb-10">
+              {t.footer_locations}
+            </p>
+
+            <div className="w-20 h-[1px] bg-[#d4af37]/30 mb-10" />
+
+            <p className="text-[9px] uppercase tracking-[0.3em] text-neutral-800 max-w-3xl leading-[2]">
+              {t.seo_text}
+            </p>
+
           </div>
-          <div className="text-center md:text-right font-mono opacity-20">
-            <span>Phrygian Lab Ltd. © 2026 / Geological Aristocracy</span>
-          </div>
+
         </div>
-        
-        <div className="w-full text-[7px] tracking-widest font-mono text-neutral-800 text-center uppercase opacity-30 select-none border-t border-neutral-900/30 pt-2">
-          {t.seo_text}
-        </div>
+
       </footer>
 
     </main>
